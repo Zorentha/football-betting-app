@@ -1,0 +1,328 @@
+{
+  "fetchedAt": "2025-08-19T15:30:24.556Z",
+  "fixtureId": 1393272,
+  "requestUrl": "http://localhost:3001/api/betting/fixtures/1393272/analyze",
+  "status": 200,
+  "data": {
+    "success": true,
+    "data": {
+      "fixtureId": 1393272,
+      "teams": {
+        "home": "Gillingham",
+        "away": "AFC Wimbledon"
+      },
+      "aiAnalysis": {
+        "probabilities": {
+          "homeWin": 41,
+          "draw": 33,
+          "awayWin": 26
+        },
+        "predictedScore": {
+          "home": 1,
+          "away": 1
+        },
+        "confidence": "medium",
+        "confidencePercentage": 65,
+        "keyFactors": [
+          "Home slight edge in points and form",
+          "Away on losing streak",
+          "Low scoring profiles (1.0 vs 0.8 avg goals)",
+          "Defensive trend suggests Under 2.5",
+          "Home advantage"
+        ],
+        "playerMatchups": [
+          {
+            "category": "Bramkarz vs Napastnik",
+            "homePlayer": "J. Turner (BR)",
+            "awayPlayer": "A. Hackford (NAP)",
+            "description": "J. Turner będzie bronił przeciw A. Hackford"
+          },
+          {
+            "category": "Bramkarz vs Napastnik",
+            "homePlayer": "J. Turner (BR)",
+            "awayPlayer": "D. Orsi (NAP)",
+            "description": "J. Turner będzie bronił przeciw D. Orsi"
+          },
+          {
+            "category": "Bramkarz vs Napastnik",
+            "homePlayer": "J. Turner (BR)",
+            "awayPlayer": "Omar Bugiel (NAP)",
+            "description": "J. Turner będzie bronił przeciw Omar Bugiel"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "S. Gale (CB)",
+            "awayPlayer": "A. Hackford (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "S. Gale (CB)",
+            "awayPlayer": "D. Orsi (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "S. Gale (CB)",
+            "awayPlayer": "Omar Bugiel (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "A. Smith (CB)",
+            "awayPlayer": "A. Hackford (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "A. Smith (CB)",
+            "awayPlayer": "D. Orsi (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "A. Smith (CB)",
+            "awayPlayer": "Omar Bugiel (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "S. Ogie (CB)",
+            "awayPlayer": "A. Hackford (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "S. Ogie (CB)",
+            "awayPlayer": "D. Orsi (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "S. Ogie (CB)",
+            "awayPlayer": "Omar Bugiel (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "R. Hutton (CM)",
+            "awayPlayer": "N. Asiimwe (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "R. Hutton (CM)",
+            "awayPlayer": "C. Maycock (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "R. Hutton (CM)",
+            "awayPlayer": "D. McCoy-Splatt (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "R. Hutton (CM)",
+            "awayPlayer": "A. Sasu (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "E. Coleman (CM)",
+            "awayPlayer": "N. Asiimwe (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "E. Coleman (CM)",
+            "awayPlayer": "C. Maycock (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "E. Coleman (CM)",
+            "awayPlayer": "D. McCoy-Splatt (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "E. Coleman (CM)",
+            "awayPlayer": "A. Sasu (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          }
+        ],
+        "matchupAnalysis": [
+          {
+            "homePlayer": "J. Turner (BR)",
+            "awayPlayer": "A. Hackford (NAP)",
+            "category": "Bramkarz vs Napastnik",
+            "advantage": "uncertain",
+            "analysis": "Turner ma ocenę 6.3 po 1 meczu, a dla Hackforda brak danych w zestawieniu; próba jest mała, więc przewaga nie jest jasna."
+          },
+          {
+            "homePlayer": "J. Turner (BR)",
+            "awayPlayer": "D. Orsi (NAP)",
+            "category": "Bramkarz vs Napastnik",
+            "advantage": "uncertain",
+            "analysis": "Turner oceniony na 6.3 (1 mecz), natomiast dla Orsiego brak statystyk, co utrudnia wskazanie wyraźnej przewagi."
+          },
+          {
+            "homePlayer": "J. Turner (BR)",
+            "awayPlayer": "Omar Bugiel (NAP)",
+            "category": "Bramkarz vs Napastnik",
+            "advantage": "away",
+            "analysis": "Bugiel ma 6.9 po 1 meczu, wyżej niż Turner (6.3), co sugeruje, że w starciu strzeleckim może mieć przewagę."
+          },
+          {
+            "homePlayer": "S. Gale (CB)",
+            "awayPlayer": "A. Hackford (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Brak danych oceny dla Gale’a i Hackforda w dostarczonych statystykach, więc trudno wskazać faworyta w tym pojedynku."
+          },
+          {
+            "homePlayer": "S. Gale (CB)",
+            "awayPlayer": "D. Orsi (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Nie ma dostępnych ocen dla Gale’a ani Orsiego; brak twardych danych statystycznych utrudnia ocenę przewagi."
+          },
+          {
+            "homePlayer": "S. Gale (CB)",
+            "awayPlayer": "Omar Bugiel (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "away",
+            "analysis": "Bugiel (6.9) prezentuje się solidnie po 1 meczu, a dla Gale’a brak danych, co przechyla szalę na korzyść napastnika."
+          },
+          {
+            "homePlayer": "A. Smith (CB)",
+            "awayPlayer": "A. Hackford (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "even",
+            "analysis": "Brak ocen dla A. Smitha (CB) i Hackforda w zestawieniu, więc starcie wygląda na wyrównane na papierze."
+          },
+          {
+            "homePlayer": "A. Smith (CB)",
+            "awayPlayer": "D. Orsi (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "even",
+            "analysis": "Dla A. Smitha (CB) i Orsiego nie ma podanych ocen; brak danych sugeruje remisowy układ sił."
+          },
+          {
+            "homePlayer": "A. Smith (CB)",
+            "awayPlayer": "Omar Bugiel (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "away",
+            "analysis": "Bugiel ma ocenę 6.9 (1 mecz), a dla A. Smitha (CB) brak statystyk, co daje przewagę napastnikowi."
+          },
+          {
+            "homePlayer": "S. Ogie (CB)",
+            "awayPlayer": "A. Hackford (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "home",
+            "analysis": "Ogie ma ocenę 6.3 po 1 meczu, a dla Hackforda brak danych; minimalny plus po stronie obrońcy."
+          },
+          {
+            "homePlayer": "S. Ogie (CB)",
+            "awayPlayer": "D. Orsi (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "home",
+            "analysis": "Ogie (6.3) jest jedynym z pary z konkretną oceną meczową; dla Orsiego brak danych, co lekko faworyzuje obrońcę."
+          },
+          {
+            "homePlayer": "S. Ogie (CB)",
+            "awayPlayer": "Omar Bugiel (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "away",
+            "analysis": "Bugiel 6.9 przewyższa Ogiego 6.3 (oba po 1 meczu), co sugeruje przewagę napastnika w pojedynku."
+          },
+          {
+            "homePlayer": "R. Hutton (CM)",
+            "awayPlayer": "N. Asiimwe (CM)",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Brak ocen dla obu pomocników w dostarczonych statystykach; pojedynek zapowiada się na wyrównany."
+          },
+          {
+            "homePlayer": "R. Hutton (CM)",
+            "awayPlayer": "C. Maycock (CM)",
+            "category": "Środek pola",
+            "advantage": "away",
+            "analysis": "Maycock ma ocenę 6.3 po 1 meczu, podczas gdy Hutton bez danych, co daje przewagę pomocnikowi gości."
+          },
+          {
+            "homePlayer": "R. Hutton (CM)",
+            "awayPlayer": "D. McCoy-Splatt (CM)",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Brak statystyk dla obu zawodników uniemożliwia rozstrzygnięcie przewagi w tym duecie."
+          },
+          {
+            "homePlayer": "R. Hutton (CM)",
+            "awayPlayer": "A. Sasu (CM)",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Nie ma danych ocen dla Huttona ani Sasu; trudno wskazać silniejszą stronę w środku pola."
+          },
+          {
+            "homePlayer": "E. Coleman (CM)",
+            "awayPlayer": "N. Asiimwe (CM)",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Dla Colemana i Asiimwe brak dostępnych ocen w zestawieniu, więc rozkład sił pozostaje niejasny."
+          },
+          {
+            "homePlayer": "E. Coleman (CM)",
+            "awayPlayer": "C. Maycock (CM)",
+            "category": "Środek pola",
+            "advantage": "away",
+            "analysis": "Maycock oceniony na 6.3 (1 mecz) ma przewagę nad Colemanem, dla którego brak danych statystycznych."
+          },
+          {
+            "homePlayer": "E. Coleman (CM)",
+            "awayPlayer": "D. McCoy-Splatt (CM)",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Brak ocen obu zawodników w dostarczonych danych, więc trudno ocenić przewagę."
+          },
+          {
+            "homePlayer": "E. Coleman (CM)",
+            "awayPlayer": "A. Sasu (CM)",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Nie ma dostępnych statystyk meczowych dla Colemana ani Sasu, więc pojedynek jest niewiadomą."
+          }
+        ],
+        "bettingTips": [
+          {
+            "type": "Under 2.5 goals",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Gillingham Draw No Bet",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Both Teams To Score: No",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Correct Score 1-0 (small stake)",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Gillingham or Draw (1X)",
+            "probability": null,
+            "reasoning": ""
+          }
+        ]
+      }
+    },
+    "savedToDatabase": true
+  }
+}

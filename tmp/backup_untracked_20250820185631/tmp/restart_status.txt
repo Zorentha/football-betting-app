@@ -1,0 +1,18 @@
+Timestamp: 2025-08-19T19:33:18+02:00
+Status: Paused per user request ("Nic — nie wykonuj niczego więcej teraz").
+
+What was done (summary):
+- Poprawiono skrypty: scripts/restart-all.ps1 oraz scripts/restart-frontend.ps1
+- Uruchomiono restart z wymuszeniem PORT=3001
+- Backend został uruchomiony i nasłuchuje na 0.0.0.0:3001 (PID: 9352)
+- Health check: GET /api/health → {"status":"OK",...}
+- Uruchomiono skrypt inspekcji prediction 1393286 (zwrócił zapis w DB; tmp_analysis_all nie znaleziono)
+
+Next recommended steps (paused):
+- Sprawdzić logi w nowych oknach PowerShell (backend + frontend/Vite) aby potwierdzić, że Vite przestał zgłaszać ECONNREFUSED
+- Uruchomić test OpenAI: node test-openai-endpoint.js (sprawdzić klucz i łączność)
+- Uruchomić end-to-end analizę / retry aby zweryfikować brak timeoutów z OpenAI
+- Jeśli wszystko OK: uruchomić scripts/generate-analysis-report.js i scripts/import-tmp-analyses.js (dry-run → apply)
+
+Note:
+- Użytkownik poprosił, żeby nic więcej nie robić teraz. Czekam na dalsze polecenia lub wklejenie logów z terminali.

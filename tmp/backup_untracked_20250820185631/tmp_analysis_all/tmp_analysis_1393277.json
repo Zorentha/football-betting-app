@@ -1,0 +1,323 @@
+{
+  "fetchedAt": "2025-08-19T16:36:07.338Z",
+  "fixtureId": 1393277,
+  "requestUrl": "http://localhost:3001/api/betting/fixtures/1393277/analyze",
+  "status": 200,
+  "data": {
+    "success": true,
+    "data": {
+      "fixtureId": 1393277,
+      "teams": {
+        "home": "Middlesbrough",
+        "away": "Doncaster"
+      },
+      "aiAnalysis": {
+        "probabilities": {
+          "homeWin": 35,
+          "draw": 29,
+          "awayWin": 36
+        },
+        "predictedScore": {
+          "home": 1,
+          "away": 2
+        },
+        "confidence": "medium",
+        "confidencePercentage": 65,
+        "keyFactors": [
+          "Doncaster better recent form (11 vs 8 pts)",
+          "Home advantage for Middlesbrough",
+          "Both average 1.6–1.8 goals",
+          "Balanced matchup; xG 2.5–3.5",
+          "Away unbeaten in 5"
+        ],
+        "playerMatchups": [
+          {
+            "category": "Bramkarz vs Napastnik",
+            "homePlayer": "T. Glover",
+            "awayPlayer": "B. Sharp",
+            "description": "T. Glover będzie bronił przeciw B. Sharp"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "L. Ayling",
+            "awayPlayer": "B. Sharp",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "A. Jones",
+            "awayPlayer": "B. Sharp",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "Neto Borges",
+            "awayPlayer": "B. Sharp",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "C. Brittain",
+            "awayPlayer": "R. Gotts",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "C. Brittain",
+            "awayPlayer": "B. Close",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "C. Brittain",
+            "awayPlayer": "D. Ajayi",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "C. Brittain",
+            "awayPlayer": "J. Sbarra",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "C. Brittain",
+            "awayPlayer": "J. Gibson",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "A. Kanté",
+            "awayPlayer": "R. Gotts",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "A. Kanté",
+            "awayPlayer": "B. Close",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "A. Kanté",
+            "awayPlayer": "D. Ajayi",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "A. Kanté",
+            "awayPlayer": "J. Sbarra",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "A. Kanté",
+            "awayPlayer": "J. Gibson",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "L. McCabe",
+            "awayPlayer": "R. Gotts",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "L. McCabe",
+            "awayPlayer": "B. Close",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "L. McCabe",
+            "awayPlayer": "D. Ajayi",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "L. McCabe",
+            "awayPlayer": "J. Sbarra",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "L. McCabe",
+            "awayPlayer": "J. Gibson",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "G. McCormick",
+            "awayPlayer": "R. Gotts",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          }
+        ],
+        "matchupAnalysis": [
+          {
+            "homePlayer": "T. Glover",
+            "awayPlayer": "B. Sharp",
+            "category": "Bramkarz vs Napastnik",
+            "advantage": "uncertain",
+            "analysis": "Brak danych ocen dla Glovera i Sharpa w podanych statystykach, więc trudno wskazać przewagę."
+          },
+          {
+            "homePlayer": "L. Ayling",
+            "awayPlayer": "B. Sharp",
+            "category": "Obrona vs Atak",
+            "advantage": "home",
+            "analysis": "Ayling ma najwyższą ocenę wśród obrońców gospodarzy (7.0 po 1 meczu), a Sharp nie widnieje w top statystykach – lekka przewaga Aylina."
+          },
+          {
+            "homePlayer": "A. Jones",
+            "awayPlayer": "B. Sharp",
+            "category": "Obrona vs Atak",
+            "advantage": "even",
+            "analysis": "Jones ma solidną ocenę 6.7, lecz brak danych o bieżącej formie Sharpa – pojedynek wygląda na wyrównany."
+          },
+          {
+            "homePlayer": "Neto Borges",
+            "awayPlayer": "B. Sharp",
+            "category": "Obrona vs Atak",
+            "advantage": "away",
+            "analysis": "Borges uzyskał najsłabszą ocenę z defensorów gospodarzy (6.2), co przy braku danych o Sharpie sugeruje większą podatność po stronie Borges."
+          },
+          {
+            "homePlayer": "C. Brittain",
+            "awayPlayer": "R. Gotts",
+            "category": "Środek pola",
+            "advantage": "home",
+            "analysis": "Brittain ma 6.7 po 1 meczu, a dla Gottsa brak not w zestawieniu – delikatna przewaga Brittaina."
+          },
+          {
+            "homePlayer": "C. Brittain",
+            "awayPlayer": "B. Close",
+            "category": "Środek pola",
+            "advantage": "home",
+            "analysis": "Brittain 6.7 vs brak danych o Close – przewaga po stronie gospodarza."
+          },
+          {
+            "homePlayer": "C. Brittain",
+            "awayPlayer": "D. Ajayi",
+            "category": "Środek pola",
+            "advantage": "home",
+            "analysis": "Ocena Brittaina 6.7 daje mu punkt odniesienia, podczas gdy dla Ajayi brak statystyk – lekka przewaga Brittaina."
+          },
+          {
+            "homePlayer": "C. Brittain",
+            "awayPlayer": "J. Sbarra",
+            "category": "Środek pola",
+            "advantage": "home",
+            "analysis": "Brittain 6.7 przewyższa Sbarrę 6.3 – przewaga środka po stronie gospodarzy."
+          },
+          {
+            "homePlayer": "C. Brittain",
+            "awayPlayer": "J. Gibson",
+            "category": "Środek pola",
+            "advantage": "away",
+            "analysis": "Gibson ma 6.9, nieco lepiej niż Brittain 6.7 – minimalna przewaga gości."
+          },
+          {
+            "homePlayer": "A. Kanté",
+            "awayPlayer": "R. Gotts",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Brak ocen dla Kanté i Gottsa – pojedynek bez wyraźnej przewagi."
+          },
+          {
+            "homePlayer": "A. Kanté",
+            "awayPlayer": "B. Close",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Dla obu brak danych ratingowych, więc należy oczekiwać wyrównanej rywalizacji."
+          },
+          {
+            "homePlayer": "A. Kanté",
+            "awayPlayer": "D. Ajayi",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Nie ma ocen dla żadnego z tej pary – przewaga niejednoznaczna."
+          },
+          {
+            "homePlayer": "A. Kanté",
+            "awayPlayer": "J. Sbarra",
+            "category": "Środek pola",
+            "advantage": "away",
+            "analysis": "Sbarra ma ocenę 6.3, a dla Kanté brak danych – lekka przewaga gości."
+          },
+          {
+            "homePlayer": "A. Kanté",
+            "awayPlayer": "J. Gibson",
+            "category": "Środek pola",
+            "advantage": "away",
+            "analysis": "Gibson 6.9 przy braku oceny Kanté wskazuje na wyraźniejszą przewagę gości."
+          },
+          {
+            "homePlayer": "L. McCabe",
+            "awayPlayer": "R. Gotts",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Brak ocen dla McCabe i Gottsa – trudno rozstrzygnąć przewagę."
+          },
+          {
+            "homePlayer": "L. McCabe",
+            "awayPlayer": "B. Close",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Bez danych ratingowych po obu stronach pojedynek zapowiada się na remisowy."
+          },
+          {
+            "homePlayer": "L. McCabe",
+            "awayPlayer": "D. Ajayi",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Nie ma mierzalnych statystyk dla tej pary – przewaga niewyraźna."
+          },
+          {
+            "homePlayer": "L. McCabe",
+            "awayPlayer": "J. Sbarra",
+            "category": "Środek pola",
+            "advantage": "away",
+            "analysis": "Sbarra posiada ocenę 6.3, przy braku danych McCabe – niewielka przewaga gości."
+          },
+          {
+            "homePlayer": "L. McCabe",
+            "awayPlayer": "J. Gibson",
+            "category": "Środek pola",
+            "advantage": "away",
+            "analysis": "Gibson 6.9 wyróżnia się na tle braku danych McCabe – przewaga Doncaster."
+          },
+          {
+            "homePlayer": "G. McCormick",
+            "awayPlayer": "R. Gotts",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Brak ocen dla obu zawodników – spodziewany balans sił."
+          }
+        ],
+        "bettingTips": [
+          {
+            "type": "Both Teams To Score: Yes",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Over 2.5 Goals",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Doncaster or Draw (X2)",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Doncaster Draw No Bet",
+            "probability": null,
+            "reasoning": ""
+          }
+        ]
+      }
+    },
+    "savedToDatabase": true
+  }
+}

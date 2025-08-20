@@ -1,0 +1,327 @@
+{
+  "fetchedAt": "2025-08-19T16:11:11.548Z",
+  "fixtureId": 1393265,
+  "requestUrl": "http://localhost:3001/api/betting/fixtures/1393265/analyze",
+  "status": 200,
+  "data": {
+    "success": true,
+    "data": {
+      "fixtureId": 1393265,
+      "teams": {
+        "home": "Bristol Rovers",
+        "away": "Cambridge United"
+      },
+      "aiAnalysis": {
+        "probabilities": {
+          "homeWin": 27,
+          "draw": 33,
+          "awayWin": 40
+        },
+        "predictedScore": {
+          "home": 1,
+          "away": 1
+        },
+        "confidence": "medium",
+        "confidencePercentage": 65,
+        "keyFactors": [
+          "Away better form (DWLWD)",
+          "Home low scoring (0.6 avg)",
+          "Rovers poor recent run",
+          "Defensive trend; <2.5 xG"
+        ],
+        "playerMatchups": [
+          {
+            "category": "Bramkarz vs Napastnik",
+            "homePlayer": "L. Southwood",
+            "awayPlayer": "L. Appéré",
+            "description": "Southwood będzie bronił przeciw Appéré."
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "R. Howley",
+            "awayPlayer": "L. Appéré",
+            "description": "Środkowy obrońca vs napastnik."
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "A. Kilgour",
+            "awayPlayer": "L. Appéré",
+            "description": "Środkowy obrońca vs napastnik."
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "C. Mola",
+            "awayPlayer": "L. Appéré",
+            "description": "Środkowy obrońca vs napastnik."
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "M. Southam-Hales",
+            "awayPlayer": "S. McLoughlin",
+            "description": "Środkowy pomocnik vs środkowy pomocnik."
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "M. Southam-Hales",
+            "awayPlayer": "P. Mpanzu",
+            "description": "Środkowy pomocnik vs środkowy pomocnik."
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "M. Southam-Hales",
+            "awayPlayer": "L. Bennett",
+            "description": "Środkowy pomocnik vs środkowy pomocnik."
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "M. Southam-Hales",
+            "awayPlayer": "E. Kachunga",
+            "description": "Środkowy pomocnik vs środkowy pomocnik."
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "M. Southam-Hales",
+            "awayPlayer": "S. Kaikai",
+            "description": "Środkowy pomocnik vs środkowy pomocnik."
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "K. Conteh",
+            "awayPlayer": "S. McLoughlin",
+            "description": "Środkowy pomocnik vs środkowy pomocnik."
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "K. Conteh",
+            "awayPlayer": "P. Mpanzu",
+            "description": "Środkowy pomocnik vs środkowy pomocnik."
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "K. Conteh",
+            "awayPlayer": "L. Bennett",
+            "description": "Środkowy pomocnik vs środkowy pomocnik."
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "K. Conteh",
+            "awayPlayer": "E. Kachunga",
+            "description": "Środkowy pomocnik vs środkowy pomocnik."
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "K. Conteh",
+            "awayPlayer": "S. Kaikai",
+            "description": "Środkowy pomocnik vs środkowy pomocnik."
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "I. Hutchinson",
+            "awayPlayer": "S. McLoughlin",
+            "description": "Środkowy pomocnik vs środkowy pomocnik."
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "I. Hutchinson",
+            "awayPlayer": "P. Mpanzu",
+            "description": "Środkowy pomocnik vs środkowy pomocnik."
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "I. Hutchinson",
+            "awayPlayer": "L. Bennett",
+            "description": "Środkowy pomocnik vs środkowy pomocnik."
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "I. Hutchinson",
+            "awayPlayer": "E. Kachunga",
+            "description": "Środkowy pomocnik vs środkowy pomocnik."
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "I. Hutchinson",
+            "awayPlayer": "S. Kaikai",
+            "description": "Środkowy pomocnik vs środkowy pomocnik."
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "J. Sparkes",
+            "awayPlayer": "S. McLoughlin",
+            "description": "Środkowy pomocnik vs środkowy pomocnik."
+          }
+        ],
+        "matchupAnalysis": [
+          {
+            "homePlayer": "L. Southwood",
+            "awayPlayer": "L. Appéré",
+            "category": "Bramkarz vs Napastnik",
+            "advantage": "uncertain",
+            "analysis": "Southwood (0G/0A, ocena 5.9 w 1 meczu) kontra Appéré (brak w TOP statystyk) — brak twardych danych, by wskazać wyraźną przewagę."
+          },
+          {
+            "homePlayer": "R. Howley",
+            "awayPlayer": "L. Appéré",
+            "category": "Obrona vs Atak",
+            "advantage": "even",
+            "analysis": "Howley i Appéré nie figurują w TOP statystykach; pojedynek środkowego obrońcy z napastnikiem zapowiada się na wyrównany."
+          },
+          {
+            "homePlayer": "A. Kilgour",
+            "awayPlayer": "L. Appéré",
+            "category": "Obrona vs Atak",
+            "advantage": "even",
+            "analysis": "Brak danych TOP dla Kilgoura i Appéré, więc nie ma podstaw, by wskazać wyraźną przewagę którejkolwiek strony."
+          },
+          {
+            "homePlayer": "C. Mola",
+            "awayPlayer": "L. Appéré",
+            "category": "Obrona vs Atak",
+            "advantage": "even",
+            "analysis": "Mola i Appéré nie są w TOP statystykach; starcie wygląda na 50–50."
+          },
+          {
+            "homePlayer": "M. Southam-Hales",
+            "awayPlayer": "S. McLoughlin",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Southam‑Hales i McLoughlin brak w TOP statystykach, więc różnice jakości trudno wyłapać — pojedynek równy."
+          },
+          {
+            "homePlayer": "M. Southam-Hales",
+            "awayPlayer": "P. Mpanzu",
+            "category": "Środek pola",
+            "advantage": "away",
+            "analysis": "Mpanzu (0G/0A, ocena 6.9 w 1 meczu) wypada lepiej od Southam‑Halesa, który nie figuruje w TOP — przewaga po stronie gości."
+          },
+          {
+            "homePlayer": "M. Southam-Hales",
+            "awayPlayer": "L. Bennett",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Obaj poza TOP statystykami; brak przesłanek do innej oceny niż remis w pojedynku."
+          },
+          {
+            "homePlayer": "M. Southam-Hales",
+            "awayPlayer": "E. Kachunga",
+            "category": "Środek pola",
+            "advantage": "away",
+            "analysis": "Kachunga (0G/0A, ocena 6.3) ma mierzalny występ, a Southam‑Hales brak w TOP — lekka przewaga Kachungi."
+          },
+          {
+            "homePlayer": "M. Southam-Hales",
+            "awayPlayer": "S. Kaikai",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Kaikai i Southam‑Hales nie mają danych w TOP; pojedynek zapowiada się wyrównanie."
+          },
+          {
+            "homePlayer": "K. Conteh",
+            "awayPlayer": "S. McLoughlin",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Conteh i McLoughlin nie figurują w TOP statystykach — starcie 50–50."
+          },
+          {
+            "homePlayer": "K. Conteh",
+            "awayPlayer": "P. Mpanzu",
+            "category": "Środek pola",
+            "advantage": "away",
+            "analysis": "Mpanzu (0G/0A, 6.9) daje wyższą jakość od Conteha (brak w TOP), co sugeruje przewagę gości w tym duecie."
+          },
+          {
+            "homePlayer": "K. Conteh",
+            "awayPlayer": "L. Bennett",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Brak TOP statystyk dla obu zawodników, więc trudno o inną ocenę niż remisowy balans sił."
+          },
+          {
+            "homePlayer": "K. Conteh",
+            "awayPlayer": "E. Kachunga",
+            "category": "Środek pola",
+            "advantage": "away",
+            "analysis": "Kachunga (0G/0A, 6.3) ma lepsze podstawy liczbowe niż Conteh (brak w TOP) — niewielka przewaga gości."
+          },
+          {
+            "homePlayer": "K. Conteh",
+            "awayPlayer": "S. Kaikai",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Obu brak w TOP statystykach; przewaga nie jest uchwytna — pojedynek równy."
+          },
+          {
+            "homePlayer": "I. Hutchinson",
+            "awayPlayer": "S. McLoughlin",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Hutchinson i McLoughlin nie mają wyróżnionych statystyk; oczekiwany balans sił w środku."
+          },
+          {
+            "homePlayer": "I. Hutchinson",
+            "awayPlayer": "P. Mpanzu",
+            "category": "Środek pola",
+            "advantage": "away",
+            "analysis": "Mpanzu (0G/0A, 6.9) przewyższa Hutchinsona (brak w TOP), co daje przewagę stronie gości."
+          },
+          {
+            "homePlayer": "I. Hutchinson",
+            "awayPlayer": "L. Bennett",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Obaj poza TOP statystykami; starcie zapowiada się na remisowe."
+          },
+          {
+            "homePlayer": "I. Hutchinson",
+            "awayPlayer": "E. Kachunga",
+            "category": "Środek pola",
+            "advantage": "away",
+            "analysis": "Kachunga (0G/0A, 6.3) ma nieco lepsze liczby niż Hutchinson (brak w TOP) — lekka przewaga gości."
+          },
+          {
+            "homePlayer": "I. Hutchinson",
+            "awayPlayer": "S. Kaikai",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Hutchinson i Kaikai nie figurują w TOP statystykach; trudno wskazać faworyta."
+          },
+          {
+            "homePlayer": "J. Sparkes",
+            "awayPlayer": "S. McLoughlin",
+            "category": "Środek pola",
+            "advantage": "home",
+            "analysis": "Sparkes (0G/0A, ocena 6.9) jest w TOP u gospodarzy, podczas gdy McLoughlin nie widnieje w TOP — przewaga Sparkesa."
+          }
+        ],
+        "bettingTips": [
+          {
+            "type": "Under 2.5 goals",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Cambridge United draw no bet",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Cambridge United or Draw (X2)",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "BTTS No",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Correct score 0-1",
+            "probability": null,
+            "reasoning": ""
+          }
+        ]
+      }
+    },
+    "savedToDatabase": true
+  }
+}

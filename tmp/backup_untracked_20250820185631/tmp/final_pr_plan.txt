@@ -1,0 +1,79 @@
+Final plan & exact steps to create the PR correctly (PowerShell) — follow verbatim
+
+Summary of current facts
+- Remote branches confirmed: main and feature/openai-expected-output-tokens (exists on origin).
+- We created a rebased branch earlier to handle unrelated history, but origin shows the original feature branch as present.
+- Earlier API attempts returned 400 (bad JSON) and 401 (bad credentials) — likely due to how the token was passed or payload formatting. You have now confirmed a PAT with repo scope is available locally.
+
+Goal
+- Create a Pull Request on GitHub that merges the feature branch into main, using the existing remote branch that you want (we will use feature/openai-expected-output-tokens unless you choose the rebased branch).
+- Ensure the request uses valid JSON and a valid PAT in PowerShell session.
+
+Checklist (do these in order, copy/paste the commands into PowerShell)
+
+1) Confirm you are in the repo root
+   cd C:\Users\lukas\zorentha-ai\football-betting-app
+
+2) (Optional) Inspect remote branches to confirm exact branch name
+   & 'C:\Program Files\Git\cmd\git.exe' ls-remote --heads origin
+
+3) Set your PAT in the current PowerShell session (do NOT paste the token here)
+   $env:GITHUB_TOKEN = 'ghp_<YOUR_PAT_HERE>'
+
+4) Recommended: use Invoke-RestMethod (safe JSON). Copy/paste the following block into PowerShell exactly (it prints the API response or the detailed error body):
+
+$body = @{
+  title = "Make OpenAI expected output tokens configurable and remove hardcoded cap"
+  head  = "feature/openai-expected-output-tokens"   # change to "...-rebased" if you prefer that branch
+  base  = "main"
+  body  = "See PR_DESCRIPTION.md in repository for full details."
+}
+Invoke-RestMethod -Uri 'https://api.github.com/repos/Zorentha/football-betting-app/pulls' `
+  -Method Post `
+  -Headers @{ Authorization = "token $env:GITHUB_TOKEN"; Accept = "application/vnd.github+json"; "User-Agent" = "cli-pr-creator" } `
+  -Body ($body | ConvertTo-Json -Depth 10)
+
+5) If you get HTTP 201 (Created)
+   - The command prints the PR JSON. Copy the html_url and paste it here.
+   - Done.
+
+6) If you get HTTP 401 (Bad credentials)
+   - Re-check token exactness (no angle brackets, no surrounding quotes). Use the helper to sanitize and retry:
+     powershell -NoProfile -ExecutionPolicy Bypass -File tmp/sanitize_and_create_pr.ps1
+   - If 401 persists, check:
+     - The token is not expired or revoked.
+     - If your organization requires SSO, make sure the token is authorized for the organization (authorize via GitHub web UI -> Your organizations -> Authorize).
+     - Recreate a classic PAT with repo scope (repo) and try again.
+
+7) If you get HTTP 400 or 422 (Validation Failed / problems parsing JSON / invalid head)
+   - Validation Failed with field "head"/"invalid" means the head name is wrong. Confirm branch exists on origin precisely:
+     & 'C:\Program Files\Git\cmd\git.exe' ls-remote --heads origin
+     Use that exact branch name (copy the part after refs/heads/).
+   - If branch names include special characters or slashes, use the exact string.
+   - If histories differ and GitHub refuses, use the rebased branch head we created earlier:
+     head = "feature/openai-expected-output-tokens-rebased"
+     Then POST again.
+
+8) If you prefer, open the browser prefilled PR link (no PAT needed):
+   - For existing branch:
+     https://github.com/Zorentha/football-betting-app/pull/new/feature/openai-expected-output-tokens?title=Make%20OpenAI%20expected%20output%20tokens%20configurable%20and%20remove%20hardcoded%20cap&body=See%20PR_DESCRIPTION.md%20in%20repository%20for%20full%20details.
+   - For rebased branch:
+     https://github.com/Zorentha/football-betting-app/pull/new/feature/openai-expected-output-tokens-rebased?title=Make%20OpenAI%20expected%20output%20tokens%20configurable%20and%20remove%20hardcoded%20cap&body=See%20PR_DESCRIPTION.md%20in%20repository%20for%20full%20details.
+   Click Create pull request.
+
+9) After PR creation
+   - Verify CI runs (GitHub Actions). If CI fails, paste logs here.
+   - Review Files changed locally and in PR. Perform QA locally (npm run dev) and test UI changes.
+   - Merge once tests and review pass.
+
+If you want me to act now (I can only run commands inside this environment; I cannot use your PAT):
+- I prepared tmp/create_pr_debug.ps1, tmp/sanitize_and_create_pr.ps1, tmp/run_pr_now.ps1 and other helpers.
+- Because you said you'll run the interactive script, run:
+  powershell -NoProfile -ExecutionPolicy Bypass -File tmp/run_pr_now.ps1
+  Then paste the full console output (I will analyze and confirm).
+
+If you want a single compact command to copy/paste now (PowerShell), here it is (use only if you already exported $env:GITHUB_TOKEN and know it is correct):
+
+$body = @{ title="Make OpenAI expected output tokens configurable and remove hardcoded cap"; head="feature/openai-expected-output-tokens"; base="main"; body="See PR_DESCRIPTION.md in repository for full details." }; Invoke-RestMethod -Uri 'https://api.github.com/repos/Zorentha/football-betting-app/pulls' -Method Post -Headers @{ Authorization = "token $env:GITHUB_TOKEN"; Accept = "application/vnd.github+json"; "User-Agent"="cli-pr-creator" } -Body ($body|ConvertTo-Json -Depth 10)
+
+End.

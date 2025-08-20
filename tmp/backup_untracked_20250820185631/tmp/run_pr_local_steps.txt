@@ -1,0 +1,34 @@
+PowerShell steps to create the PR locally (use this — you said PowerShell only)
+
+1) Open PowerShell and cd to the repo root:
+   cd C:\Users\lukas\zorentha-ai\football-betting-app
+
+2) Set your PAT into the session (do NOT paste the token here):
+   $env:GITHUB_TOKEN = 'ghp_<YOUR_NEW_PAT_WITH_REPO_SCOPE>'
+
+3) Run the sanitized create script (this will trim surrounding characters and POST the PR):
+   powershell -NoProfile -ExecutionPolicy Bypass -File tmp/sanitize_and_create_pr.ps1
+
+What the script does:
+- sanitizes $env:GITHUB_TOKEN in the current process (removes surrounding <, >, quotes, spaces),
+- calls tmp/auto_create_pr.ps1 which performs the GitHub API POST to create the PR with:
+    head = feature/openai-expected-output-tokens-rebased
+    base = main
+    title/body prefilled
+
+4) After the command completes:
+- If successful you will see JSON with html_url, number, title, state.
+- If it fails, copy the full output (including any "Response body:" printed by the script) and paste it here.
+
+Alternative single-line (if you prefer not to run the sanitize helper):
+$env:GITHUB_TOKEN = 'ghp_<YOUR_NEW_PAT>'; curl.exe -v -H "Authorization: token $env:GITHUB_TOKEN" -H "Accept: application/vnd.github+json" -d '{"title":"Make OpenAI expected output tokens configurable and remove hardcoded cap","head":"feature/openai-expected-output-tokens-rebased","base":"main","body":"See PR_DESCRIPTION.md in repository for full details."}' https://api.github.com/repos/Zorentha/football-betting-app/pulls
+
+Troubleshooting:
+- If you still get 401:
+  - Confirm the token is copied exactly (no extra angle brackets or quotes).
+  - Confirm token scopes include repo (classic) or fine‑grained branch-scoped write for Pull Requests + repository contents.
+  - Re-run the sanitize script above (it trims surrounding characters).
+- If you get validation error (422) about no common history, use head = feature/openai-expected-output-tokens-rebased (script uses rebased branch).
+
+What to paste back here:
+- The exact console output produced by tmp/sanitize_and_create_pr.ps1 (or the curl output). I will confirm the PR URL and next steps.

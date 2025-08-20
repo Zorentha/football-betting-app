@@ -1,0 +1,328 @@
+{
+  "fetchedAt": "2025-08-19T16:13:35.767Z",
+  "fixtureId": 1393266,
+  "requestUrl": "http://localhost:3001/api/betting/fixtures/1393266/analyze",
+  "status": 200,
+  "data": {
+    "success": true,
+    "data": {
+      "fixtureId": 1393266,
+      "teams": {
+        "home": "Bromley",
+        "away": "Ipswich"
+      },
+      "aiAnalysis": {
+        "probabilities": {
+          "homeWin": 14,
+          "draw": 20,
+          "awayWin": 66
+        },
+        "predictedScore": {
+          "home": 1,
+          "away": 3
+        },
+        "confidence": "medium",
+        "confidencePercentage": 65,
+        "keyFactors": [
+          "Ipswich stronger recent form (DDWWW)",
+          "Higher scoring rate: 2.4 vs 1.4",
+          "Quality gap favors away side",
+          "Bromley uneven form (DWDLD)",
+          "High-scoring trend, xG > 3.5"
+        ],
+        "playerMatchups": [
+          {
+            "category": "🧤 Bramkarz vs Napastnik",
+            "homePlayer": "S. Long (BR)",
+            "awayPlayer": "Ali Al Hamadi (NAP)",
+            "description": "S. Long będzie bronił przeciw Ali Al Hamadi"
+          },
+          {
+            "category": "🔰 Obrona vs Atak",
+            "homePlayer": "D. Elerewe (CB)",
+            "awayPlayer": "Ali Al Hamadi (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "🔰 Obrona vs Atak",
+            "homePlayer": "O. Sowunmi (CB)",
+            "awayPlayer": "Ali Al Hamadi (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "🔰 Obrona vs Atak",
+            "homePlayer": "I. Odutayo (CB)",
+            "awayPlayer": "Ali Al Hamadi (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "⚔️ Środek pola",
+            "homePlayer": "M. Ifill (CM)",
+            "awayPlayer": "C. Humphreys (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "⚔️ Środek pola",
+            "homePlayer": "M. Ifill (CM)",
+            "awayPlayer": "F. Barbrook (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "⚔️ Środek pola",
+            "homePlayer": "M. Ifill (CM)",
+            "awayPlayer": "C. Ogbene (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "⚔️ Środek pola",
+            "homePlayer": "M. Ifill (CM)",
+            "awayPlayer": "C. Chaplin (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "⚔️ Środek pola",
+            "homePlayer": "M. Ifill (CM)",
+            "awayPlayer": "J. Clarke (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "⚔️ Środek pola",
+            "homePlayer": "J. Arthurs (CM)",
+            "awayPlayer": "C. Humphreys (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "⚔️ Środek pola",
+            "homePlayer": "J. Arthurs (CM)",
+            "awayPlayer": "F. Barbrook (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "⚔️ Środek pola",
+            "homePlayer": "J. Arthurs (CM)",
+            "awayPlayer": "C. Ogbene (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "⚔️ Środek pola",
+            "homePlayer": "J. Arthurs (CM)",
+            "awayPlayer": "C. Chaplin (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "⚔️ Środek pola",
+            "homePlayer": "J. Arthurs (CM)",
+            "awayPlayer": "J. Clarke (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "⚔️ Środek pola",
+            "homePlayer": "B. Thompson (CM)",
+            "awayPlayer": "C. Humphreys (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "⚔️ Środek pola",
+            "homePlayer": "B. Thompson (CM)",
+            "awayPlayer": "F. Barbrook (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "⚔️ Środek pola",
+            "homePlayer": "B. Thompson (CM)",
+            "awayPlayer": "C. Ogbene (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "⚔️ Środek pola",
+            "homePlayer": "B. Thompson (CM)",
+            "awayPlayer": "C. Chaplin (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "⚔️ Środek pola",
+            "homePlayer": "B. Thompson (CM)",
+            "awayPlayer": "J. Clarke (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "⚔️ Środek pola",
+            "homePlayer": "M. Pinnock (CM)",
+            "awayPlayer": "C. Humphreys (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          }
+        ],
+        "matchupAnalysis": [
+          {
+            "homePlayer": "S. Long (BR)",
+            "awayPlayer": "Ali Al Hamadi (NAP)",
+            "category": "🧤 Bramkarz vs Napastnik",
+            "advantage": "uncertain",
+            "analysis": "Brak danych o Longu i Al Hamadi w TOP STATS; bez liczb trudno wskazać wyraźną przewagę w tym bezpośrednim starciu."
+          },
+          {
+            "homePlayer": "D. Elerewe (CB)",
+            "awayPlayer": "Ali Al Hamadi (ST)",
+            "category": "🔰 Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Brak liczb dla Elerewe i Al Hamadi w TOP STATS, więc nie ma podstaw, by wskazać faworyta."
+          },
+          {
+            "homePlayer": "O. Sowunmi (CB)",
+            "awayPlayer": "Ali Al Hamadi (ST)",
+            "category": "🔰 Obrona vs Atak",
+            "advantage": "home",
+            "analysis": "Sowunmi ma ocenę 8.3 i 1 asystę w 1 meczu, a dla Al Hamadi brak danych w TOP STATS — przewaga po stronie stopera Bromley."
+          },
+          {
+            "homePlayer": "I. Odutayo (CB)",
+            "awayPlayer": "Ali Al Hamadi (ST)",
+            "category": "🔰 Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Nie mamy statystyk TOP STATS dla Odutayo ani Al Hamadi, więc wynik tej rywalizacji jest niepewny."
+          },
+          {
+            "homePlayer": "M. Ifill (CM)",
+            "awayPlayer": "C. Humphreys (CM)",
+            "category": "⚔️ Środek pola",
+            "advantage": "even",
+            "analysis": "Obaj nie figurują w TOP STATS, więc pojedynek w środku pola zapowiada się wyrównanie."
+          },
+          {
+            "homePlayer": "M. Ifill (CM)",
+            "awayPlayer": "F. Barbrook (CM)",
+            "category": "⚔️ Środek pola",
+            "advantage": "even",
+            "analysis": "Ifill i Barbrook nie są w TOP STATS; brak danych wskazuje na równowagę w tym duecie."
+          },
+          {
+            "homePlayer": "M. Ifill (CM)",
+            "awayPlayer": "C. Ogbene (CM)",
+            "category": "⚔️ Środek pola",
+            "advantage": "even",
+            "analysis": "Brak liczb w TOP STATS dla Ifilla i Ogbene, więc trudno wskazać przewagę — pojedynek wygląda na równy."
+          },
+          {
+            "homePlayer": "M. Ifill (CM)",
+            "awayPlayer": "C. Chaplin (CM)",
+            "category": "⚔️ Środek pola",
+            "advantage": "even",
+            "analysis": "Ani Ifill, ani Chaplin nie widnieją w TOP STATS, co sugeruje wyrównany pojedynek w środku."
+          },
+          {
+            "homePlayer": "M. Ifill (CM)",
+            "awayPlayer": "J. Clarke (CM)",
+            "category": "⚔️ Środek pola",
+            "advantage": "even",
+            "analysis": "Ifill i Clarke bez danych w TOP STATS — spodziewana równowaga."
+          },
+          {
+            "homePlayer": "J. Arthurs (CM)",
+            "awayPlayer": "C. Humphreys (CM)",
+            "category": "⚔️ Środek pola",
+            "advantage": "even",
+            "analysis": "Arthurs i Humphreys nie figurują w TOP STATS, więc przewaga żadnej ze stron nie jest widoczna."
+          },
+          {
+            "homePlayer": "J. Arthurs (CM)",
+            "awayPlayer": "F. Barbrook (CM)",
+            "category": "⚔️ Środek pola",
+            "advantage": "even",
+            "analysis": "Brak danych TOP STATS dla Arthursa i Barbrooka, co wskazuje na wyrównany bój."
+          },
+          {
+            "homePlayer": "J. Arthurs (CM)",
+            "awayPlayer": "C. Ogbene (CM)",
+            "category": "⚔️ Środek pola",
+            "advantage": "even",
+            "analysis": "Ani Arthurs, ani Ogbene nie mają liczb w TOP STATS — pojedynek wydaje się równy."
+          },
+          {
+            "homePlayer": "J. Arthurs (CM)",
+            "awayPlayer": "C. Chaplin (CM)",
+            "category": "⚔️ Środek pola",
+            "advantage": "even",
+            "analysis": "Arthurs i Chaplin nie są ujęci w TOP STATS, stąd brak przesłanek do wskazania przewagi."
+          },
+          {
+            "homePlayer": "J. Arthurs (CM)",
+            "awayPlayer": "J. Clarke (CM)",
+            "category": "⚔️ Środek pola",
+            "advantage": "even",
+            "analysis": "Brak statystyk TOP STATS dla Arthursa i Clarke’a, więc to starcie wygląda na równe."
+          },
+          {
+            "homePlayer": "B. Thompson (CM)",
+            "awayPlayer": "C. Humphreys (CM)",
+            "category": "⚔️ Środek pola",
+            "advantage": "even",
+            "analysis": "Thompson i Humphreys nie widnieją w TOP STATS, co sugeruje wyrównany pojedynek."
+          },
+          {
+            "homePlayer": "B. Thompson (CM)",
+            "awayPlayer": "F. Barbrook (CM)",
+            "category": "⚔️ Środek pola",
+            "advantage": "even",
+            "analysis": "Brak danych TOP STATS dla Thompsona i Barbrooka — przewaga nie jest widoczna."
+          },
+          {
+            "homePlayer": "B. Thompson (CM)",
+            "awayPlayer": "C. Ogbene (CM)",
+            "category": "⚔️ Środek pola",
+            "advantage": "even",
+            "analysis": "Thompson i Ogbene bez liczb w TOP STATS, więc starcie zapowiada się na równe."
+          },
+          {
+            "homePlayer": "B. Thompson (CM)",
+            "awayPlayer": "C. Chaplin (CM)",
+            "category": "⚔️ Środek pola",
+            "advantage": "even",
+            "analysis": "Ani Thompson, ani Chaplin nie mają statystyk w TOP STATS; brak podstaw do wskazania przewagi."
+          },
+          {
+            "homePlayer": "B. Thompson (CM)",
+            "awayPlayer": "J. Clarke (CM)",
+            "category": "⚔️ Środek pola",
+            "advantage": "even",
+            "analysis": "Thompson i Clarke nie są w TOP STATS, co wskazuje na wyrównany pojedynek."
+          },
+          {
+            "homePlayer": "M. Pinnock (CM)",
+            "awayPlayer": "C. Humphreys (CM)",
+            "category": "⚔️ Środek pola",
+            "advantage": "even",
+            "analysis": "Pinnock i Humphreys nie figurują w TOP STATS, więc ten duet wygląda na zbalansowany."
+          }
+        ],
+        "bettingTips": [
+          {
+            "type": "Away win",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Away -1.0 Asian Handicap",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Over 2.5 goals",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Both teams to score: Yes",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Ipswich over 1.5 team goals",
+            "probability": null,
+            "reasoning": ""
+          }
+        ]
+      }
+    },
+    "savedToDatabase": true
+  }
+}

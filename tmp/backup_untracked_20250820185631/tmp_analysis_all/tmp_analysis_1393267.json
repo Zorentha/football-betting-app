@@ -1,0 +1,323 @@
+{
+  "fetchedAt": "2025-08-19T16:15:52.201Z",
+  "fixtureId": 1393267,
+  "requestUrl": "http://localhost:3001/api/betting/fixtures/1393267/analyze",
+  "status": 200,
+  "data": {
+    "success": true,
+    "data": {
+      "fixtureId": 1393267,
+      "teams": {
+        "home": "Cardiff",
+        "away": "Swindon Town"
+      },
+      "aiAnalysis": {
+        "probabilities": {
+          "homeWin": 53,
+          "draw": 20,
+          "awayWin": 27
+        },
+        "predictedScore": {
+          "home": 3,
+          "away": 1
+        },
+        "confidence": "medium",
+        "confidencePercentage": 65,
+        "keyFactors": [
+          "Home form WWDWD",
+          "Away form WLWLW (inconsistent)",
+          "High avg goals: 1.8 vs 2.0",
+          "Offensive trend; xG > 3.5",
+          "Home advantage"
+        ],
+        "playerMatchups": [
+          {
+            "category": "Bramkarz vs Napastnik",
+            "homePlayer": "N. Trott",
+            "awayPlayer": "B. Bodin",
+            "description": "N. Trott będzie bronił przeciw B. Bodin"
+          },
+          {
+            "category": "Bramkarz vs Napastnik",
+            "homePlayer": "N. Trott",
+            "awayPlayer": "H. Smith",
+            "description": "N. Trott będzie bronił przeciw H. Smith"
+          },
+          {
+            "category": "Bramkarz vs Napastnik",
+            "homePlayer": "N. Trott",
+            "awayPlayer": "P. Ehibhatiomhan",
+            "description": "N. Trott będzie bronił przeciw P. Ehibhatiomhan"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "R. Kpakio",
+            "awayPlayer": "B. Bodin",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "R. Kpakio",
+            "awayPlayer": "H. Smith",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "R. Kpakio",
+            "awayPlayer": "P. Ehibhatiomhan",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "W. Fish",
+            "awayPlayer": "B. Bodin",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "W. Fish",
+            "awayPlayer": "H. Smith",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "W. Fish",
+            "awayPlayer": "P. Ehibhatiomhan",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "C. Chambers",
+            "awayPlayer": "B. Bodin",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "C. Chambers",
+            "awayPlayer": "H. Smith",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "C. Chambers",
+            "awayPlayer": "P. Ehibhatiomhan",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "J. Bagan",
+            "awayPlayer": "B. Bodin",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "J. Bagan",
+            "awayPlayer": "H. Smith",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "J. Bagan",
+            "awayPlayer": "P. Ehibhatiomhan",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "D. Turnbull",
+            "awayPlayer": "G. Kilkenny",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "D. Turnbull",
+            "awayPlayer": "J. Ball",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "D. Turnbull",
+            "awayPlayer": "P. Glatzel",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "R. Wintle",
+            "awayPlayer": "G. Kilkenny",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "R. Wintle",
+            "awayPlayer": "J. Ball",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          }
+        ],
+        "matchupAnalysis": [
+          {
+            "homePlayer": "N. Trott",
+            "awayPlayer": "B. Bodin",
+            "category": "Bramkarz vs Napastnik",
+            "advantage": "uncertain",
+            "analysis": "Brak danych w dostarczonych top statystykach dla Trotta i Bodina — przewaga niejednoznaczna."
+          },
+          {
+            "homePlayer": "N. Trott",
+            "awayPlayer": "H. Smith",
+            "category": "Bramkarz vs Napastnik",
+            "advantage": "uncertain",
+            "analysis": "Smith ma ocenę 6.6 (0G/0A w 1 meczu), ale o formie Trotta brak danych — trudno wskazać faworyta."
+          },
+          {
+            "homePlayer": "N. Trott",
+            "awayPlayer": "P. Ehibhatiomhan",
+            "category": "Bramkarz vs Napastnik",
+            "advantage": "uncertain",
+            "analysis": "Brak danych statystycznych dla obu — pojedynek pozostaje otwarty."
+          },
+          {
+            "homePlayer": "R. Kpakio",
+            "awayPlayer": "B. Bodin",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Brak danych ratingowych dla Kpakio i Bodina w dostarczonym zestawieniu — przewaga niepewna."
+          },
+          {
+            "homePlayer": "R. Kpakio",
+            "awayPlayer": "H. Smith",
+            "category": "Obrona vs Atak",
+            "advantage": "away",
+            "analysis": "Smith z oceną 6.6 w 1 meczu ma potwierdzoną aktywność meczową, przy braku danych o Kpakio — minimalny plus dla gości."
+          },
+          {
+            "homePlayer": "R. Kpakio",
+            "awayPlayer": "P. Ehibhatiomhan",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Brak danych dla obu zawodników — pojedynek nieprzewidywalny."
+          },
+          {
+            "homePlayer": "W. Fish",
+            "awayPlayer": "B. Bodin",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Brak ratingów w zestawieniu dla Fish i Bodina — trudno o jasną przewagę."
+          },
+          {
+            "homePlayer": "W. Fish",
+            "awayPlayer": "H. Smith",
+            "category": "Obrona vs Atak",
+            "advantage": "away",
+            "analysis": "Smith (6.6 po 1 meczu) wypada lepiej na tle braku danych o Fish — minimalna przewaga gości."
+          },
+          {
+            "homePlayer": "W. Fish",
+            "awayPlayer": "P. Ehibhatiomhan",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Brak danych dla Fish i Ehibhatiomhana — przewaga niepewna."
+          },
+          {
+            "homePlayer": "C. Chambers",
+            "awayPlayer": "B. Bodin",
+            "category": "Obrona vs Atak",
+            "advantage": "home",
+            "analysis": "Chambers ma ocenę 6.9 w 1 meczu, podczas gdy dla Bodina brak danych — przewaga gospodarzy."
+          },
+          {
+            "homePlayer": "C. Chambers",
+            "awayPlayer": "H. Smith",
+            "category": "Obrona vs Atak",
+            "advantage": "home",
+            "analysis": "Chambers (6.9) przewyższa Smitha (6.6) według ocen po 1 meczu — lekki plus dla Cardiff."
+          },
+          {
+            "homePlayer": "C. Chambers",
+            "awayPlayer": "P. Ehibhatiomhan",
+            "category": "Obrona vs Atak",
+            "advantage": "home",
+            "analysis": "Chambers (6.9 po 1 meczu) kontra Ehibhatiomhan bez danych — przewaga gospodarzy."
+          },
+          {
+            "homePlayer": "J. Bagan",
+            "awayPlayer": "B. Bodin",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Brak danych dla Bagana i Bodina w dostarczonych statystykach — wynik starcia otwarty."
+          },
+          {
+            "homePlayer": "J. Bagan",
+            "awayPlayer": "H. Smith",
+            "category": "Obrona vs Atak",
+            "advantage": "away",
+            "analysis": "Smith (6.6 po 1 meczu) ma mierzalną formę, Bagan bez danych — niewielka przewaga gości."
+          },
+          {
+            "homePlayer": "J. Bagan",
+            "awayPlayer": "P. Ehibhatiomhan",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Brak danych dla obu — trudno wskazać lepszą stronę."
+          },
+          {
+            "homePlayer": "D. Turnbull",
+            "awayPlayer": "G. Kilkenny",
+            "category": "Środek pola",
+            "advantage": "home",
+            "analysis": "Turnbull ma ocenę 6.6 w 1 meczu, a dla Kilkenny’ego brak danych — lekka przewaga gospodarza."
+          },
+          {
+            "homePlayer": "D. Turnbull",
+            "awayPlayer": "J. Ball",
+            "category": "Środek pola",
+            "advantage": "away",
+            "analysis": "Ball (7.2 po 1 meczu) przewyższa Turnbulla (6.6) — atut po stronie gości."
+          },
+          {
+            "homePlayer": "D. Turnbull",
+            "awayPlayer": "P. Glatzel",
+            "category": "Środek pola",
+            "advantage": "home",
+            "analysis": "Turnbull (6.6 w 1 meczu) ma mierzalną formę, Glatzel bez danych — mały plus dla Cardiff."
+          },
+          {
+            "homePlayer": "R. Wintle",
+            "awayPlayer": "G. Kilkenny",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Wintle (6.3 po 1 meczu) ma przeciętną ocenę, a dla Kilkenny’ego brak danych — wygląda na wyrównany pojedynek."
+          },
+          {
+            "homePlayer": "R. Wintle",
+            "awayPlayer": "J. Ball",
+            "category": "Środek pola",
+            "advantage": "away",
+            "analysis": "Ball (7.2) wypada lepiej od Wintle’a (6.3) według ocen po 1 meczu — przewaga gości."
+          }
+        ],
+        "bettingTips": [
+          {
+            "type": "Over 2.5 goals",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Both teams to score",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Cardiff draw-no-bet",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Over 3.5 goals (small stake)",
+            "probability": null,
+            "reasoning": ""
+          }
+        ]
+      }
+    },
+    "savedToDatabase": true
+  }
+}

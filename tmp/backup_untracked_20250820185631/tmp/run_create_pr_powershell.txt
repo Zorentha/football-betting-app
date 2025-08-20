@@ -1,0 +1,15 @@
+PowerShell one-liner to create PR from the rebased branch (copy this exact line and run it in PowerShell)
+
+IMPORTANT:
+- Do NOT paste your PAT into chat.
+- Replace ghp_<YOUR_PAT_HERE> with your PAT locally, then run the line below.
+- This will create a PR with head = feature/openai-expected-output-tokens-rebased (we pushed this branch earlier).
+
+$env:GITHUB_TOKEN = 'ghp_<YOUR_PAT_HERE>'; curl.exe -v -H "Authorization: token $env:GITHUB_TOKEN" -H "Accept: application/vnd.github+json" -d '{"title":"Make OpenAI expected output tokens configurable and remove hardcoded cap","head":"feature/openai-expected-output-tokens-rebased","base":"main","body":"See PR_DESCRIPTION.md in repository for full details."}' https://api.github.com/repos/Zorentha/football-betting-app/pulls
+
+How to run:
+1) Open PowerShell in the project root (c:\Users\lukas\zorentha-ai\football-betting-app).
+2) Paste the single line above and press Enter.
+3) Copy the full terminal output (JSON). If successful, look for "html_url": "https://github.com/..." — paste that URL here so I can confirm.
+
+If you prefer the PR to be created from the original branch (not the rebased one), replace the "head" value above with "feature/openai-expected-output-tokens".

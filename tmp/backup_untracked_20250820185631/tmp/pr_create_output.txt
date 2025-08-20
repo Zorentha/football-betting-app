@@ -1,0 +1,13 @@
++ set -euo pipefail
++ REPO=Zorentha/football-betting-app
++ HEAD=feature/openai-expected-output-tokens
++ BASE=main
++ TITLE='Make OpenAI expected output tokens configurable and remove hardcoded cap'
++ BODY_FILE=PR_DESCRIPTION.md
++ '[' -z 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 ']'
++ '[' '!' -f PR_DESCRIPTION.md ']'
+++ python -
++ BODY_JSON='"Title: Make OpenAI expected output tokens configurable and remove hardcoded cap\n\nSummary:\n- Removed hardcoded 1200 token cap in src/services/openaiAnalysisService.js.\n- Made expected output tokens configurable via OPENAI_EXPECTED_OUTPUT_TOKENS.\n- Updated README.md and added .env.example documenting the new env var.\n- Ran unit tests to verify no regressions.\n\nFiles changed:\n- src/services/openaiAnalysisService.js\n- README.md\n- .env.example\n- PR_DESCRIPTION.md (this file)\n\nTesting:\n- Unit tests: node scripts/run-unit-tests.js (all passed)\n- Verified annotate flow and DB save workflow for fixture 1435547 (manual inspection)\n\nNotes:\n- OPENAI_EXPECTED_OUTPUT_TOKENS is optional. If unset, no hard cap is imposed; be aware of potential OpenAI API cost increases.\n"'
++ read -r -d '' PAYLOAD
+++ echo 'Make OpenAI expected output tokens configurable and remove hardcoded cap'
+++ sed 's/"/\\"/g'

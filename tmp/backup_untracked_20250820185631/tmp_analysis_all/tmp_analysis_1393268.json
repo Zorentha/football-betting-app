@@ -1,0 +1,323 @@
+{
+  "fetchedAt": "2025-08-19T16:18:43.546Z",
+  "fixtureId": 1393268,
+  "requestUrl": "http://localhost:3001/api/betting/fixtures/1393268/analyze",
+  "status": 200,
+  "data": {
+    "success": true,
+    "data": {
+      "fixtureId": 1393268,
+      "teams": {
+        "home": "Charlton",
+        "away": "Stevenage"
+      },
+      "aiAnalysis": {
+        "probabilities": {
+          "homeWin": 37,
+          "draw": 28,
+          "awayWin": 35
+        },
+        "predictedScore": {
+          "home": 2,
+          "away": 1
+        },
+        "confidence": "medium",
+        "confidencePercentage": 65,
+        "keyFactors": [
+          "Balanced matchup",
+          "Charlton unbeaten run",
+          "Stevenage higher scoring rate",
+          "Small points gap",
+          "xG suggests 2.5–3.5 goals"
+        ],
+        "playerMatchups": [
+          {
+            "category": "Bramkarz vs Napastnik",
+            "homePlayer": "W. Mannion (BR)",
+            "awayPlayer": "J. Malcolm (NAP)",
+            "description": "W. Mannion będzie bronił przeciw J. Malcolm"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "Z. Mitchell (CB)",
+            "awayPlayer": "J. Malcolm (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "A. Mitchell (CB)",
+            "awayPlayer": "J. Malcolm (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "M. Gillesphey (CB)",
+            "awayPlayer": "J. Malcolm (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "H. Rylah (CM)",
+            "awayPlayer": "D. Phillips (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "H. Rylah (CM)",
+            "awayPlayer": "H. White (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "H. Rylah (CM)",
+            "awayPlayer": "C. Campbell (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "H. Rylah (CM)",
+            "awayPlayer": "D. Kemp (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "H. Rylah (CM)",
+            "awayPlayer": "P. Patterson (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "H. Knibbs (CM)",
+            "awayPlayer": "D. Phillips (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "H. Knibbs (CM)",
+            "awayPlayer": "H. White (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "H. Knibbs (CM)",
+            "awayPlayer": "C. Campbell (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "H. Knibbs (CM)",
+            "awayPlayer": "D. Kemp (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "H. Knibbs (CM)",
+            "awayPlayer": "P. Patterson (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "J. Rankin-Costello (CM)",
+            "awayPlayer": "D. Phillips (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "J. Rankin-Costello (CM)",
+            "awayPlayer": "H. White (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "J. Rankin-Costello (CM)",
+            "awayPlayer": "C. Campbell (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "J. Rankin-Costello (CM)",
+            "awayPlayer": "D. Kemp (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "J. Rankin-Costello (CM)",
+            "awayPlayer": "P. Patterson (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "K. Anderson (CM)",
+            "awayPlayer": "D. Phillips (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          }
+        ],
+        "matchupAnalysis": [
+          {
+            "homePlayer": "W. Mannion (BR)",
+            "awayPlayer": "J. Malcolm (NAP)",
+            "category": "Bramkarz vs Napastnik",
+            "advantage": "home",
+            "analysis": "Mannion ma ocenę 7.2 w 1 meczu wg zestawienia top-player, co sugeruje solidną dyspozycję między słupkami; Malcolma nie ma w top-player, więc brak potwierdzonych atutów liczbowych."
+          },
+          {
+            "homePlayer": "Z. Mitchell (CB)",
+            "awayPlayer": "J. Malcolm (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Brak danych w top-player dla Z. Mitchella i J. Malcolma, więc trudno wskazać faworyta; pojedynek rozstrzygnie ustawienie i wsparcie drugiej linii."
+          },
+          {
+            "homePlayer": "A. Mitchell (CB)",
+            "awayPlayer": "J. Malcolm (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Obaj nie figurują w zestawieniu top-player, co nie daje podstaw do wskazania przewagi; kluczowe będą pojedynki 1v1 i gra w polu karnym."
+          },
+          {
+            "homePlayer": "M. Gillesphey (CB)",
+            "awayPlayer": "J. Malcolm (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "home",
+            "analysis": "Gillesphey ma ocenę 7.2 w 1 meczu, co potwierdza stabilność w defensywie; Malcolma brak w top-player, więc przewaga statystyczna po stronie stopera."
+          },
+          {
+            "homePlayer": "H. Rylah (CM)",
+            "awayPlayer": "D. Phillips (CM)",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Brak notowanych statystyk dla obu w zestawieniu top-player; o przewadze zdecydują intensywność pressingu i liczba wygranych pojedynków."
+          },
+          {
+            "homePlayer": "H. Rylah (CM)",
+            "awayPlayer": "H. White (CM)",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Żaden z zawodników nie znajduje się w top-player, więc brak twardych danych; kluczowe będą odbiory i tempo podań."
+          },
+          {
+            "homePlayer": "H. Rylah (CM)",
+            "awayPlayer": "C. Campbell (CM)",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Brak danych statystycznych w top-player dla obu; wynik pojedynku zależy od mobilności i wsparcia bocznych sektorów."
+          },
+          {
+            "homePlayer": "H. Rylah (CM)",
+            "awayPlayer": "D. Kemp (CM)",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Nie ma ich w zestawieniu top-player, więc trudno o wskazanie przewagi; ważne będą dośrodkowania i progresywne podania."
+          },
+          {
+            "homePlayer": "H. Rylah (CM)",
+            "awayPlayer": "P. Patterson (CM)",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Brak danych z top-player dla obu; pojedynek rozstrzygną przechwyty i kontrola tempa w centrum boiska."
+          },
+          {
+            "homePlayer": "H. Knibbs (CM)",
+            "awayPlayer": "D. Phillips (CM)",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Obu brakuje w zestawieniu top-player, więc brak przesłanek statystycznych; liczyć się będzie agresja w pressingu i dokładność podań."
+          },
+          {
+            "homePlayer": "H. Knibbs (CM)",
+            "awayPlayer": "H. White (CM)",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Żaden nie figuruje w top-player; o przewadze zadecyduje liczba wygranych pojedynków i pokrycie półprzestrzeni."
+          },
+          {
+            "homePlayer": "H. Knibbs (CM)",
+            "awayPlayer": "C. Campbell (CM)",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Brak danych liczbowych z listy top-player; przewagę przyniesie skuteczność w przełamaniu linii pressingu."
+          },
+          {
+            "homePlayer": "H. Knibbs (CM)",
+            "awayPlayer": "D. Kemp (CM)",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Nie ma ich w top-player, więc brak twardych wskaźników; decydujące będą kluczowe podania i strzały z drugiej linii."
+          },
+          {
+            "homePlayer": "H. Knibbs (CM)",
+            "awayPlayer": "P. Patterson (CM)",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Brak statystyk w top-player po obu stronach; pojedynek rozstrzygną odbiory i kontrola rytmu gry."
+          },
+          {
+            "homePlayer": "J. Rankin-Costello (CM)",
+            "awayPlayer": "D. Phillips (CM)",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Obaj nie widnieją w zestawieniu top-player; przewaga zależeć będzie od intensywności pressingu i jakości podań progresywnych."
+          },
+          {
+            "homePlayer": "J. Rankin-Costello (CM)",
+            "awayPlayer": "H. White (CM)",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Brak danych w top-player dla obu; kluczowe będzie zabezpieczenie przejścia rywala do ataku."
+          },
+          {
+            "homePlayer": "J. Rankin-Costello (CM)",
+            "awayPlayer": "C. Campbell (CM)",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Nie ma ich na liście top-player, więc brak podstaw do wskazania faworyta; zadecyduje liczba przechwytów i skuteczność w dystrybucji."
+          },
+          {
+            "homePlayer": "J. Rankin-Costello (CM)",
+            "awayPlayer": "D. Kemp (CM)",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Obu brakuje w zestawieniu top-player; przewaga przypadnie temu, kto lepiej wykorzysta wolne przestrzenie między liniami."
+          },
+          {
+            "homePlayer": "J. Rankin-Costello (CM)",
+            "awayPlayer": "P. Patterson (CM)",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Brak twardych danych z top-player po obu stronach; decydujące będą podania kluczowe i przełamanie pressingu."
+          },
+          {
+            "homePlayer": "K. Anderson (CM)",
+            "awayPlayer": "D. Phillips (CM)",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Żaden z zawodników nie widnieje w top-player, co utrudnia ocenę przewagi; rozstrzygać będą odbiory oraz tempo cyrkulacji piłki."
+          }
+        ],
+        "bettingTips": [
+          {
+            "type": "Both Teams To Score: Yes",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Over 2.5 Goals",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Charlton Draw No Bet",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Avoid heavy stakes due to variance",
+            "probability": null,
+            "reasoning": ""
+          }
+        ]
+      }
+    },
+    "savedToDatabase": true
+  }
+}

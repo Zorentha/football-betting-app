@@ -1,0 +1,328 @@
+{
+  "fetchedAt": "2025-08-19T16:44:46.047Z",
+  "fixtureId": 1393280,
+  "requestUrl": "http://localhost:3001/api/betting/fixtures/1393280/analyze",
+  "status": 200,
+  "data": {
+    "success": true,
+    "data": {
+      "fixtureId": 1393280,
+      "teams": {
+        "home": "Plymouth",
+        "away": "QPR"
+      },
+      "aiAnalysis": {
+        "probabilities": {
+          "homeWin": 34,
+          "draw": 36,
+          "awayWin": 30
+        },
+        "predictedScore": {
+          "home": 1,
+          "away": 1
+        },
+        "confidence": "medium",
+        "confidencePercentage": 65,
+        "keyFactors": [
+          "Both teams poor form",
+          "Defensive trend; under 2.5",
+          "Plymouth home edge",
+          "QPR struggle to win",
+          "Few clear chances expected"
+        ],
+        "playerMatchups": [
+          {
+            "category": "🧤 Bramkarz vs Napastnik",
+            "homePlayer": "L. Ashby-Hammond (BR)",
+            "awayPlayer": "R. Burrell (NAP)",
+            "description": "L. Ashby-Hammond będzie bronił przeciw R. Burrell"
+          },
+          {
+            "category": "🔰 Obrona vs Atak",
+            "homePlayer": "K. Szűcs (CB)",
+            "awayPlayer": "R. Burrell (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "🔰 Obrona vs Atak",
+            "homePlayer": "B. Wiredu (CB)",
+            "awayPlayer": "R. Burrell (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "🔰 Obrona vs Atak",
+            "homePlayer": "V. Pálsson (CB)",
+            "awayPlayer": "R. Burrell (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "🔰 Obrona vs Atak",
+            "homePlayer": "A. Benarous (CB)",
+            "awayPlayer": "R. Burrell (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "⚔️ Środek pola",
+            "homePlayer": "B. Ibrahim (CM)",
+            "awayPlayer": "E. Sutton (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "⚔️ Środek pola",
+            "homePlayer": "B. Ibrahim (CM)",
+            "awayPlayer": "D. Bennie (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "⚔️ Środek pola",
+            "homePlayer": "B. Ibrahim (CM)",
+            "awayPlayer": "E. Dixon-Bonner (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "⚔️ Środek pola",
+            "homePlayer": "B. Ibrahim (CM)",
+            "awayPlayer": "J. Pearman (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "⚔️ Środek pola",
+            "homePlayer": "B. Ibrahim (CM)",
+            "awayPlayer": "R. Kolli (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "⚔️ Środek pola",
+            "homePlayer": "M. Boateng (CM)",
+            "awayPlayer": "E. Sutton (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "⚔️ Środek pola",
+            "homePlayer": "M. Boateng (CM)",
+            "awayPlayer": "D. Bennie (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "⚔️ Środek pola",
+            "homePlayer": "M. Boateng (CM)",
+            "awayPlayer": "E. Dixon-Bonner (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "⚔️ Środek pola",
+            "homePlayer": "M. Boateng (CM)",
+            "awayPlayer": "J. Pearman (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "⚔️ Środek pola",
+            "homePlayer": "M. Boateng (CM)",
+            "awayPlayer": "R. Kolli (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "⚔️ Środek pola",
+            "homePlayer": "T. Finn (CM)",
+            "awayPlayer": "E. Sutton (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "⚔️ Środek pola",
+            "homePlayer": "T. Finn (CM)",
+            "awayPlayer": "D. Bennie (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "⚔️ Środek pola",
+            "homePlayer": "T. Finn (CM)",
+            "awayPlayer": "E. Dixon-Bonner (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "⚔️ Środek pola",
+            "homePlayer": "T. Finn (CM)",
+            "awayPlayer": "J. Pearman (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "⚔️ Środek pola",
+            "homePlayer": "T. Finn (CM)",
+            "awayPlayer": "R. Kolli (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          }
+        ],
+        "matchupAnalysis": [
+          {
+            "homePlayer": "L. Ashby-Hammond (BR)",
+            "awayPlayer": "R. Burrell (NAP)",
+            "category": "🧤 Bramkarz vs Napastnik",
+            "advantage": "uncertain",
+            "analysis": "L. Ashby-Hammond będzie bronił przeciw R. Burrell"
+          },
+          {
+            "homePlayer": "K. Szűcs (CB)",
+            "awayPlayer": "R. Burrell (ST)",
+            "category": "🔰 Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "homePlayer": "B. Wiredu (CB)",
+            "awayPlayer": "R. Burrell (ST)",
+            "category": "🔰 Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "homePlayer": "V. Pálsson (CB)",
+            "awayPlayer": "R. Burrell (ST)",
+            "category": "🔰 Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "homePlayer": "A. Benarous (CB)",
+            "awayPlayer": "R. Burrell (ST)",
+            "category": "🔰 Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "homePlayer": "B. Ibrahim (CM)",
+            "awayPlayer": "E. Sutton (CM)",
+            "category": "⚔️ Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "homePlayer": "B. Ibrahim (CM)",
+            "awayPlayer": "D. Bennie (CM)",
+            "category": "⚔️ Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "homePlayer": "B. Ibrahim (CM)",
+            "awayPlayer": "E. Dixon-Bonner (CM)",
+            "category": "⚔️ Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "homePlayer": "B. Ibrahim (CM)",
+            "awayPlayer": "J. Pearman (CM)",
+            "category": "⚔️ Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "homePlayer": "B. Ibrahim (CM)",
+            "awayPlayer": "R. Kolli (CM)",
+            "category": "⚔️ Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "homePlayer": "M. Boateng (CM)",
+            "awayPlayer": "E. Sutton (CM)",
+            "category": "⚔️ Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "homePlayer": "M. Boateng (CM)",
+            "awayPlayer": "D. Bennie (CM)",
+            "category": "⚔️ Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "homePlayer": "M. Boateng (CM)",
+            "awayPlayer": "E. Dixon-Bonner (CM)",
+            "category": "⚔️ Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "homePlayer": "M. Boateng (CM)",
+            "awayPlayer": "J. Pearman (CM)",
+            "category": "⚔️ Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "homePlayer": "M. Boateng (CM)",
+            "awayPlayer": "R. Kolli (CM)",
+            "category": "⚔️ Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "homePlayer": "T. Finn (CM)",
+            "awayPlayer": "E. Sutton (CM)",
+            "category": "⚔️ Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "homePlayer": "T. Finn (CM)",
+            "awayPlayer": "D. Bennie (CM)",
+            "category": "⚔️ Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "homePlayer": "T. Finn (CM)",
+            "awayPlayer": "E. Dixon-Bonner (CM)",
+            "category": "⚔️ Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "homePlayer": "T. Finn (CM)",
+            "awayPlayer": "J. Pearman (CM)",
+            "category": "⚔️ Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "homePlayer": "T. Finn (CM)",
+            "awayPlayer": "R. Kolli (CM)",
+            "category": "⚔️ Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Środkowy pomocnik vs środkowy pomocnik"
+          }
+        ],
+        "bettingTips": [
+          {
+            "type": "Under 2.5 goals",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Draw",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Double chance: Plymouth or Draw",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "QPR under 1.5 team goals",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Correct score 1-1 (small stake)",
+            "probability": null,
+            "reasoning": ""
+          }
+        ]
+      }
+    },
+    "savedToDatabase": true
+  }
+}

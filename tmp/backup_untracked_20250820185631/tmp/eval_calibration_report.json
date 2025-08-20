@@ -1,0 +1,10 @@
+{
+  "inputFile": "tmp/predictions_dump.json",
+  "calibrator": null,
+  "before": {
+    "brier": 0.486085,
+    "logloss": 0.8463683875149492,
+    "count": 40
+  },
+  "after": null
+}

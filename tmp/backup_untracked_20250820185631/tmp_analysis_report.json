@@ -1,0 +1,1955 @@
+{
+  "generatedAt": "2025-08-19T15:56:51.356Z",
+  "summary": {
+    "totalFiles": 45,
+    "totalFixturesWithPredictionsInDb": 48,
+    "missingFilesForDbFixtures": 3,
+    "filesWithoutDbPredictions": 0
+  },
+  "fixtures": {
+    "1390826": {
+      "fixtureId": 1390826,
+      "files": [
+        "tmp_analysis_1390826.json"
+      ],
+      "hasErrorFile": false,
+      "tmpPrimaryFile": "tmp_analysis_1390826.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "requestUrl",
+          "status",
+          "data"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 124,
+          "prediction_hash": "1755615877448",
+          "prediction_date": "2025-08-19 15:04:37",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 2,
+          "predicted_away_score": 1
+        },
+        "predictionsSample": [
+          {
+            "id": 124,
+            "prediction_hash": "1755615877448",
+            "prediction_date": "2025-08-19 15:04:37",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 2,
+            "predicted_away_score": 1
+          }
+        ],
+        "hasResult": false,
+        "latestResult": null
+      }
+    },
+    "1393259": {
+      "fixtureId": 1393259,
+      "files": [
+        "tmp_analysis_1393259.json",
+        "tmp_analysis_1393259_error.json"
+      ],
+      "hasErrorFile": true,
+      "tmpPrimaryFile": "tmp_analysis_1393259.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "requestUrl",
+          "status",
+          "data"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 131,
+          "prediction_hash": "1755616204277",
+          "prediction_date": "2025-08-19 15:10:04",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 0,
+          "predicted_away_score": 1
+        },
+        "predictionsSample": [
+          {
+            "id": 131,
+            "prediction_hash": "1755616204277",
+            "prediction_date": "2025-08-19 15:10:04",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 0,
+            "predicted_away_score": 1
+          }
+        ],
+        "hasResult": true,
+        "latestResult": {
+          "id": 3185,
+          "home_score": 0,
+          "away_score": 1,
+          "result_date": "2025-08-19 15:50:01"
+        }
+      }
+    },
+    "1393261": {
+      "fixtureId": 1393261,
+      "files": [
+        "tmp_analysis_1393261.json"
+      ],
+      "hasErrorFile": false,
+      "tmpPrimaryFile": "tmp_analysis_1393261.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "requestUrl",
+          "status",
+          "data"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 84,
+          "prediction_hash": "25|25|50|1|2|65|[]|[]",
+          "prediction_date": "2025-08-12 20:53:23",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 1,
+          "predicted_away_score": 2
+        },
+        "predictionsSample": [
+          {
+            "id": 84,
+            "prediction_hash": "25|25|50|1|2|65|[]|[]",
+            "prediction_date": "2025-08-12 20:53:23",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 1,
+            "predicted_away_score": 2
+          }
+        ],
+        "hasResult": true,
+        "latestResult": {
+          "id": 3197,
+          "home_score": 1,
+          "away_score": 2,
+          "result_date": "2025-08-19 15:50:02"
+        }
+      }
+    },
+    "1393262": {
+      "fixtureId": 1393262,
+      "files": [
+        "tmp_analysis_1393262.json"
+      ],
+      "hasErrorFile": false,
+      "tmpPrimaryFile": "tmp_analysis_1393262.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "requestUrl",
+          "status",
+          "data"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 85,
+          "prediction_hash": "25|25|50|0|1|65|[]|[]",
+          "prediction_date": "2025-08-12 20:53:23",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 0,
+          "predicted_away_score": 1
+        },
+        "predictionsSample": [
+          {
+            "id": 85,
+            "prediction_hash": "25|25|50|0|1|65|[]|[]",
+            "prediction_date": "2025-08-12 20:53:23",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 0,
+            "predicted_away_score": 1
+          }
+        ],
+        "hasResult": true,
+        "latestResult": {
+          "id": 3196,
+          "home_score": 0,
+          "away_score": 1,
+          "result_date": "2025-08-19 15:50:02"
+        }
+      }
+    },
+    "1393264": {
+      "fixtureId": 1393264,
+      "files": [
+        "tmp_analysis_1393264.json",
+        "tmp_analysis_1393264_error.json"
+      ],
+      "hasErrorFile": true,
+      "tmpPrimaryFile": "tmp_analysis_1393264.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "requestUrl",
+          "status",
+          "data"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 132,
+          "prediction_hash": "1755616473296",
+          "prediction_date": "2025-08-19 15:14:33",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 3,
+          "predicted_away_score": 1
+        },
+        "predictionsSample": [
+          {
+            "id": 132,
+            "prediction_hash": "1755616473296",
+            "prediction_date": "2025-08-19 15:14:33",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 3,
+            "predicted_away_score": 1
+          }
+        ],
+        "hasResult": true,
+        "latestResult": {
+          "id": 3184,
+          "home_score": 2,
+          "away_score": 0,
+          "result_date": "2025-08-19 15:50:01"
+        }
+      }
+    },
+    "1393265": {
+      "fixtureId": 1393265,
+      "files": [
+        "tmp_analysis_1393265_error.json"
+      ],
+      "hasErrorFile": true,
+      "tmpPrimaryFile": "tmp_analysis_1393265_error.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "error"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 133,
+          "prediction_hash": "1755616616059",
+          "prediction_date": "2025-08-19 15:16:56",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 1,
+          "predicted_away_score": 1
+        },
+        "predictionsSample": [
+          {
+            "id": 133,
+            "prediction_hash": "1755616616059",
+            "prediction_date": "2025-08-19 15:16:56",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 1,
+            "predicted_away_score": 1
+          }
+        ],
+        "hasResult": true,
+        "latestResult": {
+          "id": 3183,
+          "home_score": 0,
+          "away_score": 2,
+          "result_date": "2025-08-19 15:50:01"
+        }
+      }
+    },
+    "1393266": {
+      "fixtureId": 1393266,
+      "files": [
+        "tmp_analysis_1393266.json",
+        "tmp_analysis_1393266_error.json"
+      ],
+      "hasErrorFile": true,
+      "tmpPrimaryFile": "tmp_analysis_1393266.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "requestUrl",
+          "status",
+          "data"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 134,
+          "prediction_hash": "1755616691227",
+          "prediction_date": "2025-08-19 15:18:11",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 1,
+          "predicted_away_score": 3
+        },
+        "predictionsSample": [
+          {
+            "id": 134,
+            "prediction_hash": "1755616691227",
+            "prediction_date": "2025-08-19 15:18:11",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 1,
+            "predicted_away_score": 3
+          }
+        ],
+        "hasResult": false,
+        "latestResult": null
+      }
+    },
+    "1393267": {
+      "fixtureId": 1393267,
+      "files": [
+        "tmp_analysis_1393267.json",
+        "tmp_analysis_1393267_error.json"
+      ],
+      "hasErrorFile": true,
+      "tmpPrimaryFile": "tmp_analysis_1393267.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "requestUrl",
+          "status",
+          "data"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 135,
+          "prediction_hash": "1755616837466",
+          "prediction_date": "2025-08-19 15:20:37",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 2,
+          "predicted_away_score": 2
+        },
+        "predictionsSample": [
+          {
+            "id": 135,
+            "prediction_hash": "1755616837466",
+            "prediction_date": "2025-08-19 15:20:37",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 2,
+            "predicted_away_score": 2
+          }
+        ],
+        "hasResult": true,
+        "latestResult": {
+          "id": 3182,
+          "home_score": 2,
+          "away_score": 1,
+          "result_date": "2025-08-19 15:50:01"
+        }
+      }
+    },
+    "1393268": {
+      "fixtureId": 1393268,
+      "files": [
+        "tmp_analysis_1393268.json",
+        "tmp_analysis_1393268_error.json"
+      ],
+      "hasErrorFile": true,
+      "tmpPrimaryFile": "tmp_analysis_1393268.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "requestUrl",
+          "status",
+          "data"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 136,
+          "prediction_hash": "1755616977868",
+          "prediction_date": "2025-08-19 15:22:57",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 1,
+          "predicted_away_score": 2
+        },
+        "predictionsSample": [
+          {
+            "id": 136,
+            "prediction_hash": "1755616977868",
+            "prediction_date": "2025-08-19 15:22:57",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 1,
+            "predicted_away_score": 2
+          }
+        ],
+        "hasResult": true,
+        "latestResult": {
+          "id": 3181,
+          "home_score": 3,
+          "away_score": 1,
+          "result_date": "2025-08-19 15:50:01"
+        }
+      }
+    },
+    "1393270": {
+      "fixtureId": 1393270,
+      "files": [
+        "tmp_analysis_1393270.json",
+        "tmp_analysis_1393270_error.json"
+      ],
+      "hasErrorFile": true,
+      "tmpPrimaryFile": "tmp_analysis_1393270.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "requestUrl",
+          "status",
+          "data"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 137,
+          "prediction_hash": "1755617119111",
+          "prediction_date": "2025-08-19 15:25:19",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 2,
+          "predicted_away_score": 1
+        },
+        "predictionsSample": [
+          {
+            "id": 137,
+            "prediction_hash": "1755617119111",
+            "prediction_date": "2025-08-19 15:25:19",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 2,
+            "predicted_away_score": 1
+          }
+        ],
+        "hasResult": true,
+        "latestResult": {
+          "id": 3180,
+          "home_score": 0,
+          "away_score": 2,
+          "result_date": "2025-08-19 15:50:00"
+        }
+      }
+    },
+    "1393271": {
+      "fixtureId": 1393271,
+      "files": [
+        "tmp_analysis_1393271.json",
+        "tmp_analysis_1393271_error.json"
+      ],
+      "hasErrorFile": true,
+      "tmpPrimaryFile": "tmp_analysis_1393271.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "requestUrl",
+          "status",
+          "data"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 138,
+          "prediction_hash": "1755617262780",
+          "prediction_date": "2025-08-19 15:27:42",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 2,
+          "predicted_away_score": 1
+        },
+        "predictionsSample": [
+          {
+            "id": 138,
+            "prediction_hash": "1755617262780",
+            "prediction_date": "2025-08-19 15:27:42",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 2,
+            "predicted_away_score": 1
+          }
+        ],
+        "hasResult": true,
+        "latestResult": {
+          "id": 3179,
+          "home_score": 1,
+          "away_score": 0,
+          "result_date": "2025-08-19 15:50:00"
+        }
+      }
+    },
+    "1393272": {
+      "fixtureId": 1393272,
+      "files": [
+        "tmp_analysis_1393272.json",
+        "tmp_analysis_1393272_error.json"
+      ],
+      "hasErrorFile": true,
+      "tmpPrimaryFile": "tmp_analysis_1393272.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "requestUrl",
+          "status",
+          "data"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 139,
+          "prediction_hash": "1755617424425",
+          "prediction_date": "2025-08-19 15:30:24",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 1,
+          "predicted_away_score": 1
+        },
+        "predictionsSample": [
+          {
+            "id": 139,
+            "prediction_hash": "1755617424425",
+            "prediction_date": "2025-08-19 15:30:24",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 1,
+            "predicted_away_score": 1
+          }
+        ],
+        "hasResult": false,
+        "latestResult": null
+      }
+    },
+    "1393273": {
+      "fixtureId": 1393273,
+      "files": [
+        "tmp_analysis_1393273.json",
+        "tmp_analysis_1393273_error.json"
+      ],
+      "hasErrorFile": true,
+      "tmpPrimaryFile": "tmp_analysis_1393273.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "requestUrl",
+          "status",
+          "data"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 140,
+          "prediction_hash": "1755617706767",
+          "prediction_date": "2025-08-19 15:35:06",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 3,
+          "predicted_away_score": 0
+        },
+        "predictionsSample": [
+          {
+            "id": 140,
+            "prediction_hash": "1755617706767",
+            "prediction_date": "2025-08-19 15:35:06",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 3,
+            "predicted_away_score": 0
+          }
+        ],
+        "hasResult": true,
+        "latestResult": {
+          "id": 3178,
+          "home_score": 3,
+          "away_score": 1,
+          "result_date": "2025-08-19 15:50:00"
+        }
+      }
+    },
+    "1393274": {
+      "fixtureId": 1393274,
+      "files": [
+        "tmp_analysis_1393274.json",
+        "tmp_analysis_1393274_error.json"
+      ],
+      "hasErrorFile": true,
+      "tmpPrimaryFile": "tmp_analysis_1393274.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "requestUrl",
+          "status",
+          "data"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 141,
+          "prediction_hash": "1755617764503",
+          "prediction_date": "2025-08-19 15:36:04",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 1,
+          "predicted_away_score": 3
+        },
+        "predictionsSample": [
+          {
+            "id": 141,
+            "prediction_hash": "1755617764503",
+            "prediction_date": "2025-08-19 15:36:04",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 1,
+            "predicted_away_score": 3
+          }
+        ],
+        "hasResult": true,
+        "latestResult": {
+          "id": 3177,
+          "home_score": 1,
+          "away_score": 3,
+          "result_date": "2025-08-19 15:50:00"
+        }
+      }
+    },
+    "1393276": {
+      "fixtureId": 1393276,
+      "files": [
+        "tmp_analysis_1393276.json",
+        "tmp_analysis_1393276_error.json"
+      ],
+      "hasErrorFile": true,
+      "tmpPrimaryFile": "tmp_analysis_1393276.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "requestUrl",
+          "status",
+          "data"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 142,
+          "prediction_hash": "1755617894426",
+          "prediction_date": "2025-08-19 15:38:14",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 1,
+          "predicted_away_score": 1
+        },
+        "predictionsSample": [
+          {
+            "id": 142,
+            "prediction_hash": "1755617894426",
+            "prediction_date": "2025-08-19 15:38:14",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 1,
+            "predicted_away_score": 1
+          }
+        ],
+        "hasResult": true,
+        "latestResult": {
+          "id": 3176,
+          "home_score": 0,
+          "away_score": 1,
+          "result_date": "2025-08-19 15:50:00"
+        }
+      }
+    },
+    "1393277": {
+      "fixtureId": 1393277,
+      "files": [
+        "tmp_analysis_1393277.json",
+        "tmp_analysis_1393277_error.json"
+      ],
+      "hasErrorFile": true,
+      "tmpPrimaryFile": "tmp_analysis_1393277.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "requestUrl",
+          "status",
+          "data"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 143,
+          "prediction_hash": "1755618030393",
+          "prediction_date": "2025-08-19 15:40:30",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 1,
+          "predicted_away_score": 2
+        },
+        "predictionsSample": [
+          {
+            "id": 143,
+            "prediction_hash": "1755618030393",
+            "prediction_date": "2025-08-19 15:40:30",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 1,
+            "predicted_away_score": 2
+          }
+        ],
+        "hasResult": true,
+        "latestResult": {
+          "id": 3175,
+          "home_score": 0,
+          "away_score": 4,
+          "result_date": "2025-08-19 15:50:00"
+        }
+      }
+    },
+    "1393278": {
+      "fixtureId": 1393278,
+      "files": [
+        "tmp_analysis_1393278.json",
+        "tmp_analysis_1393278_error.json"
+      ],
+      "hasErrorFile": true,
+      "tmpPrimaryFile": "tmp_analysis_1393278.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "requestUrl",
+          "status",
+          "data"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 144,
+          "prediction_hash": "1755618181334",
+          "prediction_date": "2025-08-19 15:43:01",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 1,
+          "predicted_away_score": 2
+        },
+        "predictionsSample": [
+          {
+            "id": 144,
+            "prediction_hash": "1755618181334",
+            "prediction_date": "2025-08-19 15:43:01",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 1,
+            "predicted_away_score": 2
+          }
+        ],
+        "hasResult": true,
+        "latestResult": {
+          "id": 3174,
+          "home_score": 0,
+          "away_score": 1,
+          "result_date": "2025-08-19 15:50:00"
+        }
+      }
+    },
+    "1393279": {
+      "fixtureId": 1393279,
+      "files": [
+        "tmp_analysis_1393279.json",
+        "tmp_analysis_1393279_error.json"
+      ],
+      "hasErrorFile": true,
+      "tmpPrimaryFile": "tmp_analysis_1393279.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "requestUrl",
+          "status",
+          "data"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 145,
+          "prediction_hash": "1755618303228",
+          "prediction_date": "2025-08-19 15:45:03",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 1,
+          "predicted_away_score": 1
+        },
+        "predictionsSample": [
+          {
+            "id": 145,
+            "prediction_hash": "1755618303228",
+            "prediction_date": "2025-08-19 15:45:03",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 1,
+            "predicted_away_score": 1
+          }
+        ],
+        "hasResult": true,
+        "latestResult": {
+          "id": 3173,
+          "home_score": 1,
+          "away_score": 0,
+          "result_date": "2025-08-19 15:50:00"
+        }
+      }
+    },
+    "1393280": {
+      "fixtureId": 1393280,
+      "files": [
+        "tmp_analysis_1393280_error.json"
+      ],
+      "hasErrorFile": true,
+      "tmpPrimaryFile": "tmp_analysis_1393280_error.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "error"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 146,
+          "prediction_hash": "1755618527812",
+          "prediction_date": "2025-08-19 15:48:47",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 1,
+          "predicted_away_score": 1
+        },
+        "predictionsSample": [
+          {
+            "id": 146,
+            "prediction_hash": "1755618527812",
+            "prediction_date": "2025-08-19 15:48:47",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 1,
+            "predicted_away_score": 1
+          }
+        ],
+        "hasResult": true,
+        "latestResult": {
+          "id": 3172,
+          "home_score": 3,
+          "away_score": 2,
+          "result_date": "2025-08-19 15:50:00"
+        }
+      }
+    },
+    "1393281": {
+      "fixtureId": 1393281,
+      "files": [
+        "tmp_analysis_1393281.json",
+        "tmp_analysis_1393281_error.json"
+      ],
+      "hasErrorFile": true,
+      "tmpPrimaryFile": "tmp_analysis_1393281.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "requestUrl",
+          "status",
+          "data"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 147,
+          "prediction_hash": "1755618623344",
+          "prediction_date": "2025-08-19 15:50:23",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 1,
+          "predicted_away_score": 0
+        },
+        "predictionsSample": [
+          {
+            "id": 147,
+            "prediction_hash": "1755618623344",
+            "prediction_date": "2025-08-19 15:50:23",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 1,
+            "predicted_away_score": 0
+          }
+        ],
+        "hasResult": true,
+        "latestResult": {
+          "id": 3195,
+          "home_score": 1,
+          "away_score": 2,
+          "result_date": "2025-08-19 15:50:02"
+        }
+      }
+    },
+    "1393282": {
+      "fixtureId": 1393282,
+      "files": [
+        "tmp_analysis_1393282.json",
+        "tmp_analysis_1393282_error.json"
+      ],
+      "hasErrorFile": true,
+      "tmpPrimaryFile": "tmp_analysis_1393282.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "requestUrl",
+          "status",
+          "data"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 148,
+          "prediction_hash": "1755618787766",
+          "prediction_date": "2025-08-19 15:53:07",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 2,
+          "predicted_away_score": 1
+        },
+        "predictionsSample": [
+          {
+            "id": 148,
+            "prediction_hash": "1755618787766",
+            "prediction_date": "2025-08-19 15:53:07",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 2,
+            "predicted_away_score": 1
+          }
+        ],
+        "hasResult": false,
+        "latestResult": null
+      }
+    },
+    "1393283": {
+      "fixtureId": 1393283,
+      "files": [
+        "tmp_analysis_1393283.json",
+        "tmp_analysis_1393283_error.json"
+      ],
+      "hasErrorFile": true,
+      "tmpPrimaryFile": "tmp_analysis_1393283.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "requestUrl",
+          "status",
+          "data"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 149,
+          "prediction_hash": "1755618950804",
+          "prediction_date": "2025-08-19 15:55:50",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 2,
+          "predicted_away_score": 1
+        },
+        "predictionsSample": [
+          {
+            "id": 149,
+            "prediction_hash": "1755618950804",
+            "prediction_date": "2025-08-19 15:55:50",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 2,
+            "predicted_away_score": 1
+          }
+        ],
+        "hasResult": true,
+        "latestResult": {
+          "id": 3198,
+          "home_score": 3,
+          "away_score": 1,
+          "result_date": "2025-08-19 15:50:02"
+        }
+      }
+    },
+    "1393284": {
+      "fixtureId": 1393284,
+      "files": [
+        "tmp_analysis_1393284_error.json"
+      ],
+      "hasErrorFile": true,
+      "tmpPrimaryFile": "tmp_analysis_1393284_error.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "error"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 111,
+          "prediction_hash": "1755615195851",
+          "prediction_date": "2025-08-19 14:53:15",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 3,
+          "predicted_away_score": 1
+        },
+        "predictionsSample": [
+          {
+            "id": 111,
+            "prediction_hash": "1755615195851",
+            "prediction_date": "2025-08-19 14:53:15",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 3,
+            "predicted_away_score": 1
+          }
+        ],
+        "hasResult": false,
+        "latestResult": null
+      }
+    },
+    "1393285": {
+      "fixtureId": 1393285,
+      "files": [
+        "tmp_analysis_1393285_error.json"
+      ],
+      "hasErrorFile": true,
+      "tmpPrimaryFile": "tmp_analysis_1393285_error.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "error"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 72,
+          "prediction_hash": "60|20|20|3|1|65|[]|[]",
+          "prediction_date": "2025-08-12 20:53:23",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 3,
+          "predicted_away_score": 1
+        },
+        "predictionsSample": [
+          {
+            "id": 72,
+            "prediction_hash": "60|20|20|3|1|65|[]|[]",
+            "prediction_date": "2025-08-12 20:53:23",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 3,
+            "predicted_away_score": 1
+          }
+        ],
+        "hasResult": true,
+        "latestResult": {
+          "id": 3200,
+          "home_score": 3,
+          "away_score": 1,
+          "result_date": "2025-08-19 15:50:02"
+        }
+      }
+    },
+    "1393286": {
+      "fixtureId": 1393286,
+      "files": [
+        "tmp_analysis_1393286_error.json"
+      ],
+      "hasErrorFile": true,
+      "tmpPrimaryFile": "tmp_analysis_1393286_error.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "error"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 93,
+          "prediction_hash": "1755613156572",
+          "prediction_date": "2025-08-19 14:19:16",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 2,
+          "predicted_away_score": 1
+        },
+        "predictionsSample": [
+          {
+            "id": 93,
+            "prediction_hash": "1755613156572",
+            "prediction_date": "2025-08-19 14:19:16",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 2,
+            "predicted_away_score": 1
+          }
+        ],
+        "hasResult": false,
+        "latestResult": null
+      }
+    },
+    "1393287": {
+      "fixtureId": 1393287,
+      "files": [
+        "tmp_analysis_1393287_error.json"
+      ],
+      "hasErrorFile": true,
+      "tmpPrimaryFile": "tmp_analysis_1393287_error.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "error"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 114,
+          "prediction_hash": "1755615454367",
+          "prediction_date": "2025-08-19 14:57:34",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 1,
+          "predicted_away_score": 1
+        },
+        "predictionsSample": [
+          {
+            "id": 114,
+            "prediction_hash": "1755615454367",
+            "prediction_date": "2025-08-19 14:57:34",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 1,
+            "predicted_away_score": 1
+          }
+        ],
+        "hasResult": true,
+        "latestResult": {
+          "id": 3194,
+          "home_score": 1,
+          "away_score": 2,
+          "result_date": "2025-08-19 15:50:02"
+        }
+      }
+    },
+    "1393288": {
+      "fixtureId": 1393288,
+      "files": [
+        "tmp_analysis_1393288_error.json"
+      ],
+      "hasErrorFile": true,
+      "tmpPrimaryFile": "tmp_analysis_1393288_error.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "error"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 115,
+          "prediction_hash": "1755615531953",
+          "prediction_date": "2025-08-19 14:58:51",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 3,
+          "predicted_away_score": 1
+        },
+        "predictionsSample": [
+          {
+            "id": 115,
+            "prediction_hash": "1755615531953",
+            "prediction_date": "2025-08-19 14:58:51",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 3,
+            "predicted_away_score": 1
+          }
+        ],
+        "hasResult": false,
+        "latestResult": null
+      }
+    },
+    "1393289": {
+      "fixtureId": 1393289,
+      "files": [
+        "tmp_analysis_1393289_error.json"
+      ],
+      "hasErrorFile": true,
+      "tmpPrimaryFile": "tmp_analysis_1393289_error.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "error"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 117,
+          "prediction_hash": "1755615590543",
+          "prediction_date": "2025-08-19 14:59:50",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 2,
+          "predicted_away_score": 0
+        },
+        "predictionsSample": [
+          {
+            "id": 117,
+            "prediction_hash": "1755615590543",
+            "prediction_date": "2025-08-19 14:59:50",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 2,
+            "predicted_away_score": 0
+          }
+        ],
+        "hasResult": true,
+        "latestResult": {
+          "id": 3193,
+          "home_score": 1,
+          "away_score": 0,
+          "result_date": "2025-08-19 15:50:01"
+        }
+      }
+    },
+    "1393290": {
+      "fixtureId": 1393290,
+      "files": [
+        "tmp_analysis_1393290_error.json"
+      ],
+      "hasErrorFile": true,
+      "tmpPrimaryFile": "tmp_analysis_1393290_error.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "error"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 116,
+          "prediction_hash": "1755615534391",
+          "prediction_date": "2025-08-19 14:58:54",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 1,
+          "predicted_away_score": 2
+        },
+        "predictionsSample": [
+          {
+            "id": 116,
+            "prediction_hash": "1755615534391",
+            "prediction_date": "2025-08-19 14:58:54",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 1,
+            "predicted_away_score": 2
+          }
+        ],
+        "hasResult": false,
+        "latestResult": null
+      }
+    },
+    "1414144": {
+      "fixtureId": 1414144,
+      "files": [
+        "tmp_analysis_1414144_error.json"
+      ],
+      "hasErrorFile": true,
+      "tmpPrimaryFile": "tmp_analysis_1414144_error.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "error"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 121,
+          "prediction_hash": "1755615717968",
+          "prediction_date": "2025-08-19 15:01:57",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 2,
+          "predicted_away_score": 2
+        },
+        "predictionsSample": [
+          {
+            "id": 121,
+            "prediction_hash": "1755615717968",
+            "prediction_date": "2025-08-19 15:01:57",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 2,
+            "predicted_away_score": 2
+          }
+        ],
+        "hasResult": true,
+        "latestResult": {
+          "id": 3191,
+          "home_score": 5,
+          "away_score": 2,
+          "result_date": "2025-08-19 15:50:01"
+        }
+      }
+    },
+    "1414145": {
+      "fixtureId": 1414145,
+      "files": [
+        "tmp_analysis_1414145_error.json"
+      ],
+      "hasErrorFile": true,
+      "tmpPrimaryFile": "tmp_analysis_1414145_error.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "error"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 122,
+          "prediction_hash": "1755615775319",
+          "prediction_date": "2025-08-19 15:02:55",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 2,
+          "predicted_away_score": 1
+        },
+        "predictionsSample": [
+          {
+            "id": 122,
+            "prediction_hash": "1755615775319",
+            "prediction_date": "2025-08-19 15:02:55",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 2,
+            "predicted_away_score": 1
+          }
+        ],
+        "hasResult": true,
+        "latestResult": {
+          "id": 3190,
+          "home_score": 2,
+          "away_score": 0,
+          "result_date": "2025-08-19 15:50:01"
+        }
+      }
+    },
+    "1419512": {
+      "fixtureId": 1419512,
+      "files": [
+        "tmp_analysis_1419512_error.json"
+      ],
+      "hasErrorFile": true,
+      "tmpPrimaryFile": "tmp_analysis_1419512_error.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "error"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 65,
+          "prediction_hash": "18|18|64|0|1|65|[]|[]",
+          "prediction_date": "2025-08-12 20:53:23",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 0,
+          "predicted_away_score": 1
+        },
+        "predictionsSample": [
+          {
+            "id": 65,
+            "prediction_hash": "18|18|64|0|1|65|[]|[]",
+            "prediction_date": "2025-08-12 20:53:23",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 0,
+            "predicted_away_score": 1
+          }
+        ],
+        "hasResult": true,
+        "latestResult": {
+          "id": 3201,
+          "home_score": 0,
+          "away_score": 1,
+          "result_date": "2025-08-19 15:50:02"
+        }
+      }
+    },
+    "1419569": {
+      "fixtureId": 1419569,
+      "files": [
+        "tmp_analysis_1419569_error.json"
+      ],
+      "hasErrorFile": true,
+      "tmpPrimaryFile": "tmp_analysis_1419569_error.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "error"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 90,
+          "prediction_hash": "43|25|32|2|2|65|[\"home advantage\",\"slovan avg 2.4 goals\",\"kairat 4w in last 5\",\"expected high total goals (>3.5)\",\"both sides in scoring form\"]|[\"over 2.5 goals\",\"both teams to score: yes\",\"over 3.5 goals (small stake)\",\"slovan bratislava draw no bet\",\"slovan win & btts (value)\"]",
+          "prediction_date": "2025-08-12 20:47:17",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 2,
+          "predicted_away_score": 2
+        },
+        "predictionsSample": [
+          {
+            "id": 90,
+            "prediction_hash": "43|25|32|2|2|65|[\"home advantage\",\"slovan avg 2.4 goals\",\"kairat 4w in last 5\",\"expected high total goals (>3.5)\",\"both sides in scoring form\"]|[\"over 2.5 goals\",\"both teams to score: yes\",\"over 3.5 goals (small stake)\",\"slovan bratislava draw no bet\",\"slovan win & btts (value)\"]",
+            "prediction_date": "2025-08-12 20:47:17",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 2,
+            "predicted_away_score": 2
+          }
+        ],
+        "hasResult": false,
+        "latestResult": null
+      }
+    },
+    "1421144": {
+      "fixtureId": 1421144,
+      "files": [
+        "tmp_analysis_1421144_error.json"
+      ],
+      "hasErrorFile": true,
+      "tmpPrimaryFile": "tmp_analysis_1421144_error.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "error"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 20,
+          "prediction_hash": "63|19|18|5|1|85|[]|[]",
+          "prediction_date": "2025-08-12 20:53:23",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 5,
+          "predicted_away_score": 1
+        },
+        "predictionsSample": [
+          {
+            "id": 20,
+            "prediction_hash": "63|19|18|5|1|85|[]|[]",
+            "prediction_date": "2025-08-12 20:53:23",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 5,
+            "predicted_away_score": 1
+          }
+        ],
+        "hasResult": true,
+        "latestResult": {
+          "id": 3204,
+          "home_score": 5,
+          "away_score": 1,
+          "result_date": "2025-08-19 15:50:03"
+        }
+      }
+    },
+    "1421145": {
+      "fixtureId": 1421145,
+      "files": [
+        "tmp_analysis_1421145_error.json"
+      ],
+      "hasErrorFile": true,
+      "tmpPrimaryFile": "tmp_analysis_1421145_error.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "error"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 120,
+          "prediction_hash": "1755615716503",
+          "prediction_date": "2025-08-19 15:01:56",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 2,
+          "predicted_away_score": 1
+        },
+        "predictionsSample": [
+          {
+            "id": 120,
+            "prediction_hash": "1755615716503",
+            "prediction_date": "2025-08-19 15:01:56",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 2,
+            "predicted_away_score": 1
+          }
+        ],
+        "hasResult": true,
+        "latestResult": {
+          "id": 3192,
+          "home_score": 2,
+          "away_score": 0,
+          "result_date": "2025-08-19 15:50:01"
+        }
+      }
+    },
+    "1421146": {
+      "fixtureId": 1421146,
+      "files": [
+        "tmp_analysis_1421146_error.json"
+      ],
+      "hasErrorFile": true,
+      "tmpPrimaryFile": "tmp_analysis_1421146_error.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "error"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 123,
+          "prediction_hash": "1755615876385",
+          "prediction_date": "2025-08-19 15:04:36",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 1,
+          "predicted_away_score": 2
+        },
+        "predictionsSample": [
+          {
+            "id": 123,
+            "prediction_hash": "1755615876385",
+            "prediction_date": "2025-08-19 15:04:36",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 1,
+            "predicted_away_score": 2
+          }
+        ],
+        "hasResult": true,
+        "latestResult": {
+          "id": 3189,
+          "home_score": 2,
+          "away_score": 1,
+          "result_date": "2025-08-19 15:50:01"
+        }
+      }
+    },
+    "1421147": {
+      "fixtureId": 1421147,
+      "files": [
+        "tmp_analysis_1421147_error.json"
+      ],
+      "hasErrorFile": true,
+      "tmpPrimaryFile": "tmp_analysis_1421147_error.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "error"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 32,
+          "prediction_hash": "50|25|25|3|2|65|[]|[]",
+          "prediction_date": "2025-08-12 20:53:23",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 3,
+          "predicted_away_score": 2
+        },
+        "predictionsSample": [
+          {
+            "id": 32,
+            "prediction_hash": "50|25|25|3|2|65|[]|[]",
+            "prediction_date": "2025-08-12 20:53:23",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 3,
+            "predicted_away_score": 2
+          }
+        ],
+        "hasResult": true,
+        "latestResult": {
+          "id": 3202,
+          "home_score": 3,
+          "away_score": 2,
+          "result_date": "2025-08-19 15:50:02"
+        }
+      }
+    },
+    "1421148": {
+      "fixtureId": 1421148,
+      "files": [
+        "tmp_analysis_1421148_error.json"
+      ],
+      "hasErrorFile": true,
+      "tmpPrimaryFile": "tmp_analysis_1421148_error.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "error"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 128,
+          "prediction_hash": "1755615910078",
+          "prediction_date": "2025-08-19 15:05:10",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 3,
+          "predicted_away_score": 1
+        },
+        "predictionsSample": [
+          {
+            "id": 128,
+            "prediction_hash": "1755615910078",
+            "prediction_date": "2025-08-19 15:05:10",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 3,
+            "predicted_away_score": 1
+          }
+        ],
+        "hasResult": true,
+        "latestResult": {
+          "id": 3188,
+          "home_score": 5,
+          "away_score": 0,
+          "result_date": "2025-08-19 15:50:01"
+        }
+      }
+    },
+    "1421149": {
+      "fixtureId": 1421149,
+      "files": [
+        "tmp_analysis_1421149_error.json"
+      ],
+      "hasErrorFile": true,
+      "tmpPrimaryFile": "tmp_analysis_1421149_error.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "error"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 78,
+          "prediction_hash": "50|25|25|3|0|65|[]|[]",
+          "prediction_date": "2025-08-12 20:53:23",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 3,
+          "predicted_away_score": 0
+        },
+        "predictionsSample": [
+          {
+            "id": 78,
+            "prediction_hash": "50|25|25|3|0|65|[]|[]",
+            "prediction_date": "2025-08-12 20:53:23",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 3,
+            "predicted_away_score": 0
+          }
+        ],
+        "hasResult": true,
+        "latestResult": {
+          "id": 3199,
+          "home_score": 3,
+          "away_score": 0,
+          "result_date": "2025-08-19 15:50:02"
+        }
+      }
+    },
+    "1421150": {
+      "fixtureId": 1421150,
+      "files": [
+        "tmp_analysis_1421150_error.json"
+      ],
+      "hasErrorFile": true,
+      "tmpPrimaryFile": "tmp_analysis_1421150_error.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "error"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 29,
+          "prediction_hash": "54|22|24|4|2|65|[\"home w-w-w-w-w\",\"higher avg goals (3.4) at home\",\"lech scoring form (3.0 avg, l-w-w-w-w)\",\"high-tempo matchup; xg > 3.5\",\"strong home advantage at marakana\"]|[\"over 2.5 goals\",\"over 3.5 goals\",\"both teams to score: yes\",\"crvena zvezda draw no bet\",\"crvena zvezda over 1.5 team goals\"]",
+          "prediction_date": "2025-08-12 19:09:40",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 4,
+          "predicted_away_score": 2
+        },
+        "predictionsSample": [
+          {
+            "id": 29,
+            "prediction_hash": "54|22|24|4|2|65|[\"home w-w-w-w-w\",\"higher avg goals (3.4) at home\",\"lech scoring form (3.0 avg, l-w-w-w-w)\",\"high-tempo matchup; xg > 3.5\",\"strong home advantage at marakana\"]|[\"over 2.5 goals\",\"over 3.5 goals\",\"both teams to score: yes\",\"crvena zvezda draw no bet\",\"crvena zvezda over 1.5 team goals\"]",
+            "prediction_date": "2025-08-12 19:09:40",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 4,
+            "predicted_away_score": 2
+          }
+        ],
+        "hasResult": true,
+        "latestResult": {
+          "id": 3203,
+          "home_score": 1,
+          "away_score": 1,
+          "result_date": "2025-08-19 15:50:02"
+        }
+      }
+    },
+    "1421222": {
+      "fixtureId": 1421222,
+      "files": [
+        "tmp_analysis_1421222_error.json"
+      ],
+      "hasErrorFile": true,
+      "tmpPrimaryFile": "tmp_analysis_1421222_error.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "error"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 129,
+          "prediction_hash": "1755615922144",
+          "prediction_date": "2025-08-19 15:05:22",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 2,
+          "predicted_away_score": 1
+        },
+        "predictionsSample": [
+          {
+            "id": 129,
+            "prediction_hash": "1755615922144",
+            "prediction_date": "2025-08-19 15:05:22",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 2,
+            "predicted_away_score": 1
+          }
+        ],
+        "hasResult": true,
+        "latestResult": {
+          "id": 3187,
+          "home_score": 1,
+          "away_score": 3,
+          "result_date": "2025-08-19 15:50:01"
+        }
+      }
+    },
+    "1429256": {
+      "fixtureId": 1429256,
+      "files": [
+        "tmp_analysis_1429256_error.json"
+      ],
+      "hasErrorFile": true,
+      "tmpPrimaryFile": "tmp_analysis_1429256_error.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "error"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 130,
+          "prediction_hash": "1755616083320",
+          "prediction_date": "2025-08-19 15:08:03",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 2,
+          "predicted_away_score": 1
+        },
+        "predictionsSample": [
+          {
+            "id": 130,
+            "prediction_hash": "1755616083320",
+            "prediction_date": "2025-08-19 15:08:03",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 2,
+            "predicted_away_score": 1
+          }
+        ],
+        "hasResult": true,
+        "latestResult": {
+          "id": 3186,
+          "home_score": 2,
+          "away_score": 1,
+          "result_date": "2025-08-19 15:50:01"
+        }
+      }
+    },
+    "1435545": {
+      "fixtureId": 1435545,
+      "files": [
+        "tmp_analysis_1435545.json"
+      ],
+      "hasErrorFile": false,
+      "tmpPrimaryFile": "tmp_analysis_1435545.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "requestUrl",
+          "status",
+          "data"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 125,
+          "prediction_hash": "1755615877456",
+          "prediction_date": "2025-08-19 15:04:37",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 2,
+          "predicted_away_score": 2
+        },
+        "predictionsSample": [
+          {
+            "id": 125,
+            "prediction_hash": "1755615877456",
+            "prediction_date": "2025-08-19 15:04:37",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 2,
+            "predicted_away_score": 2
+          }
+        ],
+        "hasResult": false,
+        "latestResult": null
+      }
+    },
+    "1435546": {
+      "fixtureId": 1435546,
+      "files": [
+        "tmp_analysis_1435546.json"
+      ],
+      "hasErrorFile": false,
+      "tmpPrimaryFile": "tmp_analysis_1435546.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "requestUrl",
+          "status",
+          "data"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 126,
+          "prediction_hash": "1755615877465",
+          "prediction_date": "2025-08-19 15:04:37",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 3,
+          "predicted_away_score": 1
+        },
+        "predictionsSample": [
+          {
+            "id": 126,
+            "prediction_hash": "1755615877465",
+            "prediction_date": "2025-08-19 15:04:37",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 3,
+            "predicted_away_score": 1
+          }
+        ],
+        "hasResult": false,
+        "latestResult": null
+      }
+    },
+    "1435547": {
+      "fixtureId": 1435547,
+      "files": [
+        "tmp_analysis_1435547.json"
+      ],
+      "hasErrorFile": false,
+      "tmpPrimaryFile": "tmp_analysis_1435547.json",
+      "tmpContentSummary": {
+        "keys": [
+          "fetchedAt",
+          "fixtureId",
+          "requestUrl",
+          "status",
+          "data"
+        ]
+      },
+      "db": {
+        "numPredictions": 1,
+        "latestPrediction": {
+          "id": 127,
+          "prediction_hash": "1755615877476",
+          "prediction_date": "2025-08-19 15:04:37",
+          "ai_model": "ChatGPT-5",
+          "predicted_home_score": 2,
+          "predicted_away_score": 2
+        },
+        "predictionsSample": [
+          {
+            "id": 127,
+            "prediction_hash": "1755615877476",
+            "prediction_date": "2025-08-19 15:04:37",
+            "ai_model": "ChatGPT-5",
+            "predicted_home_score": 2,
+            "predicted_away_score": 2
+          }
+        ],
+        "hasResult": false,
+        "latestResult": null
+      }
+    }
+  },
+  "missingFilesForDbFixtures": [
+    999999,
+    1380412,
+    1380415
+  ],
+  "filesWithoutDbPredictions": []
+}

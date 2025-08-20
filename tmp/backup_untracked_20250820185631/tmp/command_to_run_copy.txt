@@ -1,0 +1,1 @@
+bash -x scripts/create_pr_with_curl.sh 2>&1 | tee tmp/pr_create_output.txt

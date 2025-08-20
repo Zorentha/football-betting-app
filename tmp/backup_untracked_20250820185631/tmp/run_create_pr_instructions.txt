@@ -1,0 +1,42 @@
+How to run the PR creation command locally (step-by-step)
+
+Important safety notes:
+- Never paste your Personal Access Token (PAT) into this chat. Set it locally in your terminal only.
+- The commands below create a pull request in the repository origin. Make sure you want to create the PR before running.
+
+A) Git Bash (recommended on Windows) / WSL / Linux / macOS
+1. Open Git Bash in the project root (c:/Users/lukas/zorentha-ai/football-betting-app).
+2. Export your PAT into the environment (do not paste it anywhere else):
+   export GITHUB_TOKEN="ghp_XXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+3. Run the one-line curl command to create the PR:
+   curl -v -H "Authorization: token $GITHUB_TOKEN" -H "Accept: application/vnd.github+json" -d '{"title":"Make OpenAI expected output tokens configurable and remove hardcoded cap","head":"feature/openai-expected-output-tokens","base":"main","body":"See PR_DESCRIPTION.md in repository for full details."}' https://api.github.com/repos/Zorentha/football-betting-app/pulls
+4. Copy the full output (it will be JSON). If creation succeeds the response JSON will contain "html_url": "https://github.com/....". Paste that URL here if you want me to verify.
+
+B) PowerShell (Windows)
+1. Open PowerShell in the project root.
+2. Set the PAT in the environment for this session:
+   $env:GITHUB_TOKEN = "ghp_XXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+3. Run curl.exe via PowerShell (use the exact line below):
+   curl.exe -v -H "Authorization: token $env:GITHUB_TOKEN" -H "Accept: application/vnd.github+json" -d '{"title":"Make OpenAI expected output tokens configurable and remove hardcoded cap","head":"feature/openai-expected-output-tokens","base":"main","body":"See PR_DESCRIPTION.md in repository for full details."}' https://api.github.com/repos/Zorentha/football-betting-app/pulls
+4. Copy the full output. Successful response contains "html_url".
+
+C) Using the prepared helper script (prints the command)
+1. Open Git Bash (or PowerShell that can run bash).
+2. Run:
+   bash scripts/run_create_pr_local.sh
+   (This prints the exact curl line(s). Copy-paste the printed line and run it after setting GITHUB_TOKEN.)
+
+D) If you prefer GitHub CLI (gh)
+1. Install gh and authenticate:
+   gh auth login
+2. Create PR:
+   gh pr create --title "Make OpenAI expected output tokens configurable and remove hardcoded cap" --body "See PR_DESCRIPTION.md in repository for full details." --base main --head feature/openai-expected-output-tokens
+3. gh will print the created PR URL.
+
+What to paste back here after running:
+- The full curl output (the JSON response). Do NOT paste your GITHUB_TOKEN.
+- If successful, paste the "html_url" from the JSON (the PR link).
+
+If you want, I can also provide a single PowerShell .ps1 script that sets GITHUB_TOKEN from a local Windows secret store and runs the curl (but you'll still run it locally).
+
+End of instructions.
