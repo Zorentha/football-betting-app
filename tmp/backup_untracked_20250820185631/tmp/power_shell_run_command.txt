@@ -1,0 +1,11 @@
+Copy this exact line into PowerShell (open PowerShell in repository root) and press Enter:
+
+powershell -NoProfile -ExecutionPolicy Bypass -File tmp/run_pr_now.ps1
+
+Notes:
+- The script will prompt you to paste your PAT (input is hidden).
+- It will sanitize the token, attempt to create the PR from head=feature/openai-expected-output-tokens-rebased -> base=main, then clear the token from the process.
+- After it finishes, paste the full console output here (or just the "html_url" if successful).
+
+Alternative one-line (if you prefer to paste token manually and run curl directly):
+$env:GITHUB_TOKEN = 'ghp_<YOUR_PAT_HERE>'; curl.exe -v -H "Authorization: token $env:GITHUB_TOKEN" -H "Accept: application/vnd.github+json" -d '{"title":"Make OpenAI expected output tokens configurable and remove hardcoded cap","head":"feature/openai-expected-output-tokens-rebased","base":"main","body":"See PR_DESCRIPTION.md in repository for full details."}' https://api.github.com/repos/Zorentha/football-betting-app/pulls

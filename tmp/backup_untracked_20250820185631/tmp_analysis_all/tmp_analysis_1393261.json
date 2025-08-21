@@ -1,0 +1,45 @@
+{
+  "fetchedAt": "2025-08-12T16:10:10.346Z",
+  "fixtureId": 1393261,
+  "requestUrl": "http://localhost:3001/api/betting/fixtures/1393261/analyze",
+  "status": 200,
+  "data": {
+    "success": true,
+    "data": {
+      "fixtureId": 1393261,
+      "teams": {
+        "home": "Blackburn",
+        "away": "Bradford"
+      },
+      "aiAnalysis": {
+        "probabilities": {
+          "homeWin": 38,
+          "draw": 28,
+          "awayWin": 34
+        },
+        "predictedScore": {
+          "home": 2,
+          "away": 1
+        },
+        "confidence": "medium",
+        "confidencePercentage": 65,
+        "keyFactors": [
+          "Home advantage",
+          "Blackburn higher avg goals (1.6 vs 1.2)",
+          "Bradford stronger recent form (DWWWW)",
+          "Expected goals 2.5-3.5",
+          "Both teams likely to score"
+        ],
+        "playerMatchups": [],
+        "matchupAnalysis": [],
+        "bettingTips": [
+          "Both Teams To Score: Yes",
+          "Over 2.5 Goals (lean)",
+          "Blackburn Draw No Bet",
+          "Small stake on Draw"
+        ]
+      }
+    },
+    "savedToDatabase": true
+  }
+}

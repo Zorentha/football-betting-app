@@ -1,0 +1,322 @@
+{
+  "fetchedAt": "2025-08-19T15:43:01.439Z",
+  "fixtureId": 1393278,
+  "requestUrl": "http://localhost:3001/api/betting/fixtures/1393278/analyze",
+  "status": 200,
+  "data": {
+    "success": true,
+    "data": {
+      "fixtureId": 1393278,
+      "teams": {
+        "home": "Northampton",
+        "away": "Southampton"
+      },
+      "aiAnalysis": {
+        "probabilities": {
+          "homeWin": 24,
+          "draw": 28,
+          "awayWin": 48
+        },
+        "predictedScore": {
+          "home": 1,
+          "away": 2
+        },
+        "confidence": "medium",
+        "confidencePercentage": 65,
+        "keyFactors": [
+          "Away in better form (DWWDL)",
+          "Home low scoring (0.8 avg goals)",
+          "Defensive trend; under 2.5 expected",
+          "Away higher points (8 vs 4)"
+        ],
+        "playerMatchups": [
+          {
+            "category": "Bramkarz vs Napastnik",
+            "homePlayer": "R. Fitzsimons (BR)",
+            "awayPlayer": "C. Archer (NAP)",
+            "description": "R. Fitzsimons będzie bronił przeciw C. Archer"
+          },
+          {
+            "category": "Bramkarz vs Napastnik",
+            "homePlayer": "R. Fitzsimons (BR)",
+            "awayPlayer": "B. Brereton (NAP)",
+            "description": "R. Fitzsimons będzie bronił przeciw B. Brereton"
+          },
+          {
+            "category": "Bramkarz vs Napastnik",
+            "homePlayer": "R. Fitzsimons (BR)",
+            "awayPlayer": "D. Downs (NAP)",
+            "description": "R. Fitzsimons będzie bronił przeciw D. Downs"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "J. Wormleighton (CB)",
+            "awayPlayer": "C. Archer (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "J. Wormleighton (CB)",
+            "awayPlayer": "B. Brereton (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "J. Wormleighton (CB)",
+            "awayPlayer": "D. Downs (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "C. McCarthy (CB)",
+            "awayPlayer": "C. Archer (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "C. McCarthy (CB)",
+            "awayPlayer": "B. Brereton (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "C. McCarthy (CB)",
+            "awayPlayer": "D. Downs (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "J. Willis (CB)",
+            "awayPlayer": "C. Archer (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "J. Willis (CB)",
+            "awayPlayer": "B. Brereton (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "J. Willis (CB)",
+            "awayPlayer": "D. Downs (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "M. Dyche (CB)",
+            "awayPlayer": "C. Archer (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "M. Dyche (CB)",
+            "awayPlayer": "B. Brereton (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "M. Dyche (CB)",
+            "awayPlayer": "D. Downs (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "J. Perkins (CB)",
+            "awayPlayer": "C. Archer (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "J. Perkins (CB)",
+            "awayPlayer": "B. Brereton (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "J. Perkins (CB)",
+            "awayPlayer": "D. Downs (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "C. McGeehan (CM)",
+            "awayPlayer": "Y. Sugawara (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "C. McGeehan (CM)",
+            "awayPlayer": "S. Charles (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          }
+        ],
+        "matchupAnalysis": [
+          {
+            "homePlayer": "R. Fitzsimons (BR)",
+            "awayPlayer": "C. Archer (NAP)",
+            "category": "Bramkarz vs Napastnik",
+            "advantage": "uncertain",
+            "analysis": "Fitzsimons ma ocenę 6.3 w 1 meczu, a brak bieżących statystyk dla Archera — trudno wskazać faworyta tego pojedynku."
+          },
+          {
+            "homePlayer": "R. Fitzsimons (BR)",
+            "awayPlayer": "B. Brereton (NAP)",
+            "category": "Bramkarz vs Napastnik",
+            "advantage": "uncertain",
+            "analysis": "Ocena Fitzsimonsa 6.3 w 1 występie sugeruje przeciętną formę, ale brak danych dla Breretona utrudnia rozstrzygnięcie przewagi."
+          },
+          {
+            "homePlayer": "R. Fitzsimons (BR)",
+            "awayPlayer": "D. Downs (NAP)",
+            "category": "Bramkarz vs Napastnik",
+            "advantage": "uncertain",
+            "analysis": "Przy ocenie 6.3 Fitzsimonsa i braku statystyk Downsa przewaga w pojedynku pozostaje niepewna."
+          },
+          {
+            "homePlayer": "J. Wormleighton (CB)",
+            "awayPlayer": "C. Archer (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Brak zweryfikowanych statystyk bieżącego sezonu dla Wormleightona i Archera, dlatego trudno wskazać przewagę w tym starciu."
+          },
+          {
+            "homePlayer": "J. Wormleighton (CB)",
+            "awayPlayer": "B. Brereton (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Nie ma dostępnych liczb dla Wormleightona ani Breretona w tym sezonie, więc ocena przewagi jest niepewna."
+          },
+          {
+            "homePlayer": "J. Wormleighton (CB)",
+            "awayPlayer": "D. Downs (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Bez danych statystycznych dla obu graczy nie da się wiarygodnie określić, kto ma przewagę."
+          },
+          {
+            "homePlayer": "C. McCarthy (CB)",
+            "awayPlayer": "C. Archer (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Brak danych liczbowych dla C. McCarthy’ego i Archera w tym sezonie — pojedynek pozostaje nierozstrzygnięty na papierze."
+          },
+          {
+            "homePlayer": "C. McCarthy (CB)",
+            "awayPlayer": "B. Brereton (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Nie dysponujemy statystykami aktualnej formy obu zawodników, więc przewaga jest niejasna."
+          },
+          {
+            "homePlayer": "C. McCarthy (CB)",
+            "awayPlayer": "D. Downs (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Brak twardych danych dla McCarthy’ego i Downsa — trudno wskazać stronę z atutem."
+          },
+          {
+            "homePlayer": "J. Willis (CB)",
+            "awayPlayer": "C. Archer (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Nie ma dostępnych statystyk bieżącego sezonu dla Willisa i Archera, więc nie można wskazać przewagi."
+          },
+          {
+            "homePlayer": "J. Willis (CB)",
+            "awayPlayer": "B. Brereton (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Z powodu braku liczb dla obu graczy ocena tego pojedynku pozostaje niepewna."
+          },
+          {
+            "homePlayer": "J. Willis (CB)",
+            "awayPlayer": "D. Downs (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Brak danych dla Willisa i Downsa w tym sezonie uniemożliwia wskazanie faworyta."
+          },
+          {
+            "homePlayer": "M. Dyche (CB)",
+            "awayPlayer": "C. Archer (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Ponieważ nie mamy aktualnych statystyk Dyche’a ani Archera, przewaga pozostaje niewiadomą."
+          },
+          {
+            "homePlayer": "M. Dyche (CB)",
+            "awayPlayer": "B. Brereton (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Brak bieżących danych liczbowych dla Dyche’a i Breretona — nie da się rozstrzygnąć przewagi."
+          },
+          {
+            "homePlayer": "M. Dyche (CB)",
+            "awayPlayer": "D. Downs (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Nie posiadamy statystyk formy obu zawodników w tym sezonie, więc ocena przewagi jest niepewna."
+          },
+          {
+            "homePlayer": "J. Perkins (CB)",
+            "awayPlayer": "C. Archer (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Z uwagi na brak danych dla Perkinsa i Archera nie można wskazać wyraźnej przewagi."
+          },
+          {
+            "homePlayer": "J. Perkins (CB)",
+            "awayPlayer": "B. Brereton (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Nie mamy zweryfikowanych statystyk obu zawodników — przewaga w tym duecie pozostaje niejasna."
+          },
+          {
+            "homePlayer": "J. Perkins (CB)",
+            "awayPlayer": "D. Downs (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Brak twardych liczb dla Perkinsa i Downsa; trudno ocenić, kto ma atut w tym starciu."
+          },
+          {
+            "homePlayer": "C. McGeehan (CM)",
+            "awayPlayer": "Y. Sugawara (CM)",
+            "category": "Środek pola",
+            "advantage": "home",
+            "analysis": "McGeehan ma ocenę 6.6 w 1 meczu, a brak danych dla Sugawary sugeruje minimalną przewagę gospodarza w środku pola."
+          },
+          {
+            "homePlayer": "C. McGeehan (CM)",
+            "awayPlayer": "S. Charles (CM)",
+            "category": "Środek pola",
+            "advantage": "home",
+            "analysis": "Przy ocenie McGeehana 6.6 i braku statystyk Charlesa, Northampton ma niewielki atut w tym pojedynku."
+          }
+        ],
+        "bettingTips": [
+          {
+            "type": "Southampton win",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Under 2.5 goals",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Both teams to score: No",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Southampton draw no bet",
+            "probability": null,
+            "reasoning": ""
+          }
+        ]
+      }
+    },
+    "savedToDatabase": true
+  }
+}

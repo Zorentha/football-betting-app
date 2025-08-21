@@ -1,0 +1,323 @@
+{
+  "fetchedAt": "2025-08-19T16:31:38.708Z",
+  "fixtureId": 1393276,
+  "requestUrl": "http://localhost:3001/api/betting/fixtures/1393276/analyze",
+  "status": 200,
+  "data": {
+    "success": true,
+    "data": {
+      "fixtureId": 1393276,
+      "teams": {
+        "home": "Leyton Orient",
+        "away": "Wycombe"
+      },
+      "aiAnalysis": {
+        "probabilities": {
+          "homeWin": 33,
+          "draw": 36,
+          "awayWin": 31
+        },
+        "predictedScore": {
+          "home": 1,
+          "away": 1
+        },
+        "confidence": "medium",
+        "confidencePercentage": 65,
+        "keyFactors": [
+          "Both sides on 5 points",
+          "Low avg goals (1.0 each)",
+          "Recent forms mixed with few wins",
+          "Home advantage Orient",
+          "Trend: under 2.5 goals"
+        ],
+        "playerMatchups": [
+          {
+            "category": "Środek pola",
+            "homePlayer": "T. Bakinson (CM)",
+            "awayPlayer": "G. Abbott (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "T. Bakinson (CM)",
+            "awayPlayer": "C. Boyd-Munce (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "T. Bakinson (CM)",
+            "awayPlayer": "J. Tilley (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "T. Bakinson (CM)",
+            "awayPlayer": "M. Westergaard (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "T. Bakinson (CM)",
+            "awayPlayer": "F. Onyedinma (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "J. White (CM)",
+            "awayPlayer": "G. Abbott (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "J. White (CM)",
+            "awayPlayer": "C. Boyd-Munce (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "J. White (CM)",
+            "awayPlayer": "J. Tilley (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "J. White (CM)",
+            "awayPlayer": "M. Westergaard (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "J. White (CM)",
+            "awayPlayer": "F. Onyedinma (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "D. Mitchell (CM)",
+            "awayPlayer": "G. Abbott (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "D. Mitchell (CM)",
+            "awayPlayer": "C. Boyd-Munce (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "D. Mitchell (CM)",
+            "awayPlayer": "J. Tilley (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "D. Mitchell (CM)",
+            "awayPlayer": "M. Westergaard (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "D. Mitchell (CM)",
+            "awayPlayer": "F. Onyedinma (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "J. Moorhouse (CM)",
+            "awayPlayer": "G. Abbott (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "J. Moorhouse (CM)",
+            "awayPlayer": "C. Boyd-Munce (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "J. Moorhouse (CM)",
+            "awayPlayer": "J. Tilley (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "J. Moorhouse (CM)",
+            "awayPlayer": "M. Westergaard (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "J. Moorhouse (CM)",
+            "awayPlayer": "F. Onyedinma (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          }
+        ],
+        "matchupAnalysis": [
+          {
+            "homePlayer": "T. Bakinson (CM)",
+            "awayPlayer": "G. Abbott (CM)",
+            "category": "Środek pola",
+            "advantage": "home",
+            "analysis": "Bakinson ma ocenę 7.5 po 1 meczu, podczas gdy dla Abbotta brak danych w udostępnionych statystykach — lekka przewaga gospodarzy."
+          },
+          {
+            "homePlayer": "T. Bakinson (CM)",
+            "awayPlayer": "C. Boyd-Munce (CM)",
+            "category": "Środek pola",
+            "advantage": "home",
+            "analysis": "Bakinson (7.5/1 mecz) wypada lepiej od Boyd‑Munce, dla którego brak danych — przewaga gospodarzy."
+          },
+          {
+            "homePlayer": "T. Bakinson (CM)",
+            "awayPlayer": "J. Tilley (CM)",
+            "category": "Środek pola",
+            "advantage": "home",
+            "analysis": "Bakinson z oceną 7.5 po 1 meczu kontra Tilley bez dostępnych statystyk — przewaga po stronie gospodarzy."
+          },
+          {
+            "homePlayer": "T. Bakinson (CM)",
+            "awayPlayer": "M. Westergaard (CM)",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Obaj mają ocenę 7.5 po 1 meczu, więc to wyrównany pojedynek w centrum boiska."
+          },
+          {
+            "homePlayer": "T. Bakinson (CM)",
+            "awayPlayer": "F. Onyedinma (CM)",
+            "category": "Środek pola",
+            "advantage": "home",
+            "analysis": "Bakinson (7.5/1 mecz) ma mierzalną formę, a dla Onyedinmy brak danych — przewaga gospodarzy."
+          },
+          {
+            "homePlayer": "J. White (CM)",
+            "awayPlayer": "G. Abbott (CM)",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Brak twardych danych dla White'a i Abbotta w udostępnionych statystykach, więc trudno wskazać przewagę."
+          },
+          {
+            "homePlayer": "J. White (CM)",
+            "awayPlayer": "C. Boyd-Munce (CM)",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Brak danych dla obu w zestawie top‑statystyk — pojedynek niepewny."
+          },
+          {
+            "homePlayer": "J. White (CM)",
+            "awayPlayer": "J. Tilley (CM)",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Obu zawodnikom brak udostępnionych statystyk — brak wyraźnej przewagi."
+          },
+          {
+            "homePlayer": "J. White (CM)",
+            "awayPlayer": "M. Westergaard (CM)",
+            "category": "Środek pola",
+            "advantage": "away",
+            "analysis": "Westergaard ma 7.5 po 1 meczu, podczas gdy dla White'a brak danych, co sugeruje przewagę gości."
+          },
+          {
+            "homePlayer": "J. White (CM)",
+            "awayPlayer": "F. Onyedinma (CM)",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Dla obu brak danych w udostępnionych statystykach — rozstrzygnięcie niepewne."
+          },
+          {
+            "homePlayer": "D. Mitchell (CM)",
+            "awayPlayer": "G. Abbott (CM)",
+            "category": "Środek pola",
+            "advantage": "home",
+            "analysis": "Mitchell ma ocenę 7.2 po 1 meczu, a dla Abbotta brak danych — przewaga gospodarzy."
+          },
+          {
+            "homePlayer": "D. Mitchell (CM)",
+            "awayPlayer": "C. Boyd-Munce (CM)",
+            "category": "Środek pola",
+            "advantage": "home",
+            "analysis": "Mitchell (7.2/1 mecz) vs Boyd‑Munce bez danych — lekka przewaga gospodarzy."
+          },
+          {
+            "homePlayer": "D. Mitchell (CM)",
+            "awayPlayer": "J. Tilley (CM)",
+            "category": "Środek pola",
+            "advantage": "home",
+            "analysis": "Mitchell z 7.2 po 1 meczu przeciw Tilley'emu bez statystyk — przewaga gospodarzy."
+          },
+          {
+            "homePlayer": "D. Mitchell (CM)",
+            "awayPlayer": "M. Westergaard (CM)",
+            "category": "Środek pola",
+            "advantage": "away",
+            "analysis": "Westergaard 7.5 przewyższa ocenę Mitchella 7.2 (po 1 meczu), co daje minimalną przewagę gości."
+          },
+          {
+            "homePlayer": "D. Mitchell (CM)",
+            "awayPlayer": "F. Onyedinma (CM)",
+            "category": "Środek pola",
+            "advantage": "home",
+            "analysis": "Mitchell (7.2/1 mecz) ma mierzalną formę, a dla Onyedinmy brak danych — przewaga gospodarzy."
+          },
+          {
+            "homePlayer": "J. Moorhouse (CM)",
+            "awayPlayer": "G. Abbott (CM)",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Dla Moorhouse'a i Abbotta brak danych w top‑statystykach — wynik starcia niepewny."
+          },
+          {
+            "homePlayer": "J. Moorhouse (CM)",
+            "awayPlayer": "C. Boyd-Munce (CM)",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Brak udostępnionych statystyk dla obu, więc przewaga nie jest jasna."
+          },
+          {
+            "homePlayer": "J. Moorhouse (CM)",
+            "awayPlayer": "J. Tilley (CM)",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Obu brakuje w zestawie statystyk — trudno wyrokować o przewadze."
+          },
+          {
+            "homePlayer": "J. Moorhouse (CM)",
+            "awayPlayer": "M. Westergaard (CM)",
+            "category": "Środek pola",
+            "advantage": "away",
+            "analysis": "Westergaard 7.5 (1 mecz) kontra Moorhouse bez danych — wyraźna przewaga gości."
+          },
+          {
+            "homePlayer": "J. Moorhouse (CM)",
+            "awayPlayer": "F. Onyedinma (CM)",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Brak danych dla obu — pojedynek niepewny."
+          }
+        ],
+        "bettingTips": [
+          {
+            "type": "Under 2.5 goals",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Draw",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Double chance: Orient or Draw",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Correct score: 1-1",
+            "probability": null,
+            "reasoning": ""
+          }
+        ]
+      }
+    },
+    "savedToDatabase": true
+  }
+}

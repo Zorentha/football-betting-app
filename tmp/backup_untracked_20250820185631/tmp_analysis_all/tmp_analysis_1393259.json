@@ -1,0 +1,323 @@
+{
+  "fetchedAt": "2025-08-19T15:10:04.402Z",
+  "fixtureId": 1393259,
+  "requestUrl": "http://localhost:3001/api/betting/fixtures/1393259/analyze",
+  "status": 200,
+  "data": {
+    "success": true,
+    "data": {
+      "fixtureId": 1393259,
+      "teams": {
+        "home": "Barrow",
+        "away": "Preston"
+      },
+      "aiAnalysis": {
+        "probabilities": {
+          "homeWin": 28,
+          "draw": 33,
+          "awayWin": 39
+        },
+        "predictedScore": {
+          "home": 0,
+          "away": 1
+        },
+        "confidence": "medium",
+        "confidencePercentage": 65,
+        "keyFactors": [
+          "Very low avg goals both sides",
+          "Away slightly better form/points",
+          "Home struggles to score",
+          "Defensive matchup expected",
+          "Under 2.5 xG trend"
+        ],
+        "playerMatchups": [
+          {
+            "category": "🧤 Bramkarz vs Napastnik",
+            "homePlayer": "B. Winterbottom (BR)",
+            "awayPlayer": "M. Frøkjær-Jensen (NAP)",
+            "description": "B. Winterbottom będzie bronił przeciw M. Frøkjær-Jensen"
+          },
+          {
+            "category": "🧤 Bramkarz vs Napastnik",
+            "homePlayer": "B. Winterbottom (BR)",
+            "awayPlayer": "M. Osmajić (NAP)",
+            "description": "B. Winterbottom będzie bronił przeciw M. Osmajić"
+          },
+          {
+            "category": "🔰 Obrona vs Atak",
+            "homePlayer": "D. Worrall (CB)",
+            "awayPlayer": "M. Frøkjær-Jensen (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "🔰 Obrona vs Atak",
+            "homePlayer": "D. Worrall (CB)",
+            "awayPlayer": "M. Osmajić (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "🔰 Obrona vs Atak",
+            "homePlayer": "C. Raglan (CB)",
+            "awayPlayer": "M. Frøkjær-Jensen (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "🔰 Obrona vs Atak",
+            "homePlayer": "C. Raglan (CB)",
+            "awayPlayer": "M. Osmajić (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "🔰 Obrona vs Atak",
+            "homePlayer": "N. Canavan (CB)",
+            "awayPlayer": "M. Frøkjær-Jensen (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "🔰 Obrona vs Atak",
+            "homePlayer": "N. Canavan (CB)",
+            "awayPlayer": "M. Osmajić (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "🔰 Obrona vs Atak",
+            "homePlayer": "L. Shipley (CB)",
+            "awayPlayer": "M. Frøkjær-Jensen (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "🔰 Obrona vs Atak",
+            "homePlayer": "L. Shipley (CB)",
+            "awayPlayer": "M. Osmajić (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "🔰 Obrona vs Atak",
+            "homePlayer": "B. Jackson (CB)",
+            "awayPlayer": "M. Frøkjær-Jensen (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "🔰 Obrona vs Atak",
+            "homePlayer": "B. Jackson (CB)",
+            "awayPlayer": "M. Osmajić (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "⚔️ Środek pola",
+            "homePlayer": "J. Earing (CM)",
+            "awayPlayer": "Pol Valentín (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "⚔️ Środek pola",
+            "homePlayer": "J. Earing (CM)",
+            "awayPlayer": "T. Carroll (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "⚔️ Środek pola",
+            "homePlayer": "J. Earing (CM)",
+            "awayPlayer": "S. Þórðarson (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "⚔️ Środek pola",
+            "homePlayer": "J. Earing (CM)",
+            "awayPlayer": "A. Devine (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "⚔️ Środek pola",
+            "homePlayer": "J. Earing (CM)",
+            "awayPlayer": "J. Okkels (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "⚔️ Środek pola",
+            "homePlayer": "R. Booty (CM)",
+            "awayPlayer": "Pol Valentín (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "⚔️ Środek pola",
+            "homePlayer": "R. Booty (CM)",
+            "awayPlayer": "T. Carroll (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "⚔️ Środek pola",
+            "homePlayer": "R. Booty (CM)",
+            "awayPlayer": "S. Þórðarson (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          }
+        ],
+        "matchupAnalysis": [
+          {
+            "homePlayer": "B. Winterbottom (BR)",
+            "awayPlayer": "M. Frøkjær-Jensen (NAP)",
+            "category": "🧤 Bramkarz vs Napastnik",
+            "advantage": "away",
+            "analysis": "Frøkjær-Jensen ma ocenę 6.6 w 1 meczu, podczas gdy Winterbottom nie figuruje w top statystykach; to lekko faworyzuje napastnika w sytuacjach strzeleckich."
+          },
+          {
+            "homePlayer": "B. Winterbottom (BR)",
+            "awayPlayer": "M. Osmajić (NAP)",
+            "category": "🧤 Bramkarz vs Napastnik",
+            "advantage": "uncertain",
+            "analysis": "Brak top statystyk dla Winterbottoma i Osmajicia — trudno wskazać stronę z wyraźnym atutem w tym pojedynku."
+          },
+          {
+            "homePlayer": "D. Worrall (CB)",
+            "awayPlayer": "M. Frøkjær-Jensen (ST)",
+            "category": "🔰 Obrona vs Atak",
+            "advantage": "home",
+            "analysis": "Worrall uzyskał 6.9 w 1 meczu, wyżej niż Frøkjær-Jensen (6.6), co sugeruje przewagę stopera w bezpośrednich starciach."
+          },
+          {
+            "homePlayer": "D. Worrall (CB)",
+            "awayPlayer": "M. Osmajić (ST)",
+            "category": "🔰 Obrona vs Atak",
+            "advantage": "home",
+            "analysis": "Worrall ma ocenę 6.9 w 1 meczu, a Osmajić nie widnieje w top statystykach; przewaga po stronie obrońcy."
+          },
+          {
+            "homePlayer": "C. Raglan (CB)",
+            "awayPlayer": "M. Frøkjær-Jensen (ST)",
+            "category": "🔰 Obrona vs Atak",
+            "advantage": "away",
+            "analysis": "Raglan ma 6.3 w 1 meczu, niżej niż Frøkjær-Jensen (6.6), więc napastnik może częściej wygrywać te starcia."
+          },
+          {
+            "homePlayer": "C. Raglan (CB)",
+            "awayPlayer": "M. Osmajić (ST)",
+            "category": "🔰 Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Raglan ma 6.3 w 1 meczu, ale brak top statystyk Osmajicia nie pozwala na pewną ocenę — pojedynek otwarty."
+          },
+          {
+            "homePlayer": "N. Canavan (CB)",
+            "awayPlayer": "M. Frøkjær-Jensen (ST)",
+            "category": "🔰 Obrona vs Atak",
+            "advantage": "away",
+            "analysis": "Canavan nie figuruje w top statystykach, a Frøkjær-Jensen ma 6.6 w 1 meczu; przewaga po stronie napastnika."
+          },
+          {
+            "homePlayer": "N. Canavan (CB)",
+            "awayPlayer": "M. Osmajić (ST)",
+            "category": "🔰 Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Obaj bez top statystyk w dostępnym zestawieniu, dlatego przewaga jest niejednoznaczna."
+          },
+          {
+            "homePlayer": "L. Shipley (CB)",
+            "awayPlayer": "M. Frøkjær-Jensen (ST)",
+            "category": "🔰 Obrona vs Atak",
+            "advantage": "away",
+            "analysis": "Shipley bez danych w top statystykach, podczas gdy Frøkjær-Jensen notował 6.6 w 1 meczu — lekka przewaga napastnika."
+          },
+          {
+            "homePlayer": "L. Shipley (CB)",
+            "awayPlayer": "M. Osmajić (ST)",
+            "category": "🔰 Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Brak top statystyk dla obu, więc wynik tych pojedynków jest trudny do prognozy."
+          },
+          {
+            "homePlayer": "B. Jackson (CB)",
+            "awayPlayer": "M. Frøkjær-Jensen (ST)",
+            "category": "🔰 Obrona vs Atak",
+            "advantage": "away",
+            "analysis": "Jackson nie widnieje w top statystykach, a Frøkjær-Jensen ma 6.6 w 1 meczu; napastnik z przewagą."
+          },
+          {
+            "homePlayer": "B. Jackson (CB)",
+            "awayPlayer": "M. Osmajić (ST)",
+            "category": "🔰 Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Obaj bez wyróżnionych danych; przewaga w tym starciu pozostaje niepewna."
+          },
+          {
+            "homePlayer": "J. Earing (CM)",
+            "awayPlayer": "Pol Valentín (CM)",
+            "category": "⚔️ Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Earing i Pol Valentín nie mają top statystyk w zestawieniu, więc trudno wskazać faworyta w środku pola."
+          },
+          {
+            "homePlayer": "J. Earing (CM)",
+            "awayPlayer": "T. Carroll (CM)",
+            "category": "⚔️ Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Brak top statystyk dla obu pomocników; starcie zapowiada się wyrównane."
+          },
+          {
+            "homePlayer": "J. Earing (CM)",
+            "awayPlayer": "S. Þórðarson (CM)",
+            "category": "⚔️ Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Obaj bez danych top — przewaga nieokreślona."
+          },
+          {
+            "homePlayer": "J. Earing (CM)",
+            "awayPlayer": "A. Devine (CM)",
+            "category": "⚔️ Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Brak top statystyk po obu stronach, dlatego trudno o jednoznaczną ocenę przewagi."
+          },
+          {
+            "homePlayer": "J. Earing (CM)",
+            "awayPlayer": "J. Okkels (CM)",
+            "category": "⚔️ Środek pola",
+            "advantage": "away",
+            "analysis": "Okkels ma ocenę 6.5 w 1 meczu, Earing nie figuruje w top statystykach; lekka przewaga pomocnika gości."
+          },
+          {
+            "homePlayer": "R. Booty (CM)",
+            "awayPlayer": "Pol Valentín (CM)",
+            "category": "⚔️ Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Booty i Pol Valentín nie mają top statystyk, więc brak wyraźnego faworyta."
+          },
+          {
+            "homePlayer": "R. Booty (CM)",
+            "awayPlayer": "T. Carroll (CM)",
+            "category": "⚔️ Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Brak danych top dla obu — przewaga niepewna."
+          },
+          {
+            "homePlayer": "R. Booty (CM)",
+            "awayPlayer": "S. Þórðarson (CM)",
+            "category": "⚔️ Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Obaj bez top statystyk w zestawieniu; pojedynek pozostaje otwarty."
+          }
+        ],
+        "bettingTips": [
+          {
+            "type": "Under 2.5 goals",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Preston draw no bet",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Both teams to score: No",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Correct score 0-1 (small stake)",
+            "probability": null,
+            "reasoning": ""
+          }
+        ]
+      }
+    },
+    "savedToDatabase": true
+  }
+}

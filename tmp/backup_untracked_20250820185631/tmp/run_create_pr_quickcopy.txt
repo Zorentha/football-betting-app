@@ -1,0 +1,27 @@
+Quick copy-paste commands to create the PR locally (pick the one for your shell)
+
+IMPORTANT: Do NOT paste your PAT into chat. Run these locally and paste only the command output here.
+
+1) Git Bash (paste as a single line)
+export GITHUB_TOKEN="ghp_<YOUR_PAT_HERE>" && curl -v -H "Authorization: token $GITHUB_TOKEN" -H "Accept: application/vnd.github+json" -d '{"title":"Make OpenAI expected output tokens configurable and remove hardcoded cap","head":"feature/openai-expected-output-tokens","base":"main","body":"See PR_DESCRIPTION.md in repository for full details."}' https://api.github.com/repos/Zorentha/football-betting-app/pulls
+
+2) PowerShell (paste as a single line)
+$env:GITHUB_TOKEN = 'ghp_<YOUR_PAT_HERE>'; curl.exe -v -H "Authorization: token $env:GITHUB_TOKEN" -H "Accept: application/vnd.github+json" -d '{"title":"Make OpenAI expected output tokens configurable and remove hardcoded cap","head":"feature/openai-expected-output-tokens","base":"main","body":"See PR_DESCRIPTION.md in repository for full details."}' https://api.github.com/repos/Zorentha/football-betting-app/pulls
+
+3) If you prefer the helper script (prints the commands), run this in Git Bash:
+bash scripts/run_create_pr_local.sh
+-> Copy the printed curl line, then run it after setting GITHUB_TOKEN as in (1).
+
+What to paste back here:
+- The full curl output (JSON). If successful, it contains "html_url": "https://github.com/...." — paste that URL here.
+- If it fails, paste the entire output (do NOT include your token).
+
+Notes based on current repo state (what I checked for you):
+- I verified remote branches: origin/feature/openai-expected-output-tokens (SHA 041051d...) and origin/main (SHA e65ecf3...).
+- There is no common ancestor between those branches (merge-base empty), so I created and pushed a rebased branch earlier (feature/openai-expected-output-tokens-rebased). If you want PR from that branch instead, replace "feature/openai-expected-output-tokens" with "feature/openai-expected-output-tokens-rebased" in the commands above (head).
+- If you want me to create the PR from the rebased branch instead, run with head "feature/openai-expected-output-tokens-rebased".
+
+Example (Git Bash) for the rebased branch:
+export GITHUB_TOKEN="ghp_<YOUR_PAT_HERE>" && curl -v -H "Authorization: token $GITHUB_TOKEN" -H "Accept: application/vnd.github+json" -d '{"title":"Make OpenAI expected output tokens configurable and remove hardcoded cap","head":"feature/openai-expected-output-tokens-rebased","base":"main","body":"See PR_DESCRIPTION.md in repository for full details."}' https://api.github.com/repos/Zorentha/football-betting-app/pulls
+
+End.

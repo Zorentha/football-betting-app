@@ -1,0 +1,67 @@
+{
+  "fetchedAt": "2025-08-19T15:05:07.082Z",
+  "fixtureId": 1435547,
+  "requestUrl": "http://localhost:3001/api/betting/fixtures/1435547/analyze",
+  "status": 200,
+  "data": {
+    "success": true,
+    "data": {
+      "fixtureId": 1435547,
+      "teams": {
+        "home": "Rangers",
+        "away": "Club Brugge KV"
+      },
+      "aiAnalysis": {
+        "probabilities": {
+          "homeWin": 34,
+          "draw": 26,
+          "awayWin": 40
+        },
+        "predictedScore": {
+          "home": 2,
+          "away": 2
+        },
+        "confidence": "medium",
+        "confidencePercentage": 65,
+        "keyFactors": [
+          "Away form WWWWL",
+          "Home form WLDWD",
+          "Away points 12 vs 8",
+          "High-scoring trend (xG > 3.5)",
+          "Rangers avg goals 2.0",
+          "Club Brugge avg goals 1.6"
+        ],
+        "playerMatchups": [],
+        "matchupAnalysis": [],
+        "bettingTips": [
+          {
+            "type": "Over 2.5 goals",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Over 3.5 goals (small stake)",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Both Teams To Score - Yes",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Club Brugge Draw No Bet",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Club Brugge or Draw (Double Chance)",
+            "probability": null,
+            "reasoning": ""
+          }
+        ]
+      }
+    },
+    "savedToDatabase": true
+  }
+}

@@ -1,0 +1,323 @@
+{
+  "fetchedAt": "2025-08-19T15:55:50.926Z",
+  "fixtureId": 1393283,
+  "requestUrl": "http://localhost:3001/api/betting/fixtures/1393283/analyze",
+  "status": 200,
+  "data": {
+    "success": true,
+    "data": {
+      "fixtureId": 1393283,
+      "teams": {
+        "home": "Stockport County",
+        "away": "Crewe"
+      },
+      "aiAnalysis": {
+        "probabilities": {
+          "homeWin": 42,
+          "draw": 27,
+          "awayWin": 31
+        },
+        "predictedScore": {
+          "home": 2,
+          "away": 1
+        },
+        "confidence": "medium",
+        "confidencePercentage": 65,
+        "keyFactors": [
+          "Home advantage",
+          "Similar recent form",
+          "Stockport higher avg goals (1.8 vs 1.6)",
+          "Balanced matchup",
+          "Expected goals 2.5-3.5"
+        ],
+        "playerMatchups": [
+          {
+            "category": "Bramkarz vs Napastnik",
+            "homePlayer": "B. Hinchliffe",
+            "awayPlayer": "A. Thibaut",
+            "description": "B. Hinchliffe będzie bronił przeciw A. Thibaut."
+          },
+          {
+            "category": "Bramkarz vs Napastnik",
+            "homePlayer": "B. Hinchliffe",
+            "awayPlayer": "E. Tezgel",
+            "description": "B. Hinchliffe będzie bronił przeciw E. Tezgel."
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "C. Connolly",
+            "awayPlayer": "A. Thibaut",
+            "description": "Środkowy obrońca vs napastnik."
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "C. Connolly",
+            "awayPlayer": "E. Tezgel",
+            "description": "Środkowy obrońca vs napastnik."
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "E. Pye",
+            "awayPlayer": "A. Thibaut",
+            "description": "Środkowy obrońca vs napastnik."
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "E. Pye",
+            "awayPlayer": "E. Tezgel",
+            "description": "Środkowy obrońca vs napastnik."
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "D. Andrew",
+            "awayPlayer": "A. Thibaut",
+            "description": "Środkowy obrońca vs napastnik."
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "D. Andrew",
+            "awayPlayer": "E. Tezgel",
+            "description": "Środkowy obrońca vs napastnik."
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "C. O'Keeffe",
+            "awayPlayer": "L. Moore",
+            "description": "Środkowy pomocnik vs środkowy pomocnik."
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "C. O'Keeffe",
+            "awayPlayer": "J. Powell",
+            "description": "Środkowy pomocnik vs środkowy pomocnik."
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "C. O'Keeffe",
+            "awayPlayer": "O. Lunt",
+            "description": "Środkowy pomocnik vs środkowy pomocnik."
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "O. Norwood",
+            "awayPlayer": "L. Moore",
+            "description": "Środkowy pomocnik vs środkowy pomocnik."
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "O. Norwood",
+            "awayPlayer": "J. Powell",
+            "description": "Środkowy pomocnik vs środkowy pomocnik."
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "O. Norwood",
+            "awayPlayer": "O. Lunt",
+            "description": "Środkowy pomocnik vs środkowy pomocnik."
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "L. Fiorini",
+            "awayPlayer": "L. Moore",
+            "description": "Środkowy pomocnik vs środkowy pomocnik."
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "L. Fiorini",
+            "awayPlayer": "J. Powell",
+            "description": "Środkowy pomocnik vs środkowy pomocnik."
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "L. Fiorini",
+            "awayPlayer": "O. Lunt",
+            "description": "Środkowy pomocnik vs środkowy pomocnik."
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "O. Dodgson",
+            "awayPlayer": "L. Moore",
+            "description": "Środkowy pomocnik vs środkowy pomocnik."
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "O. Dodgson",
+            "awayPlayer": "J. Powell",
+            "description": "Środkowy pomocnik vs środkowy pomocnik."
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "O. Dodgson",
+            "awayPlayer": "O. Lunt",
+            "description": "Środkowy pomocnik vs środkowy pomocnik."
+          }
+        ],
+        "matchupAnalysis": [
+          {
+            "homePlayer": "B. Hinchliffe",
+            "awayPlayer": "A. Thibaut",
+            "category": "Bramkarz vs Napastnik",
+            "advantage": "uncertain",
+            "analysis": "Brak danych w TOP dla Hinchliffe'a i Thibauta, więc trudno wskazać wyraźną przewagę."
+          },
+          {
+            "homePlayer": "B. Hinchliffe",
+            "awayPlayer": "E. Tezgel",
+            "category": "Bramkarz vs Napastnik",
+            "advantage": "away",
+            "analysis": "Tezgel ma 1 gola i ocenę 7.6 w 1 meczu, podczas gdy Hinchliffe nie figuruje w TOP; to sprzyja napastnikowi."
+          },
+          {
+            "homePlayer": "C. Connolly",
+            "awayPlayer": "A. Thibaut",
+            "category": "Obrona vs Atak",
+            "advantage": "home",
+            "analysis": "Connolly oceniony na 7.3 w 1 meczu, a Thibaut bez liczb w TOP, co daje minimalną przewagę gospodarzom."
+          },
+          {
+            "homePlayer": "C. Connolly",
+            "awayPlayer": "E. Tezgel",
+            "category": "Obrona vs Atak",
+            "advantage": "away",
+            "analysis": "Tezgel (1G, nota 7.6) przewyższa indywidualnie Connolly’ego (7.3), co sugeruje przewagę napastnika."
+          },
+          {
+            "homePlayer": "E. Pye",
+            "awayPlayer": "A. Thibaut",
+            "category": "Obrona vs Atak",
+            "advantage": "even",
+            "analysis": "Brak danych w TOP dla Pye i Thibauta, więc pojedynek wydaje się wyrównany."
+          },
+          {
+            "homePlayer": "E. Pye",
+            "awayPlayer": "E. Tezgel",
+            "category": "Obrona vs Atak",
+            "advantage": "away",
+            "analysis": "Tezgel (1G, 7.6) ma lepsze liczby niż Pye (brak w TOP), co daje mu przewagę."
+          },
+          {
+            "homePlayer": "D. Andrew",
+            "awayPlayer": "A. Thibaut",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Andrew ma ocenę 6.6, ale Thibaut nie ma statystyk w TOP — trudno o jednoznaczną przewagę."
+          },
+          {
+            "homePlayer": "D. Andrew",
+            "awayPlayer": "E. Tezgel",
+            "category": "Obrona vs Atak",
+            "advantage": "away",
+            "analysis": "Tezgel (1G, 7.6) kontra Andrew (6.6) — liczby wyraźnie sprzyjają napastnikowi."
+          },
+          {
+            "homePlayer": "C. O'Keeffe",
+            "awayPlayer": "L. Moore",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "O'Keeffe i Moore nie widnieją w TOP statystykach, więc starcie zapowiada się na wyrównane."
+          },
+          {
+            "homePlayer": "C. O'Keeffe",
+            "awayPlayer": "J. Powell",
+            "category": "Środek pola",
+            "advantage": "away",
+            "analysis": "Powell ma notę 6.9, podczas gdy O'Keeffe brak w TOP — lekka przewaga gości."
+          },
+          {
+            "homePlayer": "C. O'Keeffe",
+            "awayPlayer": "O. Lunt",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Brak danych w TOP dla O'Keeffe’a i Lunta, więc to raczej wyrównany pojedynek."
+          },
+          {
+            "homePlayer": "O. Norwood",
+            "awayPlayer": "L. Moore",
+            "category": "Środek pola",
+            "advantage": "home",
+            "analysis": "Norwood z oceną 7.9 przewyższa nieznanego statystycznie Moore’a, co daje mu przewagę w środku pola."
+          },
+          {
+            "homePlayer": "O. Norwood",
+            "awayPlayer": "J. Powell",
+            "category": "Środek pola",
+            "advantage": "home",
+            "analysis": "Norwood (7.9) wypada lepiej niż Powell (6.9), więc przewaga po stronie gospodarzy."
+          },
+          {
+            "homePlayer": "O. Norwood",
+            "awayPlayer": "O. Lunt",
+            "category": "Środek pola",
+            "advantage": "home",
+            "analysis": "Norwood (7.9) ma wyraźnie lepszą formę od Lunta (brak w TOP), co sugeruje przewagę gospodarzy."
+          },
+          {
+            "homePlayer": "L. Fiorini",
+            "awayPlayer": "L. Moore",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Fiorini i Moore bez liczb w TOP — pojedynek wydaje się wyrównany."
+          },
+          {
+            "homePlayer": "L. Fiorini",
+            "awayPlayer": "J. Powell",
+            "category": "Środek pola",
+            "advantage": "away",
+            "analysis": "Powell (6.9) ma konkretne liczby, podczas gdy Fiorini nie — przewaga gości."
+          },
+          {
+            "homePlayer": "L. Fiorini",
+            "awayPlayer": "O. Lunt",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Brak danych w TOP dla Fioriniego i Lunta, więc starcie wygląda na równe."
+          },
+          {
+            "homePlayer": "O. Dodgson",
+            "awayPlayer": "L. Moore",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Dodgson i Moore bez wyróżniających statystyk — pojedynek raczej na remis."
+          },
+          {
+            "homePlayer": "O. Dodgson",
+            "awayPlayer": "J. Powell",
+            "category": "Środek pola",
+            "advantage": "away",
+            "analysis": "Powell z notą 6.9 kontra Dodgson bez liczb w TOP — przewaga gości."
+          },
+          {
+            "homePlayer": "O. Dodgson",
+            "awayPlayer": "O. Lunt",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Dodgson i Lunt nie mają danych w TOP, więc przewaga żadnej ze stron nie jest oczywista."
+          }
+        ],
+        "bettingTips": [
+          {
+            "type": "Both Teams To Score: Yes",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Over 2.5 Goals",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Stockport Draw No Bet",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Correct score 2-1",
+            "probability": null,
+            "reasoning": ""
+          }
+        ]
+      }
+    },
+    "savedToDatabase": true
+  }
+}

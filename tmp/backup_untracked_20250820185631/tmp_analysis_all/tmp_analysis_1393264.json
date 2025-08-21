@@ -1,0 +1,329 @@
+{
+  "fetchedAt": "2025-08-19T16:08:42.975Z",
+  "fixtureId": 1393264,
+  "requestUrl": "http://localhost:3001/api/betting/fixtures/1393264/analyze",
+  "status": 200,
+  "data": {
+    "success": true,
+    "data": {
+      "fixtureId": 1393264,
+      "teams": {
+        "home": "Bristol City",
+        "away": "Milton Keynes Dons"
+      },
+      "aiAnalysis": {
+        "probabilities": {
+          "homeWin": 57,
+          "draw": 22,
+          "awayWin": 21
+        },
+        "predictedScore": {
+          "home": 3,
+          "away": 1
+        },
+        "confidence": "medium",
+        "confidencePercentage": 65,
+        "keyFactors": [
+          "Home form DWWWW",
+          "Higher points 13 vs 7",
+          "Home avg goals 2.4",
+          "Away inconsistency WLWDL",
+          "Offensive trend: xG > 3.5",
+          "Home advantage"
+        ],
+        "playerMatchups": [
+          {
+            "category": "Bramkarz vs Napastnik",
+            "homePlayer": "J. Lumley",
+            "awayPlayer": "J. Leko",
+            "description": "J. Lumley będzie bronił przeciw J. Leko"
+          },
+          {
+            "category": "Bramkarz vs Napastnik",
+            "homePlayer": "J. Lumley",
+            "awayPlayer": "S. Hogan",
+            "description": "J. Lumley będzie bronił przeciw S. Hogan"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "G. Tanner",
+            "awayPlayer": "J. Leko",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "G. Tanner",
+            "awayPlayer": "S. Hogan",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "Z. Vyner",
+            "awayPlayer": "J. Leko",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "Z. Vyner",
+            "awayPlayer": "S. Hogan",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "R. Dickie",
+            "awayPlayer": "J. Leko",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "R. Dickie",
+            "awayPlayer": "S. Hogan",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "M. Sykes",
+            "awayPlayer": "A. Nemane",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "M. Sykes",
+            "awayPlayer": "W. Collar",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "M. Sykes",
+            "awayPlayer": "L. Kelly",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "M. Sykes",
+            "awayPlayer": "R. Hepburn-Murphy",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "M. Sykes",
+            "awayPlayer": "C. Lemonheigh-Evans",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "J. Knight",
+            "awayPlayer": "A. Nemane",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "J. Knight",
+            "awayPlayer": "W. Collar",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "J. Knight",
+            "awayPlayer": "L. Kelly",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "J. Knight",
+            "awayPlayer": "R. Hepburn-Murphy",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "J. Knight",
+            "awayPlayer": "C. Lemonheigh-Evans",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "A. Randell",
+            "awayPlayer": "A. Nemane",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "A. Randell",
+            "awayPlayer": "W. Collar",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          }
+        ],
+        "matchupAnalysis": [
+          {
+            "homePlayer": "J. Lumley",
+            "awayPlayer": "J. Leko",
+            "category": "Bramkarz vs Napastnik",
+            "advantage": "uncertain",
+            "analysis": "Lumley ma ocenę 6.3 w 1 meczu, a Leko nie widnieje w TOP PLAYER STATS — trudno wskazać wyraźną przewagę."
+          },
+          {
+            "homePlayer": "J. Lumley",
+            "awayPlayer": "S. Hogan",
+            "category": "Bramkarz vs Napastnik",
+            "advantage": "uncertain",
+            "analysis": "Lumley oceniony na 6.3 (1 mecz), brak danych dla Hogana w TOP PLAYER STATS, więc pojedynek pozostaje niejednoznaczny."
+          },
+          {
+            "homePlayer": "G. Tanner",
+            "awayPlayer": "J. Leko",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Brak danych dla Tannera i Leko w TOP PLAYER STATS, co utrudnia wskazanie przewagi w tym pojedynku."
+          },
+          {
+            "homePlayer": "G. Tanner",
+            "awayPlayer": "S. Hogan",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Nie ma not w TOP PLAYER STATS dla obu zawodników, dlatego przewaga jest nieokreślona."
+          },
+          {
+            "homePlayer": "Z. Vyner",
+            "awayPlayer": "J. Leko",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Zarówno Vyner, jak i Leko nie figurują w TOP PLAYER STATS — brak podstaw liczbowych do oceny przewagi."
+          },
+          {
+            "homePlayer": "Z. Vyner",
+            "awayPlayer": "S. Hogan",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Brak danych statystycznych dla obu w TOP PLAYER STATS, więc wynik tego starcia jest niepewny."
+          },
+          {
+            "homePlayer": "R. Dickie",
+            "awayPlayer": "J. Leko",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Nie posiadamy not w TOP PLAYER STATS dla Dickiego ani Leko — przewaga nie do oszacowania."
+          },
+          {
+            "homePlayer": "R. Dickie",
+            "awayPlayer": "S. Hogan",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Obu graczy brakuje w TOP PLAYER STATS, co sugeruje niepewność co do wyraźnej przewagi."
+          },
+          {
+            "homePlayer": "M. Sykes",
+            "awayPlayer": "A. Nemane",
+            "category": "Środek pola",
+            "advantage": "away",
+            "analysis": "Nemane ma ocenę 6.6 w 1 meczu, podczas gdy Sykes nie widnieje w TOP PLAYER STATS — lekka przewaga gości."
+          },
+          {
+            "homePlayer": "M. Sykes",
+            "awayPlayer": "W. Collar",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Brak not dla Sykesa i Collara w TOP PLAYER STATS — pojedynek wygląda na wyrównany."
+          },
+          {
+            "homePlayer": "M. Sykes",
+            "awayPlayer": "L. Kelly",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Nie ma danych dla obu pomocników w TOP PLAYER STATS, co sugeruje równowagę w tym duecie."
+          },
+          {
+            "homePlayer": "M. Sykes",
+            "awayPlayer": "R. Hepburn-Murphy",
+            "category": "Środek pola",
+            "advantage": "home",
+            "analysis": "Hepburn-Murphy ma niższą ocenę 6.2 (1 mecz), a Sykes nie figuruje w TOP PLAYER STATS — delikatne wskazanie na gospodarzy."
+          },
+          {
+            "homePlayer": "M. Sykes",
+            "awayPlayer": "C. Lemonheigh-Evans",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Obaj brakują w TOP PLAYER STATS, więc brak przesłanek do rozdzielenia przewagi."
+          },
+          {
+            "homePlayer": "J. Knight",
+            "awayPlayer": "A. Nemane",
+            "category": "Środek pola",
+            "advantage": "away",
+            "analysis": "Nemane notowany na 6.6 w 1 meczu, Knight bez danych w TOP PLAYER STATS — przewaga po stronie gości."
+          },
+          {
+            "homePlayer": "J. Knight",
+            "awayPlayer": "W. Collar",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Brak danych liczbowych dla obu (TOP PLAYER STATS), więc pojedynek zapowiada się na remisowy."
+          },
+          {
+            "homePlayer": "J. Knight",
+            "awayPlayer": "L. Kelly",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Nie ma not dla Knighta i Kelly’ego w TOP PLAYER STATS — sytuacja wygląda na wyrównaną."
+          },
+          {
+            "homePlayer": "J. Knight",
+            "awayPlayer": "R. Hepburn-Murphy",
+            "category": "Środek pola",
+            "advantage": "home",
+            "analysis": "Hepburn-Murphy oceniony na 6.2 w 1 meczu, Knight bez danych — minimalna przewaga gospodarzy z racji słabszej noty rywala."
+          },
+          {
+            "homePlayer": "J. Knight",
+            "awayPlayer": "C. Lemonheigh-Evans",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Brak statystyk obu w TOP PLAYER STATS, więc trudno wskazać różnicę jakości — remisowy pojedynek."
+          },
+          {
+            "homePlayer": "A. Randell",
+            "awayPlayer": "A. Nemane",
+            "category": "Środek pola",
+            "advantage": "away",
+            "analysis": "Nemane ma 6.6 w 1 meczu, a Randell nie jest notowany w TOP PLAYER STATS — przewaga gości."
+          },
+          {
+            "homePlayer": "A. Randell",
+            "awayPlayer": "W. Collar",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Brak danych o obu w TOP PLAYER STATS, co wskazuje na równowagę w tym starciu."
+          }
+        ],
+        "bettingTips": [
+          {
+            "type": "Bristol City win",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Bristol City -0.5 AH",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Over 2.5 goals",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Over 3.0 Asian goals",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Both teams to score: Yes",
+            "probability": null,
+            "reasoning": ""
+          }
+        ]
+      }
+    },
+    "savedToDatabase": true
+  }
+}

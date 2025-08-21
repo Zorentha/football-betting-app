@@ -1,0 +1,333 @@
+{
+  "fetchedAt": "2025-08-19T16:29:11.134Z",
+  "fixtureId": 1393274,
+  "requestUrl": "http://localhost:3001/api/betting/fixtures/1393274/analyze",
+  "status": 200,
+  "data": {
+    "success": true,
+    "data": {
+      "fixtureId": 1393274,
+      "teams": {
+        "home": "Harrogate Town",
+        "away": "Lincoln"
+      },
+      "aiAnalysis": {
+        "probabilities": {
+          "homeWin": 20,
+          "draw": 23,
+          "awayWin": 57
+        },
+        "predictedScore": {
+          "home": 1,
+          "away": 3
+        },
+        "confidence": "medium",
+        "confidencePercentage": 65,
+        "keyFactors": [
+          "Lincoln strong form (WWLWW)",
+          "Higher avg goals 2.4 vs 1.2",
+          "Points: 12 vs 5",
+          "Open game expected (>3.5 xG)",
+          "Harrogate inconsistent (DLDWL)"
+        ],
+        "playerMatchups": [
+          {
+            "category": "Bramkarz vs Napastnik",
+            "homePlayer": "M. Oxley",
+            "awayPlayer": "R. Street",
+            "description": "M. Oxley będzie bronił przeciw R. Street"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "L. Cass",
+            "awayPlayer": "R. Street",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "B. Faulkner",
+            "awayPlayer": "R. Street",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "L. Gibson",
+            "awayPlayer": "R. Street",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "Z. Asare",
+            "awayPlayer": "R. Street",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "B. Morris",
+            "awayPlayer": "T. Bayliss",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "B. Morris",
+            "awayPlayer": "E. Hamilton",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "B. Morris",
+            "awayPlayer": "E. Ring",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "B. Morris",
+            "awayPlayer": "F. Draper",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "B. Morris",
+            "awayPlayer": "J. Moylan",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "B. Fox",
+            "awayPlayer": "T. Bayliss",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "B. Fox",
+            "awayPlayer": "E. Hamilton",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "B. Fox",
+            "awayPlayer": "E. Ring",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "B. Fox",
+            "awayPlayer": "F. Draper",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "B. Fox",
+            "awayPlayer": "J. Moylan",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "T. Hill",
+            "awayPlayer": "T. Bayliss",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "T. Hill",
+            "awayPlayer": "E. Hamilton",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "T. Hill",
+            "awayPlayer": "E. Ring",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "T. Hill",
+            "awayPlayer": "F. Draper",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "T. Hill",
+            "awayPlayer": "J. Moylan",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          }
+        ],
+        "matchupAnalysis": [
+          {
+            "homePlayer": "M. Oxley",
+            "awayPlayer": "R. Street",
+            "category": "Bramkarz vs Napastnik",
+            "advantage": "uncertain",
+            "analysis": "Brak statystyk w zestawieniu TOP dla Oxleya i Streeta, więc nie ma wyraźnej przewagi w tym pojedynku."
+          },
+          {
+            "homePlayer": "L. Cass",
+            "awayPlayer": "R. Street",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Brakuje danych TOP dla L. Cassa i R. Streeta — trudno wskazać faworyta w tym pojedynku."
+          },
+          {
+            "homePlayer": "B. Faulkner",
+            "awayPlayer": "R. Street",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Nie ma statystyk TOP dla B. Faulknera ani R. Streeta, więc przewaga pozostaje niejasna."
+          },
+          {
+            "homePlayer": "L. Gibson",
+            "awayPlayer": "R. Street",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Brak danych TOP dla L. Gibsona i R. Streeta — pojedynek oceniany jako otwarty."
+          },
+          {
+            "homePlayer": "Z. Asare",
+            "awayPlayer": "R. Street",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Nie ma not w TOP dla Z. Asare ani R. Streeta, co czyni ten pojedynek niejednoznacznym."
+          },
+          {
+            "homePlayer": "B. Morris",
+            "awayPlayer": "T. Bayliss",
+            "category": "Środek pola",
+            "advantage": "home",
+            "analysis": "B. Morris: 6.9 rating po 1 meczu (0G/0A); dla T. Baylissa brak danych w TOP — lekka przewaga gospodarzy."
+          },
+          {
+            "homePlayer": "B. Morris",
+            "awayPlayer": "E. Hamilton",
+            "category": "Środek pola",
+            "advantage": "home",
+            "analysis": "B. Morris ma ocenę 6.9 w 1 meczu (0G/0A), podczas gdy E. Hamilton nie figuruje w TOP — przewaga po stronie gospodarzy."
+          },
+          {
+            "homePlayer": "B. Morris",
+            "awayPlayer": "E. Ring",
+            "category": "Środek pola",
+            "advantage": "home",
+            "analysis": "Morris: 6.9/10 po 1 meczu (0G/0A); brak danych TOP dla E. Ringa — minimalna przewaga Harrogate w środku."
+          },
+          {
+            "homePlayer": "B. Morris",
+            "awayPlayer": "F. Draper",
+            "category": "Środek pola",
+            "advantage": "home",
+            "analysis": "B. Morris notowany na 6.9 (0G/0A w 1 meczu), zaś F. Draper bez statystyk w TOP — przewaga gospodarzy."
+          },
+          {
+            "homePlayer": "B. Morris",
+            "awayPlayer": "J. Moylan",
+            "category": "Środek pola",
+            "advantage": "home",
+            "analysis": "Morris: rating 6.9 po 1 występie; J. Moylan bez danych w TOP — lekka przewaga Harrogate."
+          },
+          {
+            "homePlayer": "B. Fox",
+            "awayPlayer": "T. Bayliss",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Brak statystyk TOP zarówno dla B. Foxa, jak i T. Baylissa — pojedynek nierozstrzygnięty na papierze."
+          },
+          {
+            "homePlayer": "B. Fox",
+            "awayPlayer": "E. Hamilton",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Nie ma danych TOP dla B. Foxa ani E. Hamiltona, więc trudno wskazać przewagę którejkolwiek strony."
+          },
+          {
+            "homePlayer": "B. Fox",
+            "awayPlayer": "E. Ring",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Brak not w TOP dla obu zawodników — ocena pojedynku pozostaje niepewna."
+          },
+          {
+            "homePlayer": "B. Fox",
+            "awayPlayer": "F. Draper",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Nie widnieją statystyki TOP dla B. Foxa i F. Drapera, co nie pozwala wskazać faworyta."
+          },
+          {
+            "homePlayer": "B. Fox",
+            "awayPlayer": "J. Moylan",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Brak danych TOP dla obu graczy — przewaga nie do oszacowania."
+          },
+          {
+            "homePlayer": "T. Hill",
+            "awayPlayer": "T. Bayliss",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Nie ma statystyk TOP dla T. Hilla ani T. Baylissa, więc pojedynek zapowiada się na wyrównany."
+          },
+          {
+            "homePlayer": "T. Hill",
+            "awayPlayer": "E. Hamilton",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Brak danych TOP po obu stronach (Hill i Hamilton) — trudno wskazać korzyść jednej ze stron."
+          },
+          {
+            "homePlayer": "T. Hill",
+            "awayPlayer": "E. Ring",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Nie widnieją noty TOP dla T. Hilla i E. Ringa; pojedynek bez klarownej przewagi."
+          },
+          {
+            "homePlayer": "T. Hill",
+            "awayPlayer": "F. Draper",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Brak statystyk TOP dla obu graczy — ocena przewagi w tym duecie jest niejednoznaczna."
+          },
+          {
+            "homePlayer": "T. Hill",
+            "awayPlayer": "J. Moylan",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Nie ma danych TOP dla T. Hilla ani J. Moylana, więc przewaga pozostaje nieokreślona."
+          }
+        ],
+        "bettingTips": [
+          {
+            "type": "Away win",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Over 2.5 goals",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Both teams to score: Yes",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Lincoln over 1.5 team goals",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Draw no bet: Lincoln",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Correct score 1-3 (small stake)",
+            "probability": null,
+            "reasoning": ""
+          }
+        ]
+      }
+    },
+    "savedToDatabase": true
+  }
+}

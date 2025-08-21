@@ -1,0 +1,327 @@
+{
+  "fetchedAt": "2025-08-19T18:59:49.444Z",
+  "fixtureId": 1393285,
+  "requestUrl": "http://localhost:3001/api/betting/fixtures/1393285/analyze",
+  "status": 200,
+  "data": {
+    "success": true,
+    "data": {
+      "fixtureId": 1393285,
+      "teams": {
+        "home": "Swansea",
+        "away": "Crawley Town"
+      },
+      "aiAnalysis": {
+        "probabilities": {
+          "homeWin": 61,
+          "draw": 24,
+          "awayWin": 15
+        },
+        "predictedScore": {
+          "home": 1,
+          "away": 0
+        },
+        "confidence": "medium",
+        "confidencePercentage": 65,
+        "keyFactors": [
+          "Home stronger form (WWLLL vs LLLLL)",
+          "Away avg goals 0.4; low threat",
+          "Home avg goals 1.0; pragmatic",
+          "Defensywny mecz; poniżej 2.5 xG"
+        ],
+        "playerMatchups": [
+          {
+            "category": "Bramkarz vs Napastnik",
+            "homePlayer": "A. Fisher (BR)",
+            "awayPlayer": "R. Brown (NAP)",
+            "description": "A. Fisher będzie bronił przeciw R. Brown"
+          },
+          {
+            "category": "Bramkarz vs Napastnik",
+            "homePlayer": "A. Fisher (BR)",
+            "awayPlayer": "K. Tshimanga (NAP)",
+            "description": "A. Fisher będzie bronił przeciw K. Tshimanga"
+          },
+          {
+            "category": "Bramkarz vs Napastnik",
+            "homePlayer": "A. Fisher (BR)",
+            "awayPlayer": "J. Roles (NAP)",
+            "description": "A. Fisher będzie bronił przeciw J. Roles"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "S. Parker (CB)",
+            "awayPlayer": "R. Brown (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "S. Parker (CB)",
+            "awayPlayer": "K. Tshimanga (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "S. Parker (CB)",
+            "awayPlayer": "J. Roles (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "K. Casey (CB)",
+            "awayPlayer": "R. Brown (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "K. Casey (CB)",
+            "awayPlayer": "K. Tshimanga (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "K. Casey (CB)",
+            "awayPlayer": "J. Roles (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "C. Burgess (CB)",
+            "awayPlayer": "R. Brown (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "C. Burgess (CB)",
+            "awayPlayer": "K. Tshimanga (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "C. Burgess (CB)",
+            "awayPlayer": "J. Roles (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "J. Tymon (CB)",
+            "awayPlayer": "R. Brown (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "J. Tymon (CB)",
+            "awayPlayer": "K. Tshimanga (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "J. Tymon (CB)",
+            "awayPlayer": "J. Roles (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "E. Galbraith (CM)",
+            "awayPlayer": "H. McKirdy (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "E. Galbraith (CM)",
+            "awayPlayer": "J. Williams (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "E. Galbraith (CM)",
+            "awayPlayer": "M. Anderson (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "E. Galbraith (CM)",
+            "awayPlayer": "A. Adeyemo (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "M. Widell (CM)",
+            "awayPlayer": "H. McKirdy (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          }
+        ],
+        "matchupAnalysis": [
+          {
+            "homePlayer": "A. Fisher (BR)",
+            "awayPlayer": "R. Brown (NAP)",
+            "category": "Bramkarz vs Napastnik",
+            "advantage": "even",
+            "analysis": "Brown ma 0G/0A i notę 6.2 w 1 meczu, o Fisherze brak danych — to zapowiada wyrównany pojedynek."
+          },
+          {
+            "homePlayer": "A. Fisher (BR)",
+            "awayPlayer": "K. Tshimanga (NAP)",
+            "category": "Bramkarz vs Napastnik",
+            "advantage": "uncertain",
+            "analysis": "Brak danych liczbowych o Tshimandze i Fisherze w udostępnionych statystykach, więc przewaga jest niejasna."
+          },
+          {
+            "homePlayer": "A. Fisher (BR)",
+            "awayPlayer": "J. Roles (NAP)",
+            "category": "Bramkarz vs Napastnik",
+            "advantage": "uncertain",
+            "analysis": "Nie ma podanych statystyk dla Rolesa ani Fishera — trudno wskazać faworyta."
+          },
+          {
+            "homePlayer": "S. Parker (CB)",
+            "awayPlayer": "R. Brown (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "home",
+            "analysis": "Brown (0G/0A, rating 6.2) nie pokazał jeszcze skuteczności; mimo braku danych o Parkerze daje to lekki plus gospodarzom."
+          },
+          {
+            "homePlayer": "S. Parker (CB)",
+            "awayPlayer": "K. Tshimanga (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Brak statystyk obu zawodników w zestawieniu — wynik pojedynku otwarty."
+          },
+          {
+            "homePlayer": "S. Parker (CB)",
+            "awayPlayer": "J. Roles (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Nie ma danych liczbowych dla Parkera i Rolesa, więc nie widać wyraźnej przewagi."
+          },
+          {
+            "homePlayer": "K. Casey (CB)",
+            "awayPlayer": "R. Brown (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "home",
+            "analysis": "Brown z notą 6.2 i 0G/0A w 1 meczu — przy braku danych o Caseyu minimalna przewaga po stronie obrońcy."
+          },
+          {
+            "homePlayer": "K. Casey (CB)",
+            "awayPlayer": "K. Tshimanga (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Brak udostępnionych liczb dla obu — przewaga nie do określenia."
+          },
+          {
+            "homePlayer": "K. Casey (CB)",
+            "awayPlayer": "J. Roles (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Z uwagi na brak statystyk Casey’ego i Rolesa nie ma podstaw do wskazania faworyta."
+          },
+          {
+            "homePlayer": "C. Burgess (CB)",
+            "awayPlayer": "R. Brown (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "home",
+            "analysis": "Słabe liczby Browna (0G/0A, rating 6.2) sugerują, że Burgess może mieć przewagę mimo braku własnych danych."
+          },
+          {
+            "homePlayer": "C. Burgess (CB)",
+            "awayPlayer": "K. Tshimanga (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Nie ma danych o obu zawodnikach w podanych statystykach — pojedynek pozostaje niewiadomą."
+          },
+          {
+            "homePlayer": "C. Burgess (CB)",
+            "awayPlayer": "J. Roles (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Brak statystyk Burgessa i Rolesa — trudno ocenić przewagę."
+          },
+          {
+            "homePlayer": "J. Tymon (CB)",
+            "awayPlayer": "R. Brown (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "home",
+            "analysis": "Tymon ma 1 asystę i ocenę 7.5 w 1 meczu, podczas gdy Brown 6.2 i 0G/0A — przewaga gospodarza."
+          },
+          {
+            "homePlayer": "J. Tymon (CB)",
+            "awayPlayer": "K. Tshimanga (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "home",
+            "analysis": "Forma Tymona (7.5, 1A) działa na jego korzyść, a o Tshimandze brak danych w zestawieniu."
+          },
+          {
+            "homePlayer": "J. Tymon (CB)",
+            "awayPlayer": "J. Roles (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "home",
+            "analysis": "Przy wysokiej nocie Tymona (7.5, 1A) i braku danych Rolesa przewaga po stronie obrońcy."
+          },
+          {
+            "homePlayer": "E. Galbraith (CM)",
+            "awayPlayer": "H. McKirdy (CM)",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Brak statystyk obu środkowych pomocników w udostępnionych danych — trudno ocenić przewagę."
+          },
+          {
+            "homePlayer": "E. Galbraith (CM)",
+            "awayPlayer": "J. Williams (CM)",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Williams ma ocenę 6.0 w 1 meczu, ale o Galbraithcie brak danych — bilans nie daje jasnej przewagi."
+          },
+          {
+            "homePlayer": "E. Galbraith (CM)",
+            "awayPlayer": "M. Anderson (CM)",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Nie ma podanych liczb dla Galbraitha ani Andersona — pojedynek niewiadomą."
+          },
+          {
+            "homePlayer": "E. Galbraith (CM)",
+            "awayPlayer": "A. Adeyemo (CM)",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Brak danych statystycznych dla obu zawodników uniemożliwia wskazanie faworyta."
+          },
+          {
+            "homePlayer": "M. Widell (CM)",
+            "awayPlayer": "H. McKirdy (CM)",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Nie widnieją żadne liczby dla Widella i McKirdy’ego w zestawieniu — przewaga nieokreślona."
+          }
+        ],
+        "bettingTips": [
+          {
+            "type": "Home win",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Under 2.5 goals",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Home clean sheet",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Draw no bet: Home",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Correct score 1-0 (small stake)",
+            "probability": null,
+            "reasoning": ""
+          }
+        ]
+      }
+    },
+    "savedToDatabase": true
+  }
+}

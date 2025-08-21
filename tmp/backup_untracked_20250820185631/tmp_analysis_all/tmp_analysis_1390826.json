@@ -1,0 +1,67 @@
+{
+  "fetchedAt": "2025-08-19T14:37:31.153Z",
+  "fixtureId": 1390826,
+  "requestUrl": "http://localhost:3001/api/betting/fixtures/1390826/analyze",
+  "status": 200,
+  "data": {
+    "success": true,
+    "data": {
+      "fixtureId": 1390826,
+      "teams": {
+        "home": "Real Madrid",
+        "away": "Osasuna"
+      },
+      "aiAnalysis": {
+        "probabilities": {
+          "homeWin": 64,
+          "draw": 22,
+          "awayWin": 14
+        },
+        "predictedScore": {
+          "home": 2,
+          "away": 1
+        },
+        "confidence": "medium",
+        "confidencePercentage": 65,
+        "keyFactors": [
+          "Home form WLWWW",
+          "Higher avg goals 2.2 vs 1.2",
+          "Osasuna inconsistent DWLLD",
+          "Expected goals 2.5–3.5",
+          "Real Madrid quality edge at home",
+          "Osasuna counter threat"
+        ],
+        "playerMatchups": [],
+        "matchupAnalysis": [],
+        "bettingTips": [
+          {
+            "type": "Real Madrid to win",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Over 1.5 total goals",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Real Madrid win & Under 4.5 goals",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Both teams to score: Yes",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Correct score 2-1 (small stake)",
+            "probability": null,
+            "reasoning": ""
+          }
+        ]
+      }
+    },
+    "savedToDatabase": true
+  }
+}

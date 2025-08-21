@@ -1,0 +1,317 @@
+{
+  "fetchedAt": "2025-08-19T16:47:30.503Z",
+  "fixtureId": 1393281,
+  "requestUrl": "http://localhost:3001/api/betting/fixtures/1393281/analyze",
+  "status": 200,
+  "data": {
+    "success": true,
+    "data": {
+      "fixtureId": 1393281,
+      "teams": {
+        "home": "Portsmouth",
+        "away": "Reading"
+      },
+      "aiAnalysis": {
+        "probabilities": {
+          "homeWin": 44,
+          "draw": 31,
+          "awayWin": 25
+        },
+        "predictedScore": {
+          "home": 1,
+          "away": 0
+        },
+        "confidence": "medium",
+        "confidencePercentage": 65,
+        "keyFactors": [
+          "Home advantage",
+          "Better recent form: LLWWD vs LWLLL",
+          "Low scoring averages: 0.8 vs 0.6",
+          "Defensywny mecz, expectedGoals < 2.5"
+        ],
+        "playerMatchups": [
+          {
+            "category": "Bramkarz vs Napastnik",
+            "homePlayer": "B. Killip (BR)",
+            "awayPlayer": "Mamadi Camará (NAP)",
+            "description": "B. Killip będzie bronił przeciw Mamadi Camará"
+          },
+          {
+            "category": "Bramkarz vs Napastnik",
+            "homePlayer": "B. Killip (BR)",
+            "awayPlayer": "K. Ehibhatiomhan (NAP)",
+            "description": "B. Killip będzie bronił przeciw K. Ehibhatiomhan"
+          },
+          {
+            "category": "Bramkarz vs Napastnik",
+            "homePlayer": "B. Killip (BR)",
+            "awayPlayer": "A. Garcia (NAP)",
+            "description": "B. Killip będzie bronił przeciw A. Garcia"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "Z. Swanson (CB)",
+            "awayPlayer": "Mamadi Camará (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "Z. Swanson (CB)",
+            "awayPlayer": "K. Ehibhatiomhan (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "Z. Swanson (CB)",
+            "awayPlayer": "A. Garcia (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "H. Matthews (CB)",
+            "awayPlayer": "Mamadi Camará (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "H. Matthews (CB)",
+            "awayPlayer": "K. Ehibhatiomhan (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "H. Matthews (CB)",
+            "awayPlayer": "A. Garcia (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "I. Bowat (CB)",
+            "awayPlayer": "Mamadi Camará (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "I. Bowat (CB)",
+            "awayPlayer": "K. Ehibhatiomhan (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "I. Bowat (CB)",
+            "awayPlayer": "A. Garcia (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "J. Farrell (CB)",
+            "awayPlayer": "Mamadi Camará (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "J. Farrell (CB)",
+            "awayPlayer": "K. Ehibhatiomhan (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "J. Farrell (CB)",
+            "awayPlayer": "A. Garcia (ST)",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "J. Swift (CM)",
+            "awayPlayer": "T. Rushesha (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "J. Swift (CM)",
+            "awayPlayer": "S. Spencer (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "J. Swift (CM)",
+            "awayPlayer": "K. Doyle (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "L. Le Roux (CM)",
+            "awayPlayer": "T. Rushesha (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "L. Le Roux (CM)",
+            "awayPlayer": "S. Spencer (CM)",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          }
+        ],
+        "matchupAnalysis": [
+          {
+            "homePlayer": "B. Killip (BR)",
+            "awayPlayer": "Mamadi Camará (NAP)",
+            "category": "Bramkarz vs Napastnik",
+            "advantage": "home",
+            "analysis": "Killip ma ocenę 7.5 po 1 meczu, co sugeruje dobrą dyspozycję; brak danych strzeleckich Camará w podanych statystykach."
+          },
+          {
+            "homePlayer": "B. Killip (BR)",
+            "awayPlayer": "K. Ehibhatiomhan (NAP)",
+            "category": "Bramkarz vs Napastnik",
+            "advantage": "home",
+            "analysis": "Killip wyróżnia się oceną 7.5 (1 mecz), a dla Ehibhatiomhan brak danych bramkowych w zestawie, więc przewaga po stronie bramkarza."
+          },
+          {
+            "homePlayer": "B. Killip (BR)",
+            "awayPlayer": "A. Garcia (NAP)",
+            "category": "Bramkarz vs Napastnik",
+            "advantage": "home",
+            "analysis": "Forma Killipa (7.5 oceny w 1 meczu) jest potwierdzona; dla A. Garcii brak wymiernych statystyk ofensywnych w podanym zestawieniu."
+          },
+          {
+            "homePlayer": "Z. Swanson (CB)",
+            "awayPlayer": "Mamadi Camará (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Brak twardych danych dla Swanson i Camará w podanym zestawieniu; trudno wskazać przewagę w tym pojedynku."
+          },
+          {
+            "homePlayer": "Z. Swanson (CB)",
+            "awayPlayer": "K. Ehibhatiomhan (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Nie ma dostępnych statystyk indywidualnych dla obu graczy w zestawie, więc ocena przewagi jest niepewna."
+          },
+          {
+            "homePlayer": "Z. Swanson (CB)",
+            "awayPlayer": "A. Garcia (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Przy braku danych liczbowych dla Swanson i Garcii nie da się obiektywnie wskazać silniejszej strony."
+          },
+          {
+            "homePlayer": "H. Matthews (CB)",
+            "awayPlayer": "Mamadi Camará (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Nie podano statystyk dla Matthewsa ani Camará; przewaga pozostaje niejasna."
+          },
+          {
+            "homePlayer": "H. Matthews (CB)",
+            "awayPlayer": "K. Ehibhatiomhan (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Brak danych liczbowych dla obu zawodników uniemożliwia wskazanie faworyta."
+          },
+          {
+            "homePlayer": "H. Matthews (CB)",
+            "awayPlayer": "A. Garcia (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Bez statystyk z zestawienia dla Matthewsa i Garcii pojedynek jest zbyt niepewny do oceny."
+          },
+          {
+            "homePlayer": "I. Bowat (CB)",
+            "awayPlayer": "Mamadi Camará (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Nie ma dostępnych liczb dla Bowata ani Camará w podanych danych, więc przewaga jest nieokreślona."
+          },
+          {
+            "homePlayer": "I. Bowat (CB)",
+            "awayPlayer": "K. Ehibhatiomhan (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Przy braku statystyk obu graczy nie można rzetelnie ocenić, kto ma przewagę."
+          },
+          {
+            "homePlayer": "I. Bowat (CB)",
+            "awayPlayer": "A. Garcia (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Nie dysponujemy danymi liczbowymi dla Bowata i Garcii; przewaga pozostaje niejasna."
+          },
+          {
+            "homePlayer": "J. Farrell (CB)",
+            "awayPlayer": "Mamadi Camará (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Brak danych dla Farrella i Camará w zestawieniu top-player; ocena przewagi jest niepewna."
+          },
+          {
+            "homePlayer": "J. Farrell (CB)",
+            "awayPlayer": "K. Ehibhatiomhan (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Nie ma statystyk dla obu graczy w podanych danych, więc trudno wskazać lepszą stronę."
+          },
+          {
+            "homePlayer": "J. Farrell (CB)",
+            "awayPlayer": "A. Garcia (ST)",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Bez konkretnych liczb dla Farrella i Garcii nie da się rozstrzygnąć tej rywalizacji na papierze."
+          },
+          {
+            "homePlayer": "J. Swift (CM)",
+            "awayPlayer": "T. Rushesha (CM)",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Swift ma ocenę 6.7 po 1 meczu, a Rushesha 6.6 oraz 1 asystę; ich wpływ wygląda porównywalnie."
+          },
+          {
+            "homePlayer": "J. Swift (CM)",
+            "awayPlayer": "S. Spencer (CM)",
+            "category": "Środek pola",
+            "advantage": "home",
+            "analysis": "Swift potwierdził formę oceną 6.7 (1 mecz), podczas gdy dla Spencera brak danych w zestawieniu."
+          },
+          {
+            "homePlayer": "J. Swift (CM)",
+            "awayPlayer": "K. Doyle (CM)",
+            "category": "Środek pola",
+            "advantage": "home",
+            "analysis": "Swift ma 6.7 po 1 meczu; brak statystyk dla Doyle’a w podanych danych faworyzuje gospodarza."
+          },
+          {
+            "homePlayer": "L. Le Roux (CM)",
+            "awayPlayer": "T. Rushesha (CM)",
+            "category": "Środek pola",
+            "advantage": "away",
+            "analysis": "Rushesha wniósł 1 asystę i ma ocenę 6.6 (1 mecz), a dla Le Roux brak danych, co daje przewagę gościowi."
+          },
+          {
+            "homePlayer": "L. Le Roux (CM)",
+            "awayPlayer": "S. Spencer (CM)",
+            "category": "Środek pola",
+            "advantage": "uncertain",
+            "analysis": "Brak danych liczbowych dla obu zawodników w podanym zestawie; przewaga jest nierozstrzygnięta."
+          }
+        ],
+        "bettingTips": [
+          {
+            "type": "Under 2.5 goals",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Portsmouth draw no bet",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Both teams to score: No",
+            "probability": null,
+            "reasoning": ""
+          }
+        ]
+      }
+    },
+    "savedToDatabase": true
+  }
+}

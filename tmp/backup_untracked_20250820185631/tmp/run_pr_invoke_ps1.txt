@@ -1,0 +1,34 @@
+Exact PowerShell commands (Invoke-RestMethod) to create the PR safely.
+
+Copy and paste these lines into PowerShell (run from repo root).
+- You already have a token with repo scopes; do NOT paste it here in chat.
+- Set it only in the session as shown, run the Invoke-RestMethod, then paste the resulting JSON (or the html_url) here.
+
+1) Set token (PowerShell session only):
+   $env:GITHUB_TOKEN = 'ghp_<YOUR_PAT_HERE>'
+
+2) Build body and POST using Invoke-RestMethod (recommended — serializes valid JSON):
+   $body = @{
+     title = "Make OpenAI expected output tokens configurable and remove hardcoded cap"
+     head  = "feature/openai-expected-output-tokens-rebased"
+     base  = "main"
+     body  = "See PR_DESCRIPTION.md in repository for full details."
+   }
+   Invoke-RestMethod -Uri 'https://api.github.com/repos/Zorentha/football-betting-app/pulls' `
+     -Method Post `
+     -Headers @{ Authorization = "token $env:GITHUB_TOKEN"; Accept = "application/vnd.github+json"; "User-Agent" = "cli-pr-creator" } `
+     -Body ($body | ConvertTo-Json -Depth 10)
+
+3) What to paste back here:
+   - If success (HTTP 201): paste the "html_url" field printed by the command.
+   - If error: paste the entire output including any "Response body" or error message.
+
+Troubleshooting notes:
+- If you still see 401: ensure token exactly (no surrounding < > or extra characters). Use the interactive script tmp/run_pr_now.ps1 if you prefer.
+- If you get 400 again: this PowerShell approach should avoid JSON parsing issues; copy exact output here.
+- If you get 422: paste response body — I will fix the payload (branch name or other validation).
+
+Optional: single-line curl alternative (PowerShell):
+$env:GITHUB_TOKEN = 'ghp_<YOUR_PAT_HERE>'; $json='{"title":"Make OpenAI expected output tokens configurable and remove hardcoded cap","head":"feature/openai-expected-output-tokens-rebased","base":"main","body":"See PR_DESCRIPTION.md in repository for full details."}'; curl.exe -v -H "Authorization: token $env:GITHUB_TOKEN" -H "Accept: application/vnd.github+json" -H "Content-Type: application/json" --data-binary $json https://api.github.com/repos/Zorentha/football-betting-app/pulls
+
+Run now and paste output.

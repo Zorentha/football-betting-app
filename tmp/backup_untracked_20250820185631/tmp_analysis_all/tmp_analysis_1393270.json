@@ -1,0 +1,318 @@
+{
+  "fetchedAt": "2025-08-19T16:21:02.120Z",
+  "fixtureId": 1393270,
+  "requestUrl": "http://localhost:3001/api/betting/fixtures/1393270/analyze",
+  "status": 200,
+  "data": {
+    "success": true,
+    "data": {
+      "fixtureId": 1393270,
+      "teams": {
+        "home": "Chesterfield",
+        "away": "Mansfield Town"
+      },
+      "aiAnalysis": {
+        "probabilities": {
+          "homeWin": 41,
+          "draw": 28,
+          "awayWin": 31
+        },
+        "predictedScore": {
+          "home": 2,
+          "away": 1
+        },
+        "confidence": "medium",
+        "confidencePercentage": 65,
+        "keyFactors": [
+          "Slight home form edge (9 vs 7 pts)",
+          "Both average 1.4 goals",
+          "Mixed recent form (WLWWL vs WWLLD)",
+          "Expected goals 2.5-3.5",
+          "Home advantage"
+        ],
+        "playerMatchups": [
+          {
+            "category": "Bramkarz vs Napastnik",
+            "homePlayer": "Z. Hemming",
+            "awayPlayer": "D. Dwyer",
+            "description": "Z. Hemming będzie bronił przeciw D. Dwyer"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "V. Campbell",
+            "awayPlayer": "D. Dwyer",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "C. Dunkley",
+            "awayPlayer": "D. Dwyer",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "K. McFadzean",
+            "awayPlayer": "D. Dwyer",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Obrona vs Atak",
+            "homePlayer": "L. Gordon",
+            "awayPlayer": "D. Dwyer",
+            "description": "Środkowy obrońca vs napastnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "M. Dibley-Dias",
+            "awayPlayer": "A. Lewis",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "M. Dibley-Dias",
+            "awayPlayer": "G. Maris",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "M. Dibley-Dias",
+            "awayPlayer": "N. Moriah-Welsh",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "M. Dibley-Dias",
+            "awayPlayer": "K. McAdam",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "R. Stirk",
+            "awayPlayer": "A. Lewis",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "R. Stirk",
+            "awayPlayer": "G. Maris",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "R. Stirk",
+            "awayPlayer": "N. Moriah-Welsh",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "R. Stirk",
+            "awayPlayer": "K. McAdam",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "D. Markanday",
+            "awayPlayer": "A. Lewis",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "D. Markanday",
+            "awayPlayer": "G. Maris",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "D. Markanday",
+            "awayPlayer": "N. Moriah-Welsh",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "D. Markanday",
+            "awayPlayer": "K. McAdam",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "R. Darcy",
+            "awayPlayer": "A. Lewis",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "R. Darcy",
+            "awayPlayer": "G. Maris",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          },
+          {
+            "category": "Środek pola",
+            "homePlayer": "R. Darcy",
+            "awayPlayer": "N. Moriah-Welsh",
+            "description": "Środkowy pomocnik vs środkowy pomocnik"
+          }
+        ],
+        "matchupAnalysis": [
+          {
+            "homePlayer": "Z. Hemming",
+            "awayPlayer": "D. Dwyer",
+            "category": "Bramkarz vs Napastnik",
+            "advantage": "uncertain",
+            "analysis": "Brak danych w TOP PLAYERS dla Hemminga i Dwyera, więc trudno wskazać wyraźną przewagę w tym pojedynku."
+          },
+          {
+            "homePlayer": "V. Campbell",
+            "awayPlayer": "D. Dwyer",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Obaj zawodnicy nie widnieją w TOP PLAYERS z aktualnymi metrykami; bez twardych danych przewaga jest niepewna."
+          },
+          {
+            "homePlayer": "C. Dunkley",
+            "awayPlayer": "D. Dwyer",
+            "category": "Obrona vs Atak",
+            "advantage": "home",
+            "analysis": "Dunkley ma ocenę 6.5 w 1 meczu (TOP PLAYERS), podczas gdy o Dwyerze brak danych — minimalna przewaga gospodarzy."
+          },
+          {
+            "homePlayer": "K. McFadzean",
+            "awayPlayer": "D. Dwyer",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Brak statystyk TOP PLAYERS dla obu, więc nie ma podstaw do rozstrzygnięcia przewagi w tym duecie."
+          },
+          {
+            "homePlayer": "L. Gordon",
+            "awayPlayer": "D. Dwyer",
+            "category": "Obrona vs Atak",
+            "advantage": "uncertain",
+            "analysis": "Bez danych o Gordonie i Dwyerze w TOP PLAYERS pojedynek jest zbyt niejednoznaczny, by wskazać faworyta."
+          },
+          {
+            "homePlayer": "M. Dibley-Dias",
+            "awayPlayer": "A. Lewis",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Żaden z graczy nie figuruje w TOP PLAYERS z bieżącymi statystykami; starcie zapowiada się wyrównane."
+          },
+          {
+            "homePlayer": "M. Dibley-Dias",
+            "awayPlayer": "G. Maris",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Brak metryk w TOP PLAYERS dla obu zawodników, więc balans sił w środku pola wygląda na równy."
+          },
+          {
+            "homePlayer": "M. Dibley-Dias",
+            "awayPlayer": "N. Moriah-Welsh",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Nie ma dostępnych statystyk TOP PLAYERS dla tej pary, co sugeruje wyrównany pojedynek."
+          },
+          {
+            "homePlayer": "M. Dibley-Dias",
+            "awayPlayer": "K. McAdam",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Ze względu na brak danych w TOP PLAYERS po obu stronach, przewidywana jest równowaga w tym duecie."
+          },
+          {
+            "homePlayer": "R. Stirk",
+            "awayPlayer": "A. Lewis",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Nie odnotowano statystyk TOP PLAYERS dla Stirka ani Lewisa; pojedynek powinien być zbalansowany."
+          },
+          {
+            "homePlayer": "R. Stirk",
+            "awayPlayer": "G. Maris",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Brak twardych danych z TOP PLAYERS dla obu, co wskazuje na wyrównany pojedynek."
+          },
+          {
+            "homePlayer": "R. Stirk",
+            "awayPlayer": "N. Moriah-Welsh",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Z powodu braku metryk TOP PLAYERS dla obu graczy, trudno wskazać faworyta — przewidywana równowaga."
+          },
+          {
+            "homePlayer": "R. Stirk",
+            "awayPlayer": "K. McAdam",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Nie ma danych w TOP PLAYERS dla tej pary, więc przewaga wydaje się neutralna."
+          },
+          {
+            "homePlayer": "D. Markanday",
+            "awayPlayer": "A. Lewis",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Brak statystyk TOP PLAYERS po obu stronach wskazuje na wyrównane starcie w środku pola."
+          },
+          {
+            "homePlayer": "D. Markanday",
+            "awayPlayer": "G. Maris",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Obaj zawodnicy bez metryk w TOP PLAYERS; spodziewany balans sił."
+          },
+          {
+            "homePlayer": "D. Markanday",
+            "awayPlayer": "N. Moriah-Welsh",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Nie posiadamy danych TOP PLAYERS o obu piłkarzach, więc pojedynek wygląda na równy."
+          },
+          {
+            "homePlayer": "D. Markanday",
+            "awayPlayer": "K. McAdam",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Brak dostępnych statystyk TOP PLAYERS po obu stronach — przewidywana równowaga."
+          },
+          {
+            "homePlayer": "R. Darcy",
+            "awayPlayer": "A. Lewis",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Bez danych w TOP PLAYERS dla Darcy’ego i Lewisa trudno wskazać przewagę; spodziewane wyrównanie."
+          },
+          {
+            "homePlayer": "R. Darcy",
+            "awayPlayer": "G. Maris",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Nie ma metryk TOP PLAYERS dla obu, więc starcie zapowiada się na remisowe."
+          },
+          {
+            "homePlayer": "R. Darcy",
+            "awayPlayer": "N. Moriah-Welsh",
+            "category": "Środek pola",
+            "advantage": "even",
+            "analysis": "Brak danych TOP PLAYERS dla tej dwójki; spodziewany jest równy pojedynek."
+          }
+        ],
+        "bettingTips": [
+          {
+            "type": "Both Teams To Score: Yes",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Over 2.25 Goals",
+            "probability": null,
+            "reasoning": ""
+          },
+          {
+            "type": "Chesterfield Draw No Bet",
+            "probability": null,
+            "reasoning": ""
+          }
+        ]
+      }
+    },
+    "savedToDatabase": true
+  }
+}
