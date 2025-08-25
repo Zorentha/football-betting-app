@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  football-betting-app:
+    image: ghcr.io/REPLACE_WITH_OWNER/football-betting-app:latest
+    container_name: football-betting-app
+    restart: always
+    environment:
+      - NODE_ENV=production
+      - PORT=3001
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - API_FOOTBALL_KEY=${API_FOOTBALL_KEY}
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./data:/app/database # persistent sqlite data (optional)
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:3001/api/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
