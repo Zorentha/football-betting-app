@@ -1,3 +1,0 @@
-# Copy this exact single line into Git Bash (Unix-style). Make sure you have exported GITHUB_TOKEN first:
-# export GITHUB_TOKEN="ghp_XXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-curl -v -H "Authorization: token $GITHUB_TOKEN" -H "Accept: application/vnd.github+json" -d '{"title":"Make OpenAI expected output tokens configurable and remove hardcoded cap","head":"feature/openai-expected-output-tokens","base":"main","body":"See PR_DESCRIPTION.md in repository for full details."}' https://api.github.com/repos/Zorentha/football-betting-app/pulls

@@ -1,7 +1,0 @@
-{
-  "temperature": 0.362833,
-  "trainedOn": "2025-08-20T11:30:44.888Z",
-  "validationLoss": 0.797888,
-  "exampleCount": 40,
-  "notes": "Temperature scaling via grid search (0.01..5)."
-}
