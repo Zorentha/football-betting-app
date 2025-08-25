@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Football Betting App — Dev Smoke Test</title>
+    <style>
+      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial; padding: 32px; background:#f7f7fb; color:#111; }
+      .card { background: #fff; border: 1px solid #e6e9ef; border-radius: 8px; padding: 20px; max-width: 920px; box-shadow: 0 6px 20px rgba(20,20,40,0.04); }
+      h1 { margin: 0 0 8px 0; font-size: 20px; }
+      pre { background:#0f1724; color:#d1fae5; padding:12px;border-radius:6px; overflow:auto; max-height:320px; }
+      .status-ok { color: #0b6; font-weight:600 }
+      .status-no { color: #c00; font-weight:600 }
+      a { color: #0066cc }
+      button { cursor: pointer; }
+      .btn-primary { background: #007bff; color: white; border: none; padding: 8px 12px; border-radius: 6px; }
+      .btn-ghost { background: transparent; border: 1px solid #e6e9ef; padding: 8px 12px; border-radius: 6px; }
+      /* simple modal */
+      .modal-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.5); display:flex; align-items:center; justify-content:center; z-index:1000; }
+      .modal { width: 90%; max-width: 1000px; background: white; padding: 16px; border-radius: 8px; box-shadow: 0 10px 40px rgba(0,0,0,0.2); max-height: 90vh; overflow:auto; }
+      .row { display:flex; gap:12px; }
+      .col { flex:1 }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Football Betting App — Dev smoke test</h1>
+      <p>This is a minimal index page used to verify dev servers and to exercise the "Show AI Analysis" dev modal which allows you to review raw/normalized AI output and confirm save to DB.</p>
+
+      <div id="health" style="margin-bottom:12px">
+        <p>Checking backend <code>/api/health</code>…</p>
+        <pre id="healthResult">waiting...</pre>
+      </div>
+
+      <div style="margin-top:8px;">
+        <button id="showAnalysisBtn" class="btn-primary">Show AI Analysis (dev)</button>
+        <button id="clearCacheBtn" class="btn-ghost" style="margin-left:8px">Clear AI Cache (dev)</button>
+      </div>
+
+      <div id="links" style="margin-top:16px">
+        <p>Quick links (dev):</p>
+        <ul>
+          <li><a id="fixturesLink" href="/fixtures/1435547">/fixtures/1435547 (SPA route placeholder)</a></li>
+          <li><a href="/api/betting/fixtures/1435547/analysis" target="_blank">/api/betting/fixtures/1435547/analysis</a></li>
+          <li><a href="/api/health" target="_blank">/api/health</a></li>
+          <li><a href="/tmp/annotate_strict_parsed_1435547.json" target="_blank">tmp/annotate_strict_parsed_1435547.json</a> (dev artifact)</li>
+        </ul>
+      </div>
+
+      <div style="margin-top:20px; color:#666; font-size:13px">
+        <p>Notes:</p>
+        <ul>
+          <li>This page is a dev helper — the real SPA may be served elsewhere when the React app is present.</li>
+          <li>The "Show AI Analysis" button fetches the parsed temporary artifact and opens a modal with raw + normalized content. Use it to confirm & save to DB in dev.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="devModalRoot"></div>
+
+    <script>
+      async function checkHealth() {
+        const out = document.getElementById('healthResult');
+        try {
+          // Try both possible API ports (3001 and 3002) to be tolerant
+          const tryPorts = [3001, 3002];
+          let json = null;
+          for (const p of tryPorts) {
+            try {
+              const res = await fetch(`http://localhost:${p}/api/health`, { cache: 'no-store' });
+              if (!res.ok) throw new Error('HTTP ' + res.status);
+              json = await res.json();
+              out.textContent = JSON.stringify({ port: p, ...json }, null, 2);
+              out.className = 'status-ok';
+              return;
+            } catch (e) {
+              // continue to next port
+            }
+          }
+          throw new Error('No API responded on ports ' + tryPorts.join(','));
+        } catch (err) {
+          out.textContent = 'Error: ' + (err.message || err);
+          out.className = 'status-no';
+        }
+      }
+
+      function createModal(aiAnalysis, fixtureId) {
+        const root = document.getElementById('devModalRoot');
+        root.innerHTML = '';
+        const backdrop = document.createElement('div');
+        backdrop.className = 'modal-backdrop';
+        const modal = document.createElement('div');
+        modal.className = 'modal';
+
+        const header = document.createElement('div');
+        header.innerHTML = `<div style="display:flex;justify-content:space-between;align-items:center"><h3 style="margin:0">AI Analysis — Fixture ${fixtureId}</h3><button id="closeModalBtn" class="btn-ghost">Close</button></div>`;
+        modal.appendChild(header);
+
+        const row = document.createElement('div');
+        row.className = 'row';
+        const colLeft = document.createElement('div');
+        colLeft.className = 'col';
+        const colRight = document.createElement('div');
+        colRight.className = 'col';
+
+        const preLeft = document.createElement('pre');
+        preLeft.textContent = JSON.stringify(aiAnalysis.raw_assistant_text_excerpt ? aiAnalysis : aiAnalysis, null, 2);
+        colLeft.appendChild(preLeft);
+
+        const preRight = document.createElement('pre');
+        preRight.textContent = JSON.stringify({
+          normalized: aiAnalysis.normalized_bettingTips ? aiAnalysis.normalized_bettingTips : aiAnalysis.parsed_bettingTips || aiAnalysis,
+          probabilities: aiAnalysis.probabilities || {}
+        }, null, 2);
+        colRight.appendChild(preRight);
+
+        row.appendChild(colLeft);
+        row.appendChild(colRight);
+        modal.appendChild(row);
+
+        const footer = document.createElement('div');
+        footer.style.marginTop = '12px';
+        footer.style.display = 'flex';
+        footer.style.justifyContent = 'flex-end';
+        footer.style.gap = '8px';
+
+        const cancelBtn = document.createElement('button');
+        cancelBtn.className = 'btn-ghost';
+        cancelBtn.textContent = 'Close';
+        cancelBtn.onclick = () => { root.innerHTML = ''; };
+
+        const confirmBtn = document.createElement('button');
+        confirmBtn.className = 'btn-primary';
+        confirmBtn.textContent = 'Confirm & Save';
+        confirmBtn.onclick = async () => {
+          confirmBtn.disabled = true;
+          confirmBtn.textContent = 'Saving...';
+          try {
+            const prediction = {
+              probabilities: aiAnalysis.probabilities || { homeWin: 34, draw: 33, awayWin: 33 },
+              predictedScore: aiAnalysis.predictedScore || { home: 0, away: 0 },
+              confidence: aiAnalysis.confidence || 'medium',
+              keyFactors: aiAnalysis.keyFactors || aiAnalysis.keyFactors || [],
+              bettingTips: aiAnalysis.normalized_bettingTips || aiAnalysis.parsed_bettingTips || aiAnalysis.bettingTips || [],
+              prediction_metadata: { source: 'dev_modal', note: 'confirmed via dev modal' },
+              calibration_version: aiAnalysis.calibration_version || aiAnalysis.calibrationVersion || 'dev'
+            };
+            const url = `/api/betting/fixtures/${fixtureId}/confirm-save`;
+            // Try both ports by absolute URL fallback (server usually proxied at same origin in dev)
+            let res = await fetch(url, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ prediction })
+            });
+            if (!res.ok) {
+              // try with explicit localhost ports
+              const tryPorts = [3002,3001];
+              let ok = false;
+              for (const p of tryPorts) {
+                try {
+                  res = await fetch(`http://localhost:${p}/api/betting/fixtures/${fixtureId}/confirm-save`, {
+                    method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ prediction })
+                  });
+                  if (res.ok) { ok = true; break; }
+                } catch(e) {}
+              }
+              if (!ok) throw new Error('Failed to POST confirm-save');
+            }
+            const j = await res.json();
+            alert('Saved prediction id: ' + (j.savedId || 'unknown'));
+            root.innerHTML = '';
+          } catch (err) {
+            alert('Save failed: ' + (err.message || err));
+            confirmBtn.disabled = false;
+            confirmBtn.textContent = 'Confirm & Save';
+          }
+        };
+
+        footer.appendChild(cancelBtn);
+        footer.appendChild(confirmBtn);
+        modal.appendChild(footer);
+
+        backdrop.appendChild(modal);
+        root.appendChild(backdrop);
+
+        document.getElementById('closeModalBtn')?.addEventListener('click', () => { root.innerHTML = ''; });
+      }
+
+      document.getElementById('showAnalysisBtn').addEventListener('click', async () => {
+        try {
+          // Load parsed artifact from tmp (dev-only)
+          const res = await fetch('/tmp/annotate_strict_parsed_1435547.json', { cache: 'no-store' });
+          if (!res.ok) throw new Error('No parsed artifact found (HTTP ' + res.status + ')');
+          const ai = await res.json();
+          const fixtureId = (ai.meta && ai.meta.fixture_hint) ? ai.meta.fixture_hint : '1435547';
+          createModal(ai, fixtureId);
+        } catch (err) {
+          alert('Unable to load parsed artifact: ' + (err.message || err));
+        }
+      });
+
+      document.getElementById('clearCacheBtn').addEventListener('click', async () => {
+        try {
+          // try both ports
+          const tryPorts=[3002,3001];
+          let ok=false;
+          for (const p of tryPorts) {
+            try {
+              const r = await fetch(`http://localhost:${p}/api/betting/openai/clear-cache`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: '{}' });
+              if (r.ok) { ok=true; break; }
+            } catch(e){}
+          }
+          alert(ok ? 'Cache cleared' : 'Failed to clear cache (try restarting server)');
+        } catch(e){ alert('Error: '+(e.message||e)); }
+      });
+
+      checkHealth();
+    </script>
+  </body>
+</html>
