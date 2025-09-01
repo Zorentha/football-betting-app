@@ -5,6 +5,7 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -12,7 +13,32 @@ permissions:
   id-token: write
 
 jobs:
+  debug-workspace:
+    name: Debug workspace (separate job)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository (debug)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          path: repo
+
+      - name: Show environment + workspace locations
+        run: |
+          echo "=== DEBUG WORKSPACE JOB START ==="
+          echo "GITHUB_WORKSPACE=$GITHUB_WORKSPACE"
+          echo "List /home/runner/work (top level):"
+          ls -la /home/runner/work || true
+          echo "List /home/runner/work/football-betting-app:"
+          ls -la /home/runner/work/football-betting-app || true
+          echo "List checkout path (repo):"
+          ls -la "$GITHUB_WORKSPACE/repo" || true
+          echo "Find package.json under /home/runner/work (maxdepth 6):"
+          find /home/runner/work -maxdepth 6 -type f -name package.json -print -exec ls -l {} \; || true
+          echo "=== DEBUG WORKSPACE JOB END ==="
+
   build-and-publish:
+    name: Build & Publish Docker
     runs-on: ubuntu-latest
     env:
       IMAGE_NAME: ghcr.io/${{ github.repository_owner }}/football-betting-app
@@ -21,6 +47,38 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          path: repo
+
+      - name: Locate package.json in workspace (debug)
+        run: |
+          echo "GITHUB_WORKSPACE=$GITHUB_WORKSPACE"
+          echo "Searching for package.json under /home/runner/work... (including repo subpath)"
+          find /home/runner/work -maxdepth 6 -type f -name package.json -print -exec ls -l {} \; || true
+          echo "Listing /home/runner/work directory:"
+          ls -la /home/runner/work || true
+          echo "Listing $GITHUB_WORKSPACE/repo (checkout path):"
+          ls -la "$GITHUB_WORKSPACE/repo" || true
+
+      - name: Debug workspace (visible)
+        run: |
+          echo "=== DEBUG WORKSPACE (visible duplicate) ==="
+          echo "GITHUB_WORKSPACE=$GITHUB_WORKSPACE"
+          echo "PWD: $(pwd)"
+          echo "Listing current directory (root):"
+          ls -la
+          echo "Listing GITHUB_WORKSPACE root:"
+          ls -la "$GITHUB_WORKSPACE" || true
+          echo "Listing checkout path (repo) recursively:"
+          if [ -d "$GITHUB_WORKSPACE/repo" ]; then
+            echo "===== START repo recursive listing ====="
+            ls -laR "$GITHUB_WORKSPACE/repo" || true
+            echo "===== END repo recursive listing ====="
+          else
+            echo "repo path missing: $GITHUB_WORKSPACE/repo"
+          fi
+          echo "===== /home/runner/work recursive sample (first 200 lines) ====="
+          find /home/runner/work -maxdepth 4 -print | sed -n '1,200p' || true
+          echo "=== END DEBUG WORKSPACE (visible duplicate) ==="
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -35,8 +93,20 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - name: Install dependencies
-        run: npm ci
+      - name: Install dependencies (from checkout path)
+        run: |
+          echo "Installing from checkout path: $GITHUB_WORKSPACE/repo"
+          echo "Listing checkout path:"
+          ls -la "$GITHUB_WORKSPACE/repo" || true
+          if [ -f "$GITHUB_WORKSPACE/repo/package.json" ]; then
+            echo "package.json found in checkout path; installing there"
+            npm --prefix "$GITHUB_WORKSPACE/repo" ci || npm --prefix "$GITHUB_WORKSPACE/repo" install
+          else
+            echo "package.json NOT found in checkout path ($GITHUB_WORKSPACE/repo). Showing workspace for debugging:"
+            ls -la "$GITHUB_WORKSPACE" || true
+            echo "Failing early - package.json not found."
+            exit 1
+          fi
 
       - name: Run unit tests
         run: node scripts/unit_test_validateAI.js

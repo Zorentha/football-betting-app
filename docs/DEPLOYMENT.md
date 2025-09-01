@@ -1,119 +1,154 @@
-Deployment — Staging / Production (Docker + GHCR + docker-compose)
-================================================================
+DEPLOYMENT — Football Betting App
+================================
 
-Cel
-----
-Instrukcja wdrożenia obrazu Docker wygenerowanego w CI oraz przykładowy skrypt do uruchomienia aplikacji w środowisku staging (docker-compose). Zawiera też wskazówki jak zautomatyzować deploy poprzez GitHub Actions lub ręcznie przez SSH.
+Cel dokumentu
+------------
+Instrukcja wdrożenia aplikacji (staging/production). Zawiera opcje: Docker (recommended), docker-compose, systemd, GitHub Actions (CI/CD), konfigurację środowiska, kroków migracji DB, backupów oraz praktyczne wskazówki dotyczące bezpieczeństwa i rollback.
 
-Co zostało przygotowane (w repo)
---------------------------------
-- Dockerfile — buduje aplikację (produkcyjny obraz).
-- .github/workflows/ci-cd.yml — buduje i wypycha obraz do GHCR (GitHub Container Registry) na push do main.
-- docker-compose.staging.yml — przykładowy compose, pobiera obraz z GHCR i uruchamia kontener.
-- docs/PROJECT_DOCUMENTATION.md — dokumentacja projektu.
-- tmp/rotate_secrets_and_cleanup_instructions.md — instrukcje bezpieczeństwa.
-
-Przygotowanie przed wdrożeniem
-------------------------------
-1. Upewnij się, że obraz został zbudowany i wypchnięty do GHCR przez workflow:
-   - Obraz: ghcr.io/<OWNER>/football-betting-app:latest
-2. Dodaj zmienne środowiskowe na serwerze staging/prod:
-   - OPENAI_API_KEY
-   - API_FOOTBALL_KEY
-   - (opcjonalnie) inne: PORT, DB paths, etc.
-3. Na serwerze docelowym zainstaluj Docker i docker-compose.
-
-Ręczny deploy (na serwerze staging)
------------------------------------
-1) Pobierz repo / utwórz katalog deploy:
-   mkdir -p /srv/football-betting-app
-   cd /srv/football-betting-app
-
-2) Stwórz plik .env (zawierający sekrety) na serwerze:
-   # example .env (NEVER commit this)
-   OPENAI_API_KEY=sk-...
-   API_FOOTBALL_KEY=...
-   PORT=3001
-
-3) W katalogu z docker-compose.staging.yml (skopiuj z repo) uruchom:
-   export OPENAI_API_KEY='sk-...'
-   export API_FOOTBALL_KEY='...'
-   docker compose -f docker-compose.staging.yml pull
-   docker compose -f docker-compose.staging.yml up -d
-
-4) Sprawdź health:
-   curl -f http://localhost:3001/api/health
-
-Automatyczny deploy (opcjonalnie via GitHub Actions)
----------------------------------------------------
-- Możesz dodać krok do workflow, który po sukcesie build&push wykona deploy via SSH:
-  - Wygeneruj parę SSH i dodaj prywatny klucz jako GitHub Secret (DEPLOY_SSH_KEY).
-  - Dodaj secret DEPLOY_HOST, DEPLOY_USER, DEPLOY_PATH.
-- Przykładowy krok (pseudo):
-  - name: Deploy to staging
-    uses: appleboy/ssh-action@v0.1.7
-    with:
-      host: ${{ secrets.DEPLOY_HOST }}
-      username: ${{ secrets.DEPLOY_USER }}
-      key: ${{ secrets.DEPLOY_SSH_KEY }}
-      script: |
-        cd ${{ secrets.DEPLOY_PATH }}
-        docker compose -f docker-compose.staging.yml pull
-        docker compose -f docker-compose.staging.yml up -d
-
-Przykładowy skrypt deploy_staging.sh (do umieszczenia na serwerze)
------------------------------------------------------------------
-#!/usr/bin/env bash
-set -euo pipefail
-
-# Usage:
-# OPENAI_API_KEY=sk-... API_FOOTBALL_KEY=... ./deploy_staging.sh
-
-IMAGE="ghcr.io/<OWNER>/football-betting-app:latest"
-COMPOSE_FILE="docker-compose.staging.yml"
-DEPLOY_DIR="/srv/football-betting-app"
-
-mkdir -p "$DEPLOY_DIR"
-cd "$DEPLOY_DIR"
-
-# Save .env if passed via environment (optional)
-if [ -n "${OPENAI_API_KEY:-}" ]; then
-  cat > .env <<EOF
-OPENAI_API_KEY=${OPENAI_API_KEY}
-API_FOOTBALL_KEY=${API_FOOTBALL_KEY:-}
-PORT=3001
-EOF
-fi
-
-# Pull and run
-docker pull "$IMAGE"
-docker compose -f "$COMPOSE_FILE" pull
-docker compose -f "$COMPOSE_FILE" up -d --remove-orphans
-docker compose -f "$COMPOSE_FILE" ps
-
-Security & Post‑deploy checks
------------------------------
-- After deployment, verify:
-  - /api/health responds
-  - logs: docker compose logs --tail=200
-  - DB file permissions (if using persisted sqlite)
-- Ensure secrets are stored in environment/secret manager, not in repo.
-- Rotate keys if any were committed accidentally (see tmp/rotate_secrets_and_cleanup_instructions.md).
-- Consider running smoke tests/end-to-end tests after deploy.
-
-Rollbacks
+Założenia
 ---------
-- To rollback to previous image (if you keep tags per CI), change image tag in docker-compose or use:
-  docker compose -f docker-compose.staging.yml pull
-  docker compose -f docker-compose.staging.yml up -d
-  # or specify older image: docker compose set image football-betting-app ghcr.io/<OWNER>/football-betting-app:<tag>
+- Repo zawiera Dockerfile i docker-compose.staging.yml.
+- W środowisku produkcyjnym rekomendowane użycie registry GHCR (ghcr.io) lub innego prywatnego rejestru.
+- Sekrety przechowywane w GitHub Secrets lub systemie typu Vault.
+- Dla prototypu używany jest SQLite; w produkcji zalecany Postgres lub inny RDBMS.
 
-Help & Automation I can provide
+1. Przygotowanie środowiska
+---------------------------
+Wymagane:
+- Docker >= 20.x
+- docker-compose (jeśli używasz docker-compose)
+- GitHub Actions (po stronie CI)
+- (Opcjonalnie) systemd dla hostów nieużywających kontenerów
+
+Ustawienia środowiskowe (.env)
+- Skopiuj .env.example -> .env (lokalnie), lub ustaw secrets:
+  - OPENAI_API_KEY
+  - API_FOOTBALL_KEY
+  - NODE_ENV=production
+  - PORT (np. 3000)
+  - DATABASE_URL (jeśli używasz Postgres, np. postgres://user:pass@host:5432/db)
+  - DEPLOY_* (DEPLOY_HOST, DEPLOY_USER) dla SSH deploy (jeśli potrzebne)
+
+2. Build & push obrazu Docker (lokalnie)
+----------------------------------------
+1. Zbuduj:
+   docker build -t ghcr.io/<OWNER>/football-betting-app:latest .
+2. Zaloguj się do GHCR:
+   echo $CR_PAT | docker login ghcr.io -u <OWNER> --password-stdin
+   (CR_PAT = personal access token with packages:write)
+3. Push:
+   docker push ghcr.io/<OWNER>/football-betting-app:latest
+
+3. GitHub Actions — automatyczny build & publish
+------------------------------------------------
+Repo zawiera workflow .github/workflows/ci-cd.yml który:
+- buduje obraz,
+- testuje (uruchamia scripts/unit_test_validateAI.js),
+- pushuje do GHCR,
+- (opcjonalnie) deploy via SSH jeśli ustawione env DEPLOY_ON_PUSH=true oraz secrets DEPLOY_SSH_KEY, DEPLOY_HOST, DEPLOY_USER, DEPLOY_PATH.
+
+Wskazówki:
+- Upewnij się, że secrets w repo zawierają GHCR credentials i nowe OPENAI key.
+- Dla prywatnych repo akcja docker/build-push-action użyje ${{ secrets.GITHUB_TOKEN }} do push (upewnij się, że permissions są ustawione).
+
+4. Deploy na serwer (docker-compose)
+-----------------------------------
+Przykład: katalog na serwerze /opt/football-betting-app zawiera docker-compose.staging.yml.
+
+1. SSH do hosta:
+   ssh deploy_user@your-host
+2. Pull obrazu:
+   docker pull ghcr.io/<OWNER>/football-betting-app:latest
+3. Zaktualizuj .env na serwerze (upewnij się, że zawiera poprawne wartości)
+4. Uruchom:
+   docker compose -f docker-compose.staging.yml up -d --remove-orphans
+5. Sprawdź logi i status:
+   docker compose -f docker-compose.staging.yml ps
+   docker compose -f docker-compose.staging.yml logs -f
+
+Rollback:
+- Jeśli potrzebny rollback do poprzedniego obrazu:
+  docker pull ghcr.io/<OWNER>/football-betting-app:<previous-tag>
+  docker compose -f docker-compose.staging.yml up -d --no-deps --build
+
+5. Deploy bez kontenerów (systemd)
+----------------------------------
+(Jeśli nie używasz Dockera)
+1. Na serwerze zainstaluj Node.js (LTS) i zależności.
+2. Skonfiguruj process manager (pm2 lub systemd):
+   - pm2 start server.js --name football-betting-app --env production
+   - lub utwórz unit file systemd:
+     /etc/systemd/system/football-betting-app.service
+3. Uruchom i włącz:
+   systemctl daemon-reload
+   systemctl enable --now football-betting-app
+
+6. Migrations / Database
+------------------------
+Obecnie repo używa SQLite (database/football_betting.db). Dla produkcji:
+- Migracja do Postgres:
+  - Przygotuj DATABASE_URL w .env
+  - W scripts/ można znaleźć migracje SQL lub napisać migrator (knex/TypeORM/Flyway)
+- Backup:
+  - SQLite: kopiuj plik DB i archiwizuj (cron + rsync)
+  - Postgres: pg_dump regularnie + retention policy
+
+7. Secrets i konfiguracja w CI
+------------------------------
+- W GitHub Settings -> Secrets and variables -> Actions dodaj:
+  - OPENAI_API_KEY
+  - API_FOOTBALL_KEY
+  - GHCR_PAT (jeśli potrzebujesz do push)
+  - DEPLOY_SSH_KEY (private key) jeśli używasz appleboy/ssh-action
+- Nie wypisuj secrets w logach. Unikaj echo ${{ secrets.* }}
+
+8. Healthchecks i monitorowanie
 -------------------------------
-I can:
-- Create scripts/deploy_staging.sh in repo and commit it.
-- Add SSH deploy step to the GitHub Actions workflow (requires secrets).
-- Create a k8s manifest / helm chart if you prefer Kubernetes deployment.
-- Add a staging CI job to run migrations/tests after deploy.
+- Endpoint: GET /api/health (upewnij się, że działa).
+- Monitoruj:
+  - latencje OpenAI calls, retry rate, strict-fallback counts
+  - wykorzystanie tokenów (może eksportować do Prometheus)
+- Alerty: Slack/PagerDuty na wysokie koszty lub spike w retry/error rate.
 
-Wybierz co chcesz, żebym wygenerował teraz (np. "Create deploy script", "Add GH Actions SSH deploy step", "Create k8s manifests").
+9. CI Debugging (ENOENT: package.json not found)
+------------------------------------------------
+- Wprowadzone debug joby (debug-workspace) w workflow: pokażą GITHUB_WORKSPACE i listing /home/runner/work.
+- Jeśli workflow nadal nie znajduje package.json:
+  - Sprawdź output debug-workspace: znajdziesz dokładną ścieżkę do package.json.
+  - Alternatywa: użyj fallback clone ustawiony w workflow — klon repo do /home/runner/work/checked_repo i instalacja tam.
+- Po potwierdzeniu, usuń debug kroki i commituj czystą wersję workflow.
+
+10. Continuous deployment — przykładowy flow
+-------------------------------------------
+- main branch merge -> GitHub Actions build & test -> push image to GHCR -> SSH deploy do staging (option) -> manual promote to production (recommended)
+- Alternatywa: użyj orchestratora (Kubernetes) z image tags + deployment rollouts.
+
+11. Best practices
+------------------
+- Testuj deployy na staging przed production.
+- Automatyczna rotacja kluczy i ograniczenie ich uprawnień.
+- Regularne backups DB i przechowywanie w bezpiecznym miejscu.
+- Upewnij się, że DB nie jest w obrazie dockerowym (mount volume).
+
+12. Przykładowe komendy ułatwiające operacje
+--------------------------------------------
+- Build & push:
+  docker build -t ghcr.io/<OWNER>/football-betting-app:$GITHUB_SHA .
+  docker push ghcr.io/<OWNER>/football-betting-app:$GITHUB_SHA
+- Restart po deploy:
+  docker compose -f docker-compose.staging.yml pull
+  docker compose -f docker-compose.staging.yml up -d --remove-orphans
+
+13. Checklist przed deployem na production
+------------------------------------------
+- [ ] Wszystkie testy jednostkowe i e2e green
+- [ ] Secrets zrotowane i ustawione w CI
+- [ ] Healthcheck endpoint działa
+- [ ] Backup DB wykonany
+- [ ] Monitoring / alerty skonfigurowane
+
+Załączniki
+---------
+- docker-compose.staging.yml (w repo)
+- .github/workflows/ci-cd.yml (CI)
+- tmp/ci_trigger_instructions.md (instrukcje debug run)
