@@ -41,7 +41,7 @@ jobs:
     name: Build & Publish Docker
     runs-on: ubuntu-latest
     env:
-      IMAGE_NAME: ghcr.io/${{ github.repository_owner }}/football-betting-app
+      IMAGE_NAME: ghcr.io/zorentha/football-betting-app
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
