@@ -1,0 +1,96 @@
+name: CI / Build & Publish Docker
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+permissions:
+  contents: read
+  packages: write
+  id-token: write
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    env:
+      IMAGE_NAME: ghcr.io/${{ github.repository_owner }}/football-betting-app
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Cache node modules
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run unit tests
+        run: node scripts/unit_test_validateAI.js
+
+      - name: Build frontend (if present)
+        run: npm run build --if-present || true
+
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v2
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          file: ./Dockerfile
+          push: true
+          tags: |
+            ${{ env.IMAGE_NAME }}:${{ github.sha }}
+            ${{ env.IMAGE_NAME }}:latest
+          build-args: |
+            NODE_ENV=production
+
+      - name: Create image metadata artifact
+        run: |
+          echo "image=${{ env.IMAGE_NAME }}:${{ github.sha }}" > image-info.txt
+          cat image-info.txt
+        shell: bash
+
+      - name: Upload image info
+        uses: actions/upload-artifact@v4
+        with:
+          name: image-info
+          path: image-info.txt
+
+      # Optional SSH deploy to staging
+      # This step is disabled by default; to enable provide the secrets:
+      # DEPLOY_SSH_KEY (private SSH key), DEPLOY_HOST, DEPLOY_USER, DEPLOY_PATH
+      - name: Deploy to staging via SSH (optional)
+        if: ${{ env.DEPLOY_ON_PUSH == 'true' }}
+        uses: appleboy/ssh-action@v0.1.7
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_SSH_KEY }}
+          port: ${{ secrets.DEPLOY_PORT || '22' }}
+          script: |
+            set -e
+            echo "Deploy: pulling latest image and restarting compose"
+            cd "${{ secrets.DEPLOY_PATH }}"
+            docker pull ${{ env.IMAGE_NAME }}:latest || true
+            docker compose -f docker-compose.staging.yml pull || true
+            docker compose -f docker-compose.staging.yml up -d --remove-orphans
+            docker compose -f docker-compose.staging.yml ps
