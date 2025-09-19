@@ -143,8 +143,8 @@ Główne punkty:
 - UX:
   - Użytkownik otwiera analizę meczu → widzi trzy‑way % i per‑tip % → może kliknąć "Show raw AI output" → następnie "Confirm & Save" → backend zapisuje.
 
-10) Skrypty pomocnicze i testy
-------------------------------
+## 10) Skrypty pomocnicze i testy
+
 Wybrane skrypty:
 - scripts/unit_test_validateAI.js — testy walidacji/normalizacji
 - scripts/confirm_and_save_test.mjs — e2e symulacja Confirm & Save
@@ -153,6 +153,9 @@ Wybrane skrypty:
 - scripts/retry-error-analyses.js — retry failed analyses
 - scripts/retry-timeout-fixtures.js — retry po timeoutach
 - scripts/restart-all.ps1 / scripts/restart-frontend.ps1 — local restart helper dla dev
+- scripts/push-to-github.ps1 — PowerShell script do pushowania zmian do GitHuba
+
+Więcej informacji o skryptach PowerShell do pushowania zmian dostępne są w [docs/PUSH_TO_GITHUB_POWERSHELL.md](PUSH_TO_GITHUB_POWERSHELL.md).
 
 11) CI/CD — GitHub Actions (diagnostyka i rozwiązania problemów)
 ----------------------------------------------------------------
@@ -200,18 +203,8 @@ Priorytety:
 
 14) Przydatne polecenia / checklisty
 -----------------------------------
-- Lokalny start:
-  npm ci
-  npm run serve-api
-  npm run dev
-- Run unit tests:
-  node scripts/unit_test_validateAI.js
-- Trigger workflow (lokalnie z gh CLI):
-  gh workflow run ci-cd.yml --ref main
-  gh run list --workflow=ci-cd.yml --limit 10
-  gh run view <run-id> --log
-- Skan sekretów:
-  docker run --rm -v "$(pwd)":/repo zricethezav/gitleaks:8.2.7 detect --source /repo
+Szczegółowe polecenia i checklisty dla developerów zostały przeniesione do osobnego dokumentu:
+- [Developer Guide](DEVELOPER_GUIDE.md) - Przydatne polecenia, skrypty i checklisty dla developerów
 
 Kontakt/uwagi końcowe
 --------------------
